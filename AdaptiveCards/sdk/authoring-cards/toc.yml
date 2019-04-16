@@ -1,0 +1,11 @@
+items:
+- name: .NET
+  href: net.md
+- name: JavaScript
+  href: javascript.md
+ms.openlocfilehash: 24ffc5b64d7e4e03b3ac4b9da50d358fffb24ff0
+ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59552259"
