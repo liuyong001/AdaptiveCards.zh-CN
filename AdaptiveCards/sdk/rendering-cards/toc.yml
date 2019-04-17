@@ -1,0 +1,105 @@
+items:
+- name: Android
+  items:
+  - name: 入门
+    href: android/getting-started.md
+  - name: 呈现一张卡片
+    href: android/render-a-card.md
+  - name: 操作
+    href: android/actions.md
+  - name: 主机配置
+    href: android/host-config.md
+  - name: 本机样式设置
+    href: android/native-styling.md
+  - name: 扩展性
+    href: android/extensibility.md
+- name: iOS
+  items:
+  - name: 入门
+    href: ios/getting-started.md
+  - name: 呈现一张卡片
+    href: ios/render-a-card.md
+  - name: 操作
+    href: ios/actions.md
+  - name: 主机配置
+    href: ios/host-config.md
+  - name: 本机样式设置
+    href: ios/native-styling.md
+  - name: 扩展性
+    href: ios/extensibility.md
+- name: JavaScript
+  items:
+  - name: 入门
+    href: javascript/getting-started.md
+  - name: 呈现一张卡片
+    href: javascript/render-a-card.md
+  - name: 操作
+    href: javascript/actions.md
+  - name: 主机配置
+    href: javascript/host-config.md
+  - name: 本机样式设置
+    href: javascript/native-styling.md
+  - name: 扩展性
+    href: javascript/extensibility.md
+- name: .NET HTML
+  items:
+  - name: 入门
+    href: net-html/getting-started.md
+  - name: 呈现一张卡片
+    href: net-html/render-a-card.md
+  - name: 操作
+    href: net-html/actions.md
+  - name: 主机配置
+    href: net-html/host-config.md
+  - name: 本机样式设置
+    href: net-html/native-styling.md
+  - name: 扩展性
+    href: net-html/extensibility.md
+- name: .NET WPF
+  items:
+  - name: 入门
+    href: net-wpf/getting-started.md
+  - name: 呈现一张卡片
+    href: net-wpf/render-a-card.md
+  - name: 操作
+    href: net-wpf/actions.md
+  - name: 主机配置
+    href: net-wpf/host-config.md
+  - name: 本机样式设置
+    href: net-wpf/native-styling.md
+  - name: 扩展性
+    href: net-wpf/extensibility.md
+- name: .NET 映像
+  items:
+  - name: 入门
+    href: net-image/getting-started.md
+  - name: 呈现一张卡片
+    href: net-image/render-a-card.md
+  - name: 操作
+    href: net-image/actions.md
+  - name: 主机配置
+    href: net-image/host-config.md
+  - name: 本机样式设置
+    href: net-image/native-styling.md
+  - name: 扩展性
+    href: net-image/extensibility.md
+- name: UWP
+  items:
+  - name: 入门
+    href: uwp/getting-started.md
+  - name: 呈现一张卡片
+    href: uwp/render-a-card.md
+  - name: 操作
+    href: uwp/actions.md
+  - name: 主机配置
+    href: uwp/host-config.md
+  - name: 本机样式设置
+    href: uwp/native-styling.md
+  - name: 扩展性
+    href: uwp/extensibility.md
+ms.openlocfilehash: 2576fb7239292897dcec3f44411d356731c5ab3c
+ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59552279"
