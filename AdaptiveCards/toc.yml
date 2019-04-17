@@ -1,0 +1,57 @@
+items:
+- name: 概述
+  href: index.md
+- name: 入门
+  items:
+  - name: 机器人开发人员
+    href: getting-started/bots.md
+  - name: Windows 开发人员
+    href: getting-started/windows.md
+  - name: Outlook 开发人员
+    href: getting-started/outlook.md
+- name: 创作卡片
+  items:
+  - name: 入门
+    href: authoring-cards/getting-started.md
+  - name: 卡片架构
+    href: authoring-cards/card-schema.md
+  - name: 语音
+    href: authoring-cards/speech.md
+  - name: 文本功能
+    href: authoring-cards/text-features.md
+- name: 呈现卡片
+  items:
+  - name: 入门
+    href: rendering-cards/getting-started.md
+  - name: 操作
+    href: rendering-cards/actions.md
+  - name: 主机配置
+    href: rendering-cards/host-config.md
+  - name: 扩展性
+    href: rendering-cards/extensibility.md
+  - name: 呈现器状态
+    href: rendering-cards/renderer-status.md
+  - name: 实现呈现器
+    href: rendering-cards/implement-a-renderer.md
+- name: SDK
+  items:
+  - name: 创作卡片
+    href: sdk/authoring-cards/toc.yml
+  - name: 呈现卡片
+    href: sdk/rendering-cards/toc.yml
+- name: 资源
+  items:
+  - name: 原则
+    href: resources/principles.md
+  - name: 合作伙伴
+    href: resources/partners.md
+  - name: 工具
+    href: resources/tools.md
+  - name: 路线图
+    href: resources/future.md
+ms.openlocfilehash: 0d11154a56cef4b2814a28544ebf83b50081bfae
+ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59552339"
