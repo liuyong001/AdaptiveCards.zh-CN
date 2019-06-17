@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 303d5675f58bd2c870dcdf5718d508d2e3c78fca
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: bffa49012a8ebe686fc033f98b2438d2e9e959cc
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553349"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138030"
 ---
 # <a name="renderer-status"></a>呈现器状态
 下表显示每个呈现器中，基于其公共的已发布版本的当前状态。
@@ -43,7 +43,7 @@ ms.locfileid: "59553349"
 
 \* 为了最小化库的大小并让使用方应用程序使用其首选的 Markdown 处理器，HTML 呈现器不包括内置的 Markdown 支持。 如果已加载，HTML 呈现器将但是自动使用 Markdown It。
 
-### <a name="extensbility"></a>Extensbility
+### <a name="extensibility"></a>扩展性
 
 |功能 | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |
@@ -61,7 +61,7 @@ ms.locfileid: "59553349"
 | Action.Submit 支持  | ✅ | ✅ | ✅ | ✅ | ✅  |
 | selectAction 支持 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-### <a name="events"></a>事件
+### <a name="events"></a>Events
 
 |       功能        | HTML | .NET | UWP | iOS | Android | 
 |----------------------------|------|------|-----|-----|---------|

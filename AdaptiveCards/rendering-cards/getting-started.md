@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 0a9507c56a8bae9f038c220cdf55e34b2c3b0829
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 0a5f99268ce483fddd99f4493b386db796c3e9d2
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552919"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138090"
 ---
 # <a name="rendering-cards-inside-your-application"></a>应用程序中呈现卡片
 
@@ -60,7 +60,7 @@ ms.locfileid: "59552919"
 
 ### <a name="customize-per-element-rendering"></a>自定义每个元素呈现
 
-每个 SDK，可重写的呈现任何元素，或者甚至添加对您定义的整个新元素的支持。  例如，可以更改`Input.Date`呈现器仍保留的呈现器输出的其余部分的同时发出自定义控件。 也可以添加对自定义支持`Rating`给您的元素定义。
+每个 SDK，可重写的呈现任何元素，或者甚至添加对您定义的整个新元素的支持。  例如，可以更改`Input.Date`呈现器仍保留的呈现器输出的其余部分的同时发出自定义控件。 也可以添加对自定义支持`Rating`你定义的元素。
 
 
 

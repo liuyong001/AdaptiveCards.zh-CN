@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: daea48607376c84f0e0f0af9450cac7dcdf67c0e
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 64eeaefbc2ac775b69bd48cc853beb729cb2c37f
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552479"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67137990"
 ---
 # <a name="handling-speech"></a>处理语音
 

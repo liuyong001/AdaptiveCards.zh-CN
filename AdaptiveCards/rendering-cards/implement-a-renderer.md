@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 09/15/2017
 ms.topic: article
-ms.openlocfilehash: 3c79d768d5c979626b66614a1856ad6c2e390805
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: b39493f82f3378e5a554abc6df890d6821869671
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552549"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67138020"
 ---
 # <a name="adaptive-card-renderer-specification"></a>自适应卡呈现器规范
 
@@ -50,7 +50,7 @@ ms.locfileid: "59552549"
 1. `AdaptiveCard`构造函数**必须**提供`version`属性默认值基于当前的架构版本 
 1. 如果呈现器遇到`version`中的属性`AdaptiveCard`高于受支持的版本，它**必须**返回`fallbackText`相反。
 
-## <a name="rendering"></a>呈现
+## <a name="rendering"></a>渲染
 
 `AdaptiveCard`组成`body`和`actions`。 `body`是一系列`CardElement`s，呈现器将枚举并按顺序呈现。 
 
@@ -89,7 +89,7 @@ ms.locfileid: "59552549"
 
 ### <a name="images"></a>映像
 
-1. 呈现器**应该**允许主机应用程序知道所有 HTTP 映像都下载时和卡是"完全 rendererd"
+1. 呈现器**应该**允许主机应用程序知道所有 HTTP 映像都下载时和卡"完全呈现"
 1. 呈现器**必须**检查主机配置`maxImageSize`param 时下载 HTTP 图像
 1. 呈现器**必须**支持`.png`和 `.jpeg`
 1. 呈现器**应该**支持`.gif`映像
@@ -142,7 +142,7 @@ ms.locfileid: "59552549"
 
 提交操作的行为类似于 HTML 窗体提交，则这些不同之处在于 HTML 通常触发 HTTP post，自适应卡最多保留它意味着每个主机应用程序，以确定什么"提交"。 
 
-1. 当这**必须**引发事件的用户点击操作 invokved。  
+1. 当这**必须**引发的事件在用户点击调用的操作。  
 1. `data`属性**必须**包含回调有效负载中。
 1. 有关`Action.Submit`，将呈现器**必须**收集在卡上的所有输入，并检索其值。 
 
@@ -156,7 +156,7 @@ ms.locfileid: "59552549"
 1. 如果 HostConfig`supportsInteractivity`是`false`呈现器**不得**呈现任何输入。
 2. 输入**应该**可能用最高的保真度呈现。 例如，`Input.Date`理想情况下将日期选取器提供给用户，但如果这不是您的 UI 堆栈，则呈现器可能**必须**故障回复到呈现标准文本框。
 3. 呈现器**应该**显示`placeholderText`在可能的情况
-4. 呈现器**不**必须实现的输入验证。 自适应卡的用户必须规划以验证其端上的所有接收的数据。
+4. 呈现器**不**必须实现的输入验证。 自适应卡的用户必须规划以验证他们一端任何接收的数据。
 5. 输入值绑定**必须**正确转义
 
 6. 该对象**必须**返回到主机应用程序，如下所示：
@@ -164,6 +164,6 @@ ms.locfileid: "59552549"
    我们没有使接收方以正确分析的响应取决于自适应卡中进行输入验证任何承诺。 例如，Input.Number 可能返回"你好"，并且他们需要作好准备。
 
 
-## <a name="events"></a>事件
+## <a name="events"></a>Events
 
 1. 呈现器**应该**激发事件时已更改元素的可见性，允许主机应用程序向卡滚动到位。
