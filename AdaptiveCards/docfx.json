@@ -42,7 +42,7 @@
     },
     "fileMetadata": {
        "open_to_public_contributors": {
-          "./*.md": true,
+          "/*.md": true,
           "getting-started/**.md": true,
           "authoring-cards/**.md": true
         }
