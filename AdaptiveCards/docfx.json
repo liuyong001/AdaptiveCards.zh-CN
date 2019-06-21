@@ -39,7 +39,13 @@
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/AdaptiveCards"
     },
-    "fileMetadata": {},
+    "fileMetadata": {
+       "open_to_public_contributors": {
+          "./*.md": true,
+          "getting-started/**.md": true,
+          "authoring-cards/**.md": true
+        }
+    },
     "template": [],
     "dest": "AdaptiveCards",
     "markdownEngineName": "markdig"
