@@ -1,23 +1,23 @@
 ---
-title: 可扩展性-.NET WPF SDK
+title: 扩展性 - .NET WPF SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: af301ec4d73b6791c1d132b9df7040d71cf70d7b
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 4f89784f711727deb538b2ed2195007ca8e6aca1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552619"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134312"
 ---
-# <a name="extensibility---net-wpf"></a><span data-ttu-id="6045a-102">可扩展性-.NET WPF</span><span class="sxs-lookup"><span data-stu-id="6045a-102">Extensibility - .NET WPF</span></span>
+# <a name="extensibility---net-wpf"></a><span data-ttu-id="ff8f6-102">扩展性 - .NET WPF</span><span class="sxs-lookup"><span data-stu-id="ff8f6-102">Extensibility - .NET WPF</span></span>
 
-## <a name="custom-element-rendering"></a><span data-ttu-id="6045a-103">自定义元素呈现</span><span class="sxs-lookup"><span data-stu-id="6045a-103">Custom Element Rendering</span></span>
+## <a name="custom-element-rendering"></a><span data-ttu-id="ff8f6-103">自定义元素呈现</span><span class="sxs-lookup"><span data-stu-id="ff8f6-103">Custom Element Rendering</span></span>
 
-<span data-ttu-id="6045a-104">可以使用呈现器的完全控制`ElementRenderers`属性设置为**添加**，**删除**，或**重写**默认呈现器。</span><span class="sxs-lookup"><span data-stu-id="6045a-104">For full control of the renderer you can use the `ElementRenderers` property to **add**, **remove**, or **override** default renderers.</span></span>
+<span data-ttu-id="ff8f6-104">若要完全控制呈现器，可以使用 `ElementRenderers` 属性来**添加**、**删除**或**重写**默认呈现器。</span><span class="sxs-lookup"><span data-stu-id="ff8f6-104">For full control of the renderer you can use the `ElementRenderers` property to **add**, **remove**, or **override** default renderers.</span></span>
 
-<span data-ttu-id="6045a-105">下面的示例演示如何可以定义一个自定义`"type": "Rating"`元素和呈现它。</span><span class="sxs-lookup"><span data-stu-id="6045a-105">The following example shows how you could define a custom `"type": "Rating"` element and render it.</span></span>
+<span data-ttu-id="ff8f6-105">以下示例显示了如何定义并呈现一个自定义 `"type": "Rating"` 元素。</span><span class="sxs-lookup"><span data-stu-id="ff8f6-105">The following example shows how you could define a custom `"type": "Rating"` element and render it.</span></span>
 
 ```csharp
 // Register the new type with the JSON parser
@@ -29,9 +29,9 @@ renderer.ElementRenderers.Set<MyCustomRating>(MyCustomRating.Render);
 // Define a custom Rating element type
 public class MyCustomRating : AdaptiveElement
 {
-    public override string Type => "Rating";
+    public MyCustomRating() { Type = "Rating"; }
 
-    public double Rating { get; set; }
+    public override string Type { get; set; }
 
     public AdaptiveTextSize Size { get; set; }
 

@@ -5,26 +5,26 @@ ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
 ms.openlocfilehash: 19e77b86da9d163f5fcf6a6074071a4638a8d793
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
-ms.translationtype: MT
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "59552609"
 ---
-# <a name="speech-and-advanced-customization"></a><span data-ttu-id="4950e-102">语音和高级自定义</span><span class="sxs-lookup"><span data-stu-id="4950e-102">Speech and advanced customization</span></span>
-<span data-ttu-id="4950e-103">我们生活在某个时间段的语音交互通过 Cortana 等服务。</span><span class="sxs-lookup"><span data-stu-id="4950e-103">We live in an era of speech interaction via services like Cortana.</span></span>  <span data-ttu-id="4950e-104">从第一天使用的自适应卡旨在支持语音，实现很酷的新手完整方案。</span><span class="sxs-lookup"><span data-stu-id="4950e-104">Adaptive cards are designed from day one to support speech, enabling cool new hands-full scenarios.</span></span>
+# <a name="speech-and-advanced-customization"></a><span data-ttu-id="dcac8-102">语音和高级自定义</span><span class="sxs-lookup"><span data-stu-id="dcac8-102">Speech and advanced customization</span></span>
+<span data-ttu-id="dcac8-103">我们生活在一个可以通过 Cortana 之类的服务进行语音交互的时代。</span><span class="sxs-lookup"><span data-stu-id="dcac8-103">We live in an era of speech interaction via services like Cortana.</span></span>  <span data-ttu-id="dcac8-104">从第一天开始，自适应卡片在设计时就考虑到要支持语音，启用可应对用户超忙情况的全新超酷方案。</span><span class="sxs-lookup"><span data-stu-id="dcac8-104">Adaptive cards are designed from day one to support speech, enabling cool new hands-full scenarios.</span></span>
 
-<span data-ttu-id="4950e-105">`speak`标记允许要发送到的环境可视显示不主体验，如对汽车的仪表板时的自适应卡。</span><span class="sxs-lookup"><span data-stu-id="4950e-105">The `speak` tag enables the adaptive card to be delivered to an environment where a visual display is not primary experience, such as to a car dashboard while driving.</span></span> 
+<span data-ttu-id="dcac8-105">可以通过 `speak` 标记为视觉显示不是主要体验的环境（例如，在驾驶时使用的汽车仪表板）提供自适应卡片。</span><span class="sxs-lookup"><span data-stu-id="dcac8-105">The `speak` tag enables the adaptive card to be delivered to an environment where a visual display is not primary experience, such as to a car dashboard while driving.</span></span> 
 
-## <a name="speak-property"></a><span data-ttu-id="4950e-106">说出属性</span><span class="sxs-lookup"><span data-stu-id="4950e-106">Speak property</span></span>
-<span data-ttu-id="4950e-107">若要支持的语音，我们`speak`属性，其中包含要向用户说出的文本。</span><span class="sxs-lookup"><span data-stu-id="4950e-107">To support speech we have a `speak` property which contains text to say to the user.</span></span> <span data-ttu-id="4950e-108">可以使用语音合成标记语言批注文本 ([SSML](https://msdn.microsoft.com/en-us/library/office/hh361578))。</span><span class="sxs-lookup"><span data-stu-id="4950e-108">The text can be annotated using speech synthesis markup language ([SSML](https://msdn.microsoft.com/en-us/library/office/hh361578)).</span></span> <span data-ttu-id="4950e-109">SSML 控制速度、 风格和语音的转折点。</span><span class="sxs-lookup"><span data-stu-id="4950e-109">SSML controls the speed, tone, and inflection of the speech.</span></span>  <span data-ttu-id="4950e-110">它甚至允许您对音频进行流式处理或呈现 TTS 音频流从你自己的服务，为你提供自定义来很好大的灵活性。</span><span class="sxs-lookup"><span data-stu-id="4950e-110">It even allows you to stream audio or a render a TTS audio stream from your own service, giving you a great deal of flexibility for customization.</span></span>
+## <a name="speak-property"></a><span data-ttu-id="dcac8-106">Speak 属性</span><span class="sxs-lookup"><span data-stu-id="dcac8-106">Speak property</span></span>
+<span data-ttu-id="dcac8-107">为了支持语音，我们使用了 `speak` 属性，其中包含要说给用户听的文本。</span><span class="sxs-lookup"><span data-stu-id="dcac8-107">To support speech we have a `speak` property which contains text to say to the user.</span></span> <span data-ttu-id="dcac8-108">文本可以使用语音合成标记语言 ([SSML](https://msdn.microsoft.com/en-us/library/office/hh361578)) 进行标注。</span><span class="sxs-lookup"><span data-stu-id="dcac8-108">The text can be annotated using speech synthesis markup language ([SSML](https://msdn.microsoft.com/en-us/library/office/hh361578)).</span></span> <span data-ttu-id="dcac8-109">SSML 控制语音的速度、语气和音调。</span><span class="sxs-lookup"><span data-stu-id="dcac8-109">SSML controls the speed, tone, and inflection of the speech.</span></span>  <span data-ttu-id="dcac8-110">它甚至允许你流式传输音频，或者呈现由你自己的服务提供的 TTS 音频流，让你可以很灵活地进行自定义。</span><span class="sxs-lookup"><span data-stu-id="dcac8-110">It even allows you to stream audio or a render a TTS audio stream from your own service, giving you a great deal of flexibility for customization.</span></span>
 
-<span data-ttu-id="4950e-111">有两种模式来朗读属性使用由主机应用程序：</span><span class="sxs-lookup"><span data-stu-id="4950e-111">There are two patterns for speak property usage by a host application:</span></span>
+<span data-ttu-id="dcac8-111">主机应用程序可以通过两种模式来使用 speak 属性：</span><span class="sxs-lookup"><span data-stu-id="dcac8-111">There are two patterns for speak property usage by a host application:</span></span>
 
-* <span data-ttu-id="4950e-112">**交付**-卡传递时，客户端可以选择读取 Speak 属性来描述作为一个整体的卡的卡。</span><span class="sxs-lookup"><span data-stu-id="4950e-112">**On delivery** - When a card is delivered, the client may opt to read the Speak property for the card to describe the card as a whole.</span></span>
-* <span data-ttu-id="4950e-113">**按需**-为了支持更丰富的可访问性模型，speak 标记的每个元素的架构支持。</span><span class="sxs-lookup"><span data-stu-id="4950e-113">**On demand** - In order to support a richer accessibility model, the schema supports a speak tag for each element.</span></span> <span data-ttu-id="4950e-114">客户端可以读取在卡片中的每个元素的 Speak 属性。</span><span class="sxs-lookup"><span data-stu-id="4950e-114">The client may read a Speak property  for each element in the card.</span></span>
+* <span data-ttu-id="dcac8-112">**按交付** - 将卡片交付给客户时，客户可以选择让系统读出对卡片进行整体说明的卡片 Speak 属性。</span><span class="sxs-lookup"><span data-stu-id="dcac8-112">**On delivery** - When a card is delivered, the client may opt to read the Speak property for the card to describe the card as a whole.</span></span>
+* <span data-ttu-id="dcac8-113">**按需** - 架构支持为每个元素设置一个 speak 标记，这样就可以支持内容更丰富的辅助功能模型。</span><span class="sxs-lookup"><span data-stu-id="dcac8-113">**On demand** - In order to support a richer accessibility model, the schema supports a speak tag for each element.</span></span> <span data-ttu-id="dcac8-114">客户可以让系统读出卡片中每个元素的 Speak 属性。</span><span class="sxs-lookup"><span data-stu-id="dcac8-114">The client may read a Speak property  for each element in the card.</span></span>
 
-### <a name="examples"></a><span data-ttu-id="4950e-115">示例</span><span class="sxs-lookup"><span data-stu-id="4950e-115">Examples</span></span>
+### <a name="examples"></a><span data-ttu-id="dcac8-115">示例</span><span class="sxs-lookup"><span data-stu-id="dcac8-115">Examples</span></span>
 
 ```json
     "speak":"hello world!"
@@ -34,6 +34,6 @@ ms.locfileid: "59552609"
     "speak":"<speak><audio src='https://www.soundjay.com/misc/bell-ringing-04.mp3'/><s>Time to wake up!</s></speak>"
 ```
 
-## <a name="speech-content-design"></a><span data-ttu-id="4950e-116">语音内容设计</span><span class="sxs-lookup"><span data-stu-id="4950e-116">Speech content design</span></span>
+## <a name="speech-content-design"></a><span data-ttu-id="dcac8-116">语音内容设计</span><span class="sxs-lookup"><span data-stu-id="dcac8-116">Speech content design</span></span>
 
-<span data-ttu-id="4950e-117">设计为语音的内容与设计进行可视显示的内容不同。</span><span class="sxs-lookup"><span data-stu-id="4950e-117">Content designed for speech is different from content designed for visual display.</span></span> <span data-ttu-id="4950e-118">在设计时数据卡，您正在设计整个的视觉体验，以向 delights 它们一种方法中的用户显示信息。</span><span class="sxs-lookup"><span data-stu-id="4950e-118">When you design a card, you are designing an entire visual experience to present information to a user in a way that delights them.</span></span> <span data-ttu-id="4950e-119">语音的设计时，您应考虑如何口头描述 delights 用户一种方法中的内容。</span><span class="sxs-lookup"><span data-stu-id="4950e-119">When designing for speech, you should think about how to verbally describe the content in a way that delights the user.</span></span>  
+<span data-ttu-id="dcac8-117">为语音设计的内容不同于为视觉显示设计的内容。</span><span class="sxs-lookup"><span data-stu-id="dcac8-117">Content designed for speech is different from content designed for visual display.</span></span> <span data-ttu-id="dcac8-118">在设计卡片时，你是在设计整个视觉体验，需要以用户满意的方式将信息提供给用户。</span><span class="sxs-lookup"><span data-stu-id="dcac8-118">When you design a card, you are designing an entire visual experience to present information to a user in a way that delights them.</span></span> <span data-ttu-id="dcac8-119">针对语音进行设计时，应考虑如何以用户满意的方式口头介绍内容。</span><span class="sxs-lookup"><span data-stu-id="dcac8-119">When designing for speech, you should think about how to verbally describe the content in a way that delights the user.</span></span>  
