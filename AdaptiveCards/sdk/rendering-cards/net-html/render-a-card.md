@@ -1,21 +1,21 @@
 ---
-title: 呈现卡-.NET HTML SDK
+title: 呈现卡片 - .NET HTML SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 8dc1baffb91f0755f1955ee02b8a3e820b0d34e4
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 1bc1a225fc731aeb8e66bde1ef21a9443e74c8b1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553099"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134171"
 ---
-# <a name="render-a-card---net-html"></a>呈现卡-.NET HTML
+# <a name="render-a-card---net-html"></a>呈现卡片 - .NET HTML
 
-下面介绍了如何呈现使用.NET HTML SDK 的卡。
+下面介绍如何使用 .NET HTML SDK 来呈现卡片。
 
-## <a name="instantiate-a-renderer"></a>实例化一个呈现器
+## <a name="instantiate-a-renderer"></a>实例化呈现器
 
 下一步是创建呈现器的实例。 
 
@@ -32,7 +32,7 @@ AdaptiveCardRenderer renderer = new AdaptiveCardRenderer();
 AdaptiveSchemaVersion schemaVersion = renderer.SupportedSchemaVersion; // 1.0
 ```
 
-## <a name="render-a-card-to-html"></a>以 html 格式呈现数据卡
+## <a name="render-a-card-to-html"></a>将卡片呈现为 HTML
 
 ```csharp
 // Build a simple card
@@ -52,7 +52,7 @@ try
 
     // (Optional) Check for any renderer warnings
     // This includes things like an unknown element type found in the card
-    // Or the card exceeded the maxmimum number of supported actions, etc
+    // Or the card exceeded the maximum number of supported actions, etc
     IList<AdaptiveWarning> warnings = renderedCard.Warnings;
 }
 catch(AdaptiveException ex)

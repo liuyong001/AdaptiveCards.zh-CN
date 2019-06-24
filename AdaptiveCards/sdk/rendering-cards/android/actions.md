@@ -1,19 +1,19 @@
 ---
-title: 操作-Android SDK
+title: 操作 - Android SDK
 author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: b823b139a706e5149ff1cabc672f57cede4bfa33
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: e21c03e069e7ab29dd7d2724d49a2d439c67e5a1
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552539"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134259"
 ---
-# <a name="actions---android"></a>操作-Android
+# <a name="actions---android"></a>操作 - Android
 
-当执行卡操作时，获取调用传递给呈现调用实现 ICardActionHandler 接口的类。 下面介绍了如何定义操作处理程序：
+执行卡片操作时，会调用已传递给呈现调用（用于实现 ICardActionHandler 接口）的类。 下面介绍如何定义操作处理程序：
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -109,3 +109,15 @@ public class ActionHandler implements ICardActionHandler
     }
 }
 ```
+
+> [!IMPORTANT]
+> **v1.1 的重大更改**
+> 
+> 1. 包括在此版本中的媒体元素要求通过用于实现 ICardActionHandler 的类来实现两个新方法，这两个方法是
+>
+> ```java
+> public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+> public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+> ```
+>
+> 在任何媒体元素中首次按下播放按钮时会调用 onMediaPlay，当媒体播放完毕时会调用 onMediaStop

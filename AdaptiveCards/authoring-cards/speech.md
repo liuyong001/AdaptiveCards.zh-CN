@@ -5,24 +5,24 @@ ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
 ms.openlocfilehash: 19e77b86da9d163f5fcf6a6074071a4638a8d793
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
-ms.translationtype: MT
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "59552609"
 ---
 # <a name="speech-and-advanced-customization"></a>语音和高级自定义
-我们生活在某个时间段的语音交互通过 Cortana 等服务。  从第一天使用的自适应卡旨在支持语音，实现很酷的新手完整方案。
+我们生活在一个可以通过 Cortana 之类的服务进行语音交互的时代。  从第一天开始，自适应卡片在设计时就考虑到要支持语音，启用可应对用户超忙情况的全新超酷方案。
 
-`speak`标记允许要发送到的环境可视显示不主体验，如对汽车的仪表板时的自适应卡。 
+可以通过 `speak` 标记为视觉显示不是主要体验的环境（例如，在驾驶时使用的汽车仪表板）提供自适应卡片。 
 
-## <a name="speak-property"></a>说出属性
-若要支持的语音，我们`speak`属性，其中包含要向用户说出的文本。 可以使用语音合成标记语言批注文本 ([SSML](https://msdn.microsoft.com/en-us/library/office/hh361578))。 SSML 控制速度、 风格和语音的转折点。  它甚至允许您对音频进行流式处理或呈现 TTS 音频流从你自己的服务，为你提供自定义来很好大的灵活性。
+## <a name="speak-property"></a>Speak 属性
+为了支持语音，我们使用了 `speak` 属性，其中包含要说给用户听的文本。 文本可以使用语音合成标记语言 ([SSML](https://msdn.microsoft.com/en-us/library/office/hh361578)) 进行标注。 SSML 控制语音的速度、语气和音调。  它甚至允许你流式传输音频，或者呈现由你自己的服务提供的 TTS 音频流，让你可以很灵活地进行自定义。
 
-有两种模式来朗读属性使用由主机应用程序：
+主机应用程序可以通过两种模式来使用 speak 属性：
 
-* **交付**-卡传递时，客户端可以选择读取 Speak 属性来描述作为一个整体的卡的卡。
-* **按需**-为了支持更丰富的可访问性模型，speak 标记的每个元素的架构支持。 客户端可以读取在卡片中的每个元素的 Speak 属性。
+* **按交付** - 将卡片交付给客户时，客户可以选择让系统读出对卡片进行整体说明的卡片 Speak 属性。
+* **按需** - 架构支持为每个元素设置一个 speak 标记，这样就可以支持内容更丰富的辅助功能模型。 客户可以让系统读出卡片中每个元素的 Speak 属性。
 
 ### <a name="examples"></a>示例
 
@@ -36,4 +36,4 @@ ms.locfileid: "59552609"
 
 ## <a name="speech-content-design"></a>语音内容设计
 
-设计为语音的内容与设计进行可视显示的内容不同。 在设计时数据卡，您正在设计整个的视觉体验，以向 delights 它们一种方法中的用户显示信息。 语音的设计时，您应考虑如何口头描述 delights 用户一种方法中的内容。  
+为语音设计的内容不同于为视觉显示设计的内容。 在设计卡片时，你是在设计整个视觉体验，需要以用户满意的方式将信息提供给用户。 针对语音进行设计时，应考虑如何以用户满意的方式口头介绍内容。  

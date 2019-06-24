@@ -1,26 +1,26 @@
 ---
-title: 呈现卡片的.NET WPF SDK
+title: 呈现卡片 - .NET WPF SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 6bc476c79c6d06c7ecb770fb1c3e89eb55e81b9a
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: f847b83a17456dbf80f869ef8ef0df699e57f50e
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553469"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67134298"
 ---
-# <a name="render-a-card---net-wpf"></a>呈现卡片的.NET WPF
+# <a name="render-a-card---net-wpf"></a>呈现卡片 - .NET WPF
 
-下面介绍了如何呈现使用.NET WPF SDK 的卡。
+下面介绍如何使用 .NET WPF SDK 来呈现卡片。
 
 > [!NOTE]
-> **`Media` 使用 HTTPS Url 将不在 WPF 中有效**
+> **带 HTTPS URL 的 `Media` 在 WPF 中不适用**
 > 
-> 由于[WPF MediaElement 控件中的 bug](https://stackoverflow.com/questions/30702505/playing-media-from-https-site-in-media-element-throwing-null-reference-exception)我们并不是能够呈现通过 HTTPS 提供服务的媒体。 应使用中的 HTTP Url`Media`元素直到解决此问题。  
+> 由于 [WPF 的 MediaElement 控件中存在 Bug](https://stackoverflow.com/questions/30702505/playing-media-from-https-site-in-media-element-throwing-null-reference-exception)，我们不能呈现通过 HTTPS 提供的媒体。 在此问题得到解决前，应该在 `Media` 元素中使用 HTTP URL。  
 
-## <a name="instantiate-a-renderer"></a>实例化一个呈现器
+## <a name="instantiate-a-renderer"></a>实例化呈现器
 
 创建呈现器库的实例。 
 
@@ -40,12 +40,12 @@ renderer.UseXceedElementRenderers();
 AdaptiveSchemaVersion schemaVersion = renderer.SupportedSchemaVersion;
 ```
 
-## <a name="render-a-card-to-xaml"></a>卡内容呈现给 XAML
+## <a name="render-a-card-to-xaml"></a>将卡片呈现为 XAML
 
 ```csharp
 // Build a simple card
 // In the real world this would probably be provided as JSON
-AdaptiveCard card = new AdaptiveCard()
+AdaptiveCard card = new AdaptiveCard("1.0")
 {
     Body = { new AdaptiveTextBlock() { Text = "Hello World" } }
 };
@@ -61,7 +61,7 @@ try
 
     // (Optional) Check for any renderer warnings
     // This includes things like an unknown element type found in the card
-    // Or the card exceeded the maxmimum number of supported actions, etc
+    // Or the card exceeded the maximum number of supported actions, etc
     IList<AdaptiveWarning> warnings = renderedCard.Warnings;
 }
 catch(AdaptiveException ex)

@@ -5,30 +5,30 @@ ms.author: mahiding
 ms.date: 11/09/2017
 ms.topic: article
 ms.openlocfilehash: ac8ec0c48e06377ebd17f1b31abe463c48809fe3
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
-ms.translationtype: MT
+ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
+ms.lasthandoff: 06/17/2019
 ms.locfileid: "59553609"
 ---
 # <a name="text-features"></a>文本功能
 
-`TextBlock` 提供了一些格式设置和本地化文本的高级的功能。
+`TextBlock` 提供一些用于文本格式设置和本地化的高级功能。
 
 ## <a name="markdown"></a>Markdown
-若要支持内联标记，自适应卡支持**子集**的 Markdown 语法。
+为了支持内联标记，自适应卡片支持**部分** Markdown 语法。
 
-_支持_
+支持 
 
 | 文本样式      | Markdown |
 |-----------------|-----|
-| **加粗**        | ```**Bold**``` |
+| **粗体**        | ```**Bold**``` |
 | _斜体_        | ```_Italic_``` |
 | 项目符号列表     | ```- Item 1\r- Item 2\r- Item 3``` | 
 | 编号列表   | ```1. Green\r2. Orange\r3. Blue``` |
 | 超链接      | ```[Title](url)``` |
 
-_不支持_
+不支持 
 
 * 标头
 * 表
@@ -37,9 +37,9 @@ _不支持_
 
 ### <a name="markdown-example"></a>Markdown 示例
 
-下面有效负载中将会呈现如下：
+下面的有效负载会呈现如下所示的内容：
 
-![markdown 屏幕快照](media/text-features/markdown.png)
+![markdown 屏幕截图](media/text-features/markdown.png)
 
 ```json
 {
@@ -75,9 +75,9 @@ _不支持_
 
 ## <a name="datetime-formatting-and-localization"></a>日期/时间格式设置和本地化
 
-有时不会知道收到卡，因此，自适应卡提供的用户的时区`DATE()`和`TIME()`的格式设置函数，以自动对目标设备上的时间进行本地化。
+有时候，你不知道接收卡片的用户的时区，因此可以使用自适应卡片提供的 `DATE()` 和 `TIME()` 格式设置函数，在目标设备上自动完成时间的本地化。
 
-### <a name="datetime-example"></a>日期/时间的示例
+### <a name="datetime-example"></a>日期/时间示例
 
 ```json
 {
@@ -94,18 +94,18 @@ _不支持_
 }
 ```
 
-上述卡将显示： 
+上面的卡会显示： 
 
-> **在上午 6:00，你的包将到达 2017 年 2 月 14，日，星期二**
+> **Your package will arrive on Tue, Feb 14th, 2017 at 6:00 AM**
 
 ### <a name="datetime-function-rules"></a>日期/时间函数规则
 
-有一些规则来正确地解释每个平台上的日期/时间函数。 如果原始字符串将显示给用户，并且没有人愿意，则不符合规则。
+为了在每个平台上恰当地解释日期/时间函数，必须应用一些规则。 如果规则得不到满足，则会向用户显示原始字符串，这不是大家希望的。
 
-1. **区分大小写**（必须为全部大写）
-1. **不能含有空格**之间`{{`， `}}`，或括号
-1. **严格[RFC 3389](https://tools.ietf.org/html/rfc3339)格式**（请参阅下面的示例）
-1. **必须为**有效的日期和时间
+1. **区分大小写**（必须全部大写）
+1. `{{`、`}}` 或括号之间**不能有空格**
+1. **严格的 [RFC 3389](https://tools.ietf.org/html/rfc3339) 格式设置**（参见下面的示例）
+1. **必须是**有效的日期和时间
 
 ### <a name="valid-formats"></a>有效格式
 
@@ -115,12 +115,12 @@ _不支持_
 
 ### <a name="date-formatting-param"></a>日期格式设置参数
 
-对于日期，可以指定可选参数来设置输出格式。
+对于日期，可以指定一个可选参数来设置输出格式。
 
 
 |       格式        |            示例            |
 |---------------------|-------------------------------|
-| `COMPACT` （默认值） |          "2/13/2017"          |
-|       `SHORT`       |     "星期一，2 月 13日，2017"     |
-|       `LONG`        | "星期一，2017 年 2 月 13 日" |
+| `COMPACT`（默认） |          “2/13/2017”          |
+|       `SHORT`       |     “Mon, Feb 13th, 2017”     |
+|       `LONG`        | “Monday, February 13th, 2017” |
 
