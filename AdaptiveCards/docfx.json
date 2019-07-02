@@ -38,15 +38,10 @@
       "titleSuffix": "Adaptive Cards",
       "searchScope": ["Adaptive Cards"],
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/AdaptiveCards"
+      "feedback_github_repo": "MicrosoftDocs/AdaptiveCards",
+      "disable_contribution_on_translation_quality": ["MT"]
     },
-    "fileMetadata": {
-       "open_to_public_contributors": {
-          "/*.md": true,
-          "getting-started/**.md": true,
-          "authoring-cards/**.md": true
-        }
-    },
+    "fileMetadata": {},
     "template": [],
     "dest": "AdaptiveCards",
     "markdownEngineName": "markdig"
