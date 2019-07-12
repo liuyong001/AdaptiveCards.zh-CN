@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: 6059c354c0b1926d40618c536b5e791f69e71d5e
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 0b48069f86a73bd26340976fcd420a062ce5b890
+ms.sourcegitcommit: eb7e91e8466d511b79068bc537930962abd45024
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67138010"
+ms.lasthandoff: 07/11/2019
+ms.locfileid: "67815984"
 ---
 # <a name="partners"></a>合作伙伴 
 
@@ -21,7 +21,7 @@ ms.locfileid: "67138010"
 
 平台 | 描述 | 文档 | Version
 ---------|-------------|---------------|---------
-[Bot Framework 聊天](https://github.com/Microsoft/BotFramework-WebChat)  | 有关 Microsoft Bot Framework 可嵌入 web 聊天控件 | [入门](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.0
+[Bot Framework 聊天](https://github.com/Microsoft/BotFramework-WebChat)  | 有关 Microsoft Bot Framework 可嵌入 web 聊天控件 | [入门](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.2 （web 聊天 4.5）
 [Cortana 技能](https://docs.microsoft.com/en-us/cortana/skills/adaptive-cards) | 适用于 Windows 10 虚拟助手 | [入门](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.0
 [Windows 时间线](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | 在这台电脑、 其他 Windows Pc 和 iOS/Android 设备上启动恢复过去的活动的新方法。 | [入门](https://docs.microsoft.com/en-us/adaptive-cards/get-started/windows) | 1.0
 [Outlook 可操作邮件](https://docs.microsoft.com/en-us/outlook/actionable-messages/)  | 附加到电子邮件的可操作邮件 | [入门](https://docs.microsoft.com/en-us/outlook/actionable-messages/) | 1.0
