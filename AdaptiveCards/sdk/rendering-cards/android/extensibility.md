@@ -4,14 +4,21 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 378171186599dd8d103111da183b7fc2e6e01c42
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: ca92f0a2b6ef8a36c5394e4dd9853df59fef22b2
+ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134262"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299552"
 ---
 # <a name="extensibility---android"></a>扩展性 - Android
+
+可对 Android 呈现器进行扩展, 以支持多个方案, 包括:
+* [自定义卡片元素分析](#custom-parsing-of-card-elements)
+* [卡片元素的自定义呈现](#custom-rendering-of-card-elements)
+* [操作的自定义呈现](#custom-rendering-of-actions)(自1.2 版起)
+* [自定义图像加载](#custom-image-loading)(自 v 1.0.1 版以来)
+* [自定义媒体加载](#custom-media-loading)(自1.1 版起)
 
 ## <a name="custom-parsing-of-card-elements"></a>对卡片元素的自定义分析
 
@@ -78,7 +85,13 @@ AdaptiveCard adaptiveCard = AdaptiveCard.DeserializeFromString(jsonText, element
 
 ## <a name="custom-rendering-of-card-elements"></a>对卡片元素的自定义呈现
 
-若要针对类型定义我们自己的自定义呈现器，我们必须先创建一个从 BaseCardElementParser 扩展的类：
+> [!IMPORTANT]
+>
+> **重大更改列表**
+>
+> [v1.2 的重大更改](#breaking-changes-for-v12)
+
+若要为类型定义我自己的自定义呈现器, 必须首先创建一个扩展```BaseCardElementRenderer```自的类:
 ```java
 public class MyCardElementRenderer extends BaseCardElementRenderer
 {
@@ -104,7 +117,140 @@ public class MyCardElementRenderer extends BaseCardElementRenderer
 ```java
 CardRendererRegistration.getInstance().registerRenderer("MyType", new CustomBlahRenderer());
 
-RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, getSupportFragmentManager(), adaptiveCard, cardActionHandler, new HostConfig());
+RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, fragmentManager, adaptiveCard, cardActionHandler,  hostConfig);
+```
+
+### <a name="breaking-changes-for-v12"></a>针对1.2 版的重大更改
+
+方法已更改为```RenderedAdaptiveCard```包含参数, 并且```ContainerStyle```已针对 ContainerStyle 现在包含的 RenderArgs 进行了更改, 以便扩展 BaseCardElementRenderer 的类应如下所示```render```
+
+```
+public class MyCardElementRenderer extends BaseCardElementRenderer
+{
+    @Override
+    public View render(RenderedAdaptiveCard renderedAdaptiveCard, Context context, FragmentManager fragmentManager, ViewGroup viewGroup,
+                       BaseCardElement baseCardElement, ICardActionHandler cardActionHandler, HostConfig hostConfig, RenderArgs renderArgs)
+    { }
+}
+```
+
+## <a name="custom-parsing-of-card-actions"></a>自定义卡操作分析
+
+类似于分析中的自定义卡片元素。 例如, 假设我们有一个新的操作类型, 如下所示:
+```json
+{
+    "type" : "MyAction",
+    "ActionData" : "My data"
+}
+```
+
+下面的代码行演示了如何将其分析为从扩展的```BaseActionElement```ActionElement:
+```java
+public class MyActionElement extends BaseActionElement
+{
+    public MyActionElement(ActionType type) 
+    {
+        super(type);
+    }
+
+    public String getActionData()
+    {
+        return mActionData;
+    }
+
+    public void setActionData(String s)
+    {
+        mActionData = s;
+    }
+
+    private String mActionData;
+    public static final String MyActionId = "myAction";
+}
+
+public class MyActionParser extends ActionElementParser
+{
+    @Override
+    public BaseActionElement Deserialize(ParseContext context, JsonValue value)
+    {
+        MyActionElement element = new MyActionElement(ActionType.Custom);
+        element.SetElementTypeString(MyActionElement.MyActionId);
+        String val = value.getString();
+        try {
+            JSONObject obj = new JSONObject(val);
+            element.setActionData(obj.getString("ActionData"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+            element.setActionData("Failure");
+        }
+        return element;
+    }
+
+    @Override
+    public BaseActionElement DeserializeFromString(ParseContext context, String jsonString)
+    {
+        MyActionElement element = new MyActionElement(ActionType.Custom);
+        element.SetElementTypeString(MyActionElement.MyActionId);
+        try {
+            JSONObject obj = new JSONObject(jsonString);
+            element.setBackwardString(obj.getString("ActionData"));
+        } catch (JSONException e) {
+            e.printStackTrace();
+            element.setBackwardString("Failure");
+        }
+        return element;
+    }
+}
+```
+
+接下来的代码行演示如何注册分析器并获取包含自定义 action 元素的 AdaptiveCard 对象:
+```java
+// Create an ActionParserRegistration and add your parser to it
+ActionParserRegistration actionParserRegistration = new ActionParserRegistration();
+actionParserRegistration.AddParser(MyActionElement.MyActionId, new MyActionParser());
+
+ParseContext context = new ParseContext(null, actionParserRegistration);
+ParseResult parseResult = AdaptiveCard.DeserializeFromString(jsonText, AdaptiveCardRenderer.VERSION, context);
+```
+
+接下来, 呈现自定义操作
+
+## <a name="custom-rendering-of-actions"></a>操作的自定义呈现
+
+若要为类型定义我自己的自定义操作呈现器, 必须首先创建一个扩展```BaseActionElementRenderer```自的类:
+```java
+public class MyActionRenderer extends BaseActionElementRenderer
+{
+    @Override
+    public Button render(RenderedAdaptiveCard renderedCard,
+                         Context context,
+                         FragmentManager fragmentManager,
+                         ViewGroup viewGroup,
+                         BaseActionElement baseActionElement,
+                         ICardActionHandler cardActionHandler,
+                         HostConfig hostConfig,
+                         RenderArgs renderArgs)
+    {
+        Button myActionButton = new Button(context);
+
+        CustomActionElement customAction = (CustomActionElement) baseActionElement.findImplObj();
+
+        myActionButton.setBackgroundColor(getResources().getColor(R.color.greenActionColor));
+        myActionButton.setText(customAction.getMessage());
+        myActionButton.setAllCaps(false);
+        myActionButton.setOnClickListener(new BaseActionElementRenderer.ActionOnClickListener(renderedCard, baseActionElement, cardActionHandler));
+
+        viewGroup.addView(myActionButton);
+
+        return myActionButton;
+    }
+}
+```
+
+然后注册该呈现器，如下所示：
+```java
+CardRendererRegistration.getInstance().registerActionRenderer("myAction", new CustomActionRenderer());
+
+RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, fragmentManager, adaptiveCard, cardActionHandler, hostConfig);
 ```
 
 ## <a name="custom-rendering-of-actions"></a>对操作的自定义呈现
@@ -233,13 +379,14 @@ public class ResourceResolver implements IResourceResolver
 ```
 
 可以看到，最大的更改是
-* loadOnlineImage(String, GenericImageLoaderAsync) 已重命名为 resolveImageResource(String, GenericImageLoaderAsync)
-* 已将 resolveImageResource(String, GenericImageLoaderAsync) 的重载添加为 resolveImageResource(String, GenericImageLoaderAsync, int)，目的是支持需要最大宽度的方案
+
+* ```loadOnlineImage(String, GenericImageLoaderAsync)```已重命名为```resolveImageResource(String, GenericImageLoaderAsync)```
+* ```resolveImageResource(String, GenericImageLoaderAsync)``` 为```resolveImageResource(String, GenericImageLoaderAsync, int)```添加了的重载, 以便支持最大宽度是必需的方案
 
 ## <a name="custom-media-loading"></a>自定义媒体加载
 
 > [!IMPORTANT]
-> **请记住，IOnlineMediaLoader 要求已在 API 级别 23 或 Android M 中添加 MediaDataSource**
+> **请```IOnlineMediaLoader```记住```MediaDataSource``` , 要求在 API 级别23或 Android M 中添加了**
 
 除了包括媒体元素，还包括 IOnlineMediaLoader 接口，这样开发人员就可以重写用于基础 mediaPlayer 元素的 [MediaDataSource](https://developer.android.com/reference/android/media/MediaDataSource)。 **（需要 Android M）**
 
