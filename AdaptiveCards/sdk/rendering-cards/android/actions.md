@@ -4,16 +4,22 @@ author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: e21c03e069e7ab29dd7d2724d49a2d439c67e5a1
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 49b0b45abeb54381bd7b4b548219a09ad5da10c1
+ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134259"
+ms.lasthandoff: 07/17/2019
+ms.locfileid: "68299530"
 ---
-# <a name="actions---android"></a><span data-ttu-id="b8bea-102">操作 - Android</span><span class="sxs-lookup"><span data-stu-id="b8bea-102">Actions - Android</span></span>
+# <a name="actions---android"></a><span data-ttu-id="efda6-102">操作 - Android</span><span class="sxs-lookup"><span data-stu-id="efda6-102">Actions - Android</span></span>
 
-<span data-ttu-id="b8bea-103">执行卡片操作时，会调用已传递给呈现调用（用于实现 ICardActionHandler 接口）的类。</span><span class="sxs-lookup"><span data-stu-id="b8bea-103">When a cards action is executed, the class that was passed to the render call that implements the ICardActionHandler interface gets invoked.</span></span> <span data-ttu-id="b8bea-104">下面介绍如何定义操作处理程序：</span><span class="sxs-lookup"><span data-stu-id="b8bea-104">Here is how to define your action handler:</span></span>
+> [!IMPORTANT]
+> <span data-ttu-id="efda6-103">**重大更改列表**</span><span class="sxs-lookup"><span data-stu-id="efda6-103">**List of Breaking changes**</span></span>
+> 
+> [<span data-ttu-id="efda6-104">1.1 版中的重大更改</span><span class="sxs-lookup"><span data-stu-id="efda6-104">Breaking changes in v1.1</span></span>](#breaking-changes-in-v11)
+> 
+
+<span data-ttu-id="efda6-105">执行卡操作时, 将调用传递到实现```ICardActionHandler```接口的呈现调用的类。</span><span class="sxs-lookup"><span data-stu-id="efda6-105">When a cards action is executed, the class that was passed to the render call that implements the ```ICardActionHandler``` interface gets invoked.</span></span> <span data-ttu-id="efda6-106">下面介绍如何定义操作处理程序：</span><span class="sxs-lookup"><span data-stu-id="efda6-106">Here is how to define your action handler:</span></span>
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -110,14 +116,50 @@ public class ActionHandler implements ICardActionHandler
 }
 ```
 
-> [!IMPORTANT]
-> <span data-ttu-id="b8bea-105">**v1.1 的重大更改**</span><span class="sxs-lookup"><span data-stu-id="b8bea-105">**Breaking changes for v1.1**</span></span>
-> 
-> 1. <span data-ttu-id="b8bea-106">包括在此版本中的媒体元素要求通过用于实现 ICardActionHandler 的类来实现两个新方法，这两个方法是</span><span class="sxs-lookup"><span data-stu-id="b8bea-106">The media element included in this version requires two new methods to be implemented by the classes that implement ICardActionHandler, these methods are</span></span>
->
-> ```java
-> public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
-> public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
-> ```
->
-> <span data-ttu-id="b8bea-107">在任何媒体元素中首次按下播放按钮时会调用 onMediaPlay，当媒体播放完毕时会调用 onMediaStop</span><span class="sxs-lookup"><span data-stu-id="b8bea-107">onMediaPlay is invoked when the play button is pressed for the first time in any media element, meanwhile onMediaStop is invoked when the media reaches it's end</span></span>
+## <a name="breaking-changes-in-v11"></a><span data-ttu-id="efda6-107">1\.1 版中的重大更改</span><span class="sxs-lookup"><span data-stu-id="efda6-107">Breaking changes in v1.1</span></span>
+
+<span data-ttu-id="efda6-108">此版本中包含的媒体元素需要由实现```ICardActionHandler```的类实现两个新方法, 这些方法是:</span><span class="sxs-lookup"><span data-stu-id="efda6-108">The media element included in this version requires two new methods to be implemented by the classes that implement ```ICardActionHandler```, these methods are:</span></span>
+
+* <span data-ttu-id="efda6-109">```onMediaPlay```当在任何媒体元素中首次按 "播放" 按钮时调用</span><span class="sxs-lookup"><span data-stu-id="efda6-109">```onMediaPlay``` is invoked when the play button is pressed for the first time in any media element</span></span>
+* <span data-ttu-id="efda6-110">```onMediaStop```当媒体结束时调用</span><span class="sxs-lookup"><span data-stu-id="efda6-110">```onMediaStop``` is invoked when the media reaches it's end</span></span>
+
+<span data-ttu-id="efda6-111">这些方法的签名包括:</span><span class="sxs-lookup"><span data-stu-id="efda6-111">The signatures for these methods are:</span></span>
+
+```java
+public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+```
+
+<span data-ttu-id="efda6-112">上一示例中的 ActionHandler 的实现现在如下所示:</span><span class="sxs-lookup"><span data-stu-id="efda6-112">And the implementation for the ActionHandler from the previous example would now look similar to this:</span></span>
+
+```java
+public class ActionHandler implements ICardActionHandler
+{
+    @Override
+    public void onAction(BaseActionElement actionElement, RenderedAdaptiveCard renderedCard)
+    { }
+
+    private void onSubmit(BaseActionElement actionElement, RenderedAdaptiveCard renderedAdaptiveCard) 
+    { }
+
+    private void onShowCard(BaseActionElement actionElement)
+    { }
+
+    private void onOpenUrl(BaseActionElement actionElement)
+    { }
+
+    @Override
+    public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+    {
+        // Your logic here, i.e.
+        showToast("Media started: " + mediaElement, Toast.LENGTH_LONG);
+    }
+
+    @Override
+    public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
+    {
+        // Your logic here, i.e.
+        showToast("Media ended playing: " + mediaElement, Toast.LENGTH_LONG);
+    }
+}
+```
