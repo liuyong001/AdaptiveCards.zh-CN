@@ -4,24 +4,16 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/01/2017
 ms.topic: article
-ms.openlocfilehash: fa86d83a8f20490ec286b69653099ac8cd81b8ef
-ms.sourcegitcommit: 4d80c553ab574befa8c84706fd85d22077915745
+ms.openlocfilehash: fb1a79da288cbce77c4f684b384982feb96e7a8c
+ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2019
-ms.locfileid: "68387346"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523841"
 ---
 # <a name="net-sdk-for-authoring-cards"></a>用于创作插件的 .NET SDK
 
 如我们在[入门](../../authoring-cards/getting-started.md)"页中所述, 自适应卡是一个 JSON 对象模型。 .NET 库可以更轻松地使用该 JSON。
-
-> [!IMPORTANT]
-> **V 0.5 中的重大更改**
-> 
-> 1. 包已从`Microsoft.AdaptiveCards`重命名为`AdaptiveCards`
-> 1. 由于经常与框架类型发生名称冲突, 所有模型类都以 "自适应" 为前缀。 例如, `TextBlock`现在为`AdaptiveTextBlock`
-> 1. 所有 "uri" 属性已从类型`string`更改为`Uri`
-> 1. 前面的0.5 个预览中也有一些架构更改,[这里概述](https://github.com/Microsoft/AdaptiveCards/pull/633)了这些更改
 
 
 ## <a name="nuget-install"></a>NuGet 安装
@@ -30,7 +22,7 @@ ms.locfileid: "68387346"
 [![Nuget 安装](https://img.shields.io/nuget/vpre/AdaptiveCards.svg)](https://www.nuget.org/packages/AdaptiveCards)
 
 ```console
-Install-Package AdaptiveCards -IncludePrerelease
+Install-Package AdaptiveCards
 ```
 
 ## <a name="example-create-an-adaptivecard-and-serialize-to-json"></a>例如：创建 AdaptiveCard 并序列化为 JSON

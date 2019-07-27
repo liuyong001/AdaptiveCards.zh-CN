@@ -4,14 +4,15 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 5/14/2018
 ms.topic: article
-ms.openlocfilehash: 15a99a42a997da5c14f52c9aa240f13d2b81ef65
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: d4c9e784fec66d2f3449e5780dda23d72ab2edf2
+ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553449"
+ms.lasthandoff: 07/26/2019
+ms.locfileid: "68523864"
 ---
 # <a name="adaptive-cards-media"></a>自适应卡媒体
+
 
 ## <a name="introduction-video"></a>简介视频
 
