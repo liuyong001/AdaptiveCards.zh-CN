@@ -38,13 +38,15 @@
       href: sdk/authoring-cards/toc.yml
     - name: 呈现卡片
       href: sdk/rendering-cards/toc.yml
+    - name: 设计器 SDK
+      href: sdk/designer.md
 - name: 模板化（预览）
   items:
     - name: 概述
       href: templating/index.md
     - name: 模板语言
       href: templating/language.md
-    - name: SDK
+    - name: 将 SDK 模板化
       href: templating/sdk.md
     - name: 模板服务
       href: templating/service.md
