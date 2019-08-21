@@ -224,7 +224,7 @@ HTTP POST https://templates.adaptivecards.io/graph.microsoft.com/Profile.json
 
 此模板服务由 GitHub 存储库 (当前为**专用**) 来支持, 但我们会在我们占用一些松动的结束后打开源。
 
-我们希望使用 GitHub 作为模板的后备存储, 我们可以 "变得大众化" 创作、增强和共享模板的过程。 任何人都可以提交包含一个全新模板的拉取请求, 或对现有模板进行增强 .。。GitHub 的开发人员友好体验中都有。
+我们希望使用 GitHub 作为模板的后备存储, 我们可以 "变得大众化" 创作、增强和共享模板的过程。 任何人都可以提交包含一个全新模板的拉取请求, 或对现有模板进行增强... GitHub 的开发人员友好体验中都有。
 
 ## <a name="self-hosting-the-service"></a>自承载服务
 
