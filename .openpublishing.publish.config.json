@@ -4,8 +4,9 @@
       "docset_name": "AdaptiveCards",
       "build_source_folder": "AdaptiveCards",
       "build_output_subfolder": "AdaptiveCards",
-      "locale": "zh-cn",
+      "locale": "zh-CN",
       "monikers": [],
+      "moniker_ranges": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
