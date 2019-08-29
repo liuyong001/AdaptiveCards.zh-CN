@@ -11,18 +11,18 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552599"
 ---
-# <a name="getting-started---net-html"></a><span data-ttu-id="0c199-102">获取已开始-.NET HTML</span><span class="sxs-lookup"><span data-stu-id="0c199-102">Getting started - .NET HTML</span></span>
+# <a name="getting-started---net-html"></a><span data-ttu-id="a52ff-102">入门-.NET HTML</span><span class="sxs-lookup"><span data-stu-id="a52ff-102">Getting started - .NET HTML</span></span>
 
-<span data-ttu-id="0c199-103">如我们所述[Getting Started](../../../authoring-cards/getting-started.md)页上，自适应卡是一个 JSON 序列化卡对象模型。</span><span class="sxs-lookup"><span data-stu-id="0c199-103">As we described in [Getting Started](../../../authoring-cards/getting-started.md) page, an Adaptive Card is a JSON-serialized card object model.</span></span> <span data-ttu-id="0c199-104">这是用于生成 HTML 标记，通常是从一台服务器的.NET 库。</span><span class="sxs-lookup"><span data-stu-id="0c199-104">This is a .NET library for generating HTML markup, typically from a server.</span></span>
+<span data-ttu-id="a52ff-103">正如我们在[入门](../../../authoring-cards/getting-started.md)"页中所述, 自适应卡是 JSON 序列化的卡对象模型。</span><span class="sxs-lookup"><span data-stu-id="a52ff-103">As we described in [Getting Started](../../../authoring-cards/getting-started.md) page, an Adaptive Card is a JSON-serialized card object model.</span></span> <span data-ttu-id="a52ff-104">这是一个用于生成 HTML 标记的 .NET 库, 通常来自服务器。</span><span class="sxs-lookup"><span data-stu-id="a52ff-104">This is a .NET library for generating HTML markup, typically from a server.</span></span>
 
-## <a name="nuget-install"></a><span data-ttu-id="0c199-105">NuGet 安装</span><span class="sxs-lookup"><span data-stu-id="0c199-105">NuGet install</span></span>
+## <a name="nuget-install"></a><span data-ttu-id="a52ff-105">NuGet 安装</span><span class="sxs-lookup"><span data-stu-id="a52ff-105">NuGet install</span></span>
 
-<span data-ttu-id="0c199-106">[![Nuget 安装](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html)</span><span class="sxs-lookup"><span data-stu-id="0c199-106">[![Nuget install](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html)</span></span>
+<span data-ttu-id="a52ff-106">[![Nuget 安装](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html)</span><span class="sxs-lookup"><span data-stu-id="a52ff-106">[![Nuget install](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Html.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Html)</span></span>
 
 ```console
 Install-Package AdaptiveCards.Rendering.Html -IncludePrerelease
 ```
 
-## <a name="next-steps"></a><span data-ttu-id="0c199-107">后续步骤</span><span class="sxs-lookup"><span data-stu-id="0c199-107">Next steps</span></span>
+## <a name="next-steps"></a><span data-ttu-id="a52ff-107">后续步骤</span><span class="sxs-lookup"><span data-stu-id="a52ff-107">Next steps</span></span>
 
-<span data-ttu-id="0c199-108">请参阅[呈现卡片](render-a-card.md)以了解后续步骤 ！</span><span class="sxs-lookup"><span data-stu-id="0c199-108">See [Render a card](render-a-card.md) for the next steps!</span></span>
+<span data-ttu-id="a52ff-108">请参阅[呈现卡片](render-a-card.md)，了解后续步骤！</span><span class="sxs-lookup"><span data-stu-id="a52ff-108">See [Render a card](render-a-card.md) for the next steps!</span></span>

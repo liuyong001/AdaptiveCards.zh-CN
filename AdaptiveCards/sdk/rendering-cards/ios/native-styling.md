@@ -11,6 +11,6 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553299"
 ---
-# <a name="native-styling---ios"></a><span data-ttu-id="a795a-102">本机样式-iOS</span><span class="sxs-lookup"><span data-stu-id="a795a-102">Native styling - iOS</span></span>
+# <a name="native-styling---ios"></a><span data-ttu-id="97952-102">本机样式-iOS</span><span class="sxs-lookup"><span data-stu-id="97952-102">Native styling - iOS</span></span>
 
-<span data-ttu-id="a795a-103">不支持。</span><span class="sxs-lookup"><span data-stu-id="a795a-103">Not supported.</span></span>
+<span data-ttu-id="97952-103">不受支持。</span><span class="sxs-lookup"><span data-stu-id="97952-103">Not supported.</span></span>

@@ -1,5 +1,5 @@
 ---
-title: 可扩展性-iOS SDK
+title: 扩展性-iOS SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,12 +11,12 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553559"
 ---
-# <a name="extensibility---ios"></a><span data-ttu-id="12e50-102">可扩展性-iOS</span><span class="sxs-lookup"><span data-stu-id="12e50-102">Extensibility - iOS</span></span>
+# <a name="extensibility---ios"></a><span data-ttu-id="812ee-102">扩展性-iOS</span><span class="sxs-lookup"><span data-stu-id="812ee-102">Extensibility - iOS</span></span>
 
-## <a name="changing-per-element-rendering"></a><span data-ttu-id="12e50-103">更改每个元素呈现</span><span class="sxs-lookup"><span data-stu-id="12e50-103">Changing per element rendering</span></span>
+## <a name="changing-per-element-rendering"></a><span data-ttu-id="812ee-103">更改每个元素的呈现</span><span class="sxs-lookup"><span data-stu-id="812ee-103">Changing per element rendering</span></span>
 
-<span data-ttu-id="12e50-104">开发人员可以自定义查找范围 renderred AdaptiveCards 元素，如 TextBlock。</span><span class="sxs-lookup"><span data-stu-id="12e50-104">Developers can customize the look of renderred AdaptiveCards elements such as TextBlock.</span></span>
-<span data-ttu-id="12e50-105">下面的示例演示如何一个可以更改 NumberInput 背景色。</span><span class="sxs-lookup"><span data-stu-id="12e50-105">Following example shows how one can change background color of NumberInput.</span></span>
+<span data-ttu-id="812ee-104">开发人员可以自定义 renderred AdaptiveCards 元素的外观, 例如 TextBlock。</span><span class="sxs-lookup"><span data-stu-id="812ee-104">Developers can customize the look of renderred AdaptiveCards elements such as TextBlock.</span></span>
+<span data-ttu-id="812ee-105">下面的示例演示如何更改 NumberInput 的背景色。</span><span class="sxs-lookup"><span data-stu-id="812ee-105">Following example shows how one can change background color of NumberInput.</span></span>
 
 ```objective-c
 ACRRegistration *registration = [ACRRegistration getInstance];
@@ -51,10 +51,10 @@ ACRRegistration *registration = [ACRRegistration getInstance];
   }
   ```
 
- ## <a name="additional-property"></a><span data-ttu-id="12e50-106">附加属性</span><span class="sxs-lookup"><span data-stu-id="12e50-106">Additional Property</span></span>
+ ## <a name="additional-property"></a><span data-ttu-id="812ee-106">其他属性</span><span class="sxs-lookup"><span data-stu-id="812ee-106">Additional Property</span></span>
 
- <span data-ttu-id="12e50-107">开发人员还可以在其他属性作为 json 有效负载的一部分发送。</span><span class="sxs-lookup"><span data-stu-id="12e50-107">Developers can also send in additional properties as part of json payload.</span></span>
-<span data-ttu-id="12e50-108">例如，除了"间距"和"id"的 BaseCardElement 的 json 有效负载，其中一个可以向其 json 有效负载添加 TextBlock 的角半径。</span><span class="sxs-lookup"><span data-stu-id="12e50-108">For example, in addition to "spacing" and "id" of json payload for BaseCardElement, one can add radius for corners of TextBlock to its json payload.</span></span>
+ <span data-ttu-id="812ee-107">开发人员还可以作为 json 有效负载的一部分发送其他属性。</span><span class="sxs-lookup"><span data-stu-id="812ee-107">Developers can also send in additional properties as part of json payload.</span></span>
+<span data-ttu-id="812ee-108">例如, 除了 "BaseCardElement" 的 json 有效负载的 "间距" 和 "id" 外, 还可以将 TextBlock 的圆角的半径添加到其 json 有效负载中。</span><span class="sxs-lookup"><span data-stu-id="812ee-108">For example, in addition to "spacing" and "id" of json payload for BaseCardElement, one can add radius for corners of TextBlock to its json payload.</span></span>
 
  ```objective-c
  "type":"TextBlock",
@@ -70,10 +70,10 @@ ACRRegistration *registration = [ACRRegistration getInstance];
               radiusForMyTextBlock = dictionary[@"radius"];
           ...
 ```
- ## <a name="custom-parsing"></a><span data-ttu-id="12e50-109">自定义分析</span><span class="sxs-lookup"><span data-stu-id="12e50-109">Custom Parsing</span></span>
+ ## <a name="custom-parsing"></a><span data-ttu-id="812ee-109">自定义分析</span><span class="sxs-lookup"><span data-stu-id="812ee-109">Custom Parsing</span></span>
 
-<span data-ttu-id="12e50-110">开发人员也可以具有自定义分析，并已添加到 adpative 卡如进度栏的新 UI 元素。</span><span class="sxs-lookup"><span data-stu-id="12e50-110">Developers can also have custom parsing and have new UI element added to adpative card such as progress bar.</span></span> <span data-ttu-id="12e50-111">请有关详细信息，检查 CustomProgressBarRenderer.mm。</span><span class="sxs-lookup"><span data-stu-id="12e50-111">Please check CustomProgressBarRenderer.mm for detail.</span></span>
-<span data-ttu-id="12e50-112">自定义分析程序必须实现 ACOIBaseCardElementParser 协议。</span><span class="sxs-lookup"><span data-stu-id="12e50-112">Custom parser must implement ACOIBaseCardElementParser protocol.</span></span> <span data-ttu-id="12e50-113">deserializeToCustomElement 方法应分析给定外被当作 json 有效负载，并返回指向 UIView 对象，它将添加到 AdaptiveCard 呈现对象的指针。</span><span class="sxs-lookup"><span data-stu-id="12e50-113">deserializeToCustomElement method should parses given json payload given as NSData and return a pointer to UIView object that will be added to AdaptiveCard rendered object.</span></span>
+<span data-ttu-id="812ee-110">开发人员还可以自定义分析, 并将新的 UI 元素添加到 adpative 卡, 如进度栏。</span><span class="sxs-lookup"><span data-stu-id="812ee-110">Developers can also have custom parsing and have new UI element added to adpative card such as progress bar.</span></span> <span data-ttu-id="812ee-111">有关详细信息, 请查看 CustomProgressBarRenderer.mm。</span><span class="sxs-lookup"><span data-stu-id="812ee-111">Please check CustomProgressBarRenderer.mm for detail.</span></span>
+<span data-ttu-id="812ee-112">自定义分析器必须实现 ACOIBaseCardElementParser 协议。</span><span class="sxs-lookup"><span data-stu-id="812ee-112">Custom parser must implement ACOIBaseCardElementParser protocol.</span></span> <span data-ttu-id="812ee-113">deserializeToCustomElement 方法应将给定的 json 负载分析为外, 并返回一个指向 UIView 对象的指针, 该对象将添加到 AdaptiveCard 呈现的对象。</span><span class="sxs-lookup"><span data-stu-id="812ee-113">deserializeToCustomElement method should parses given json payload given as NSData and return a pointer to UIView object that will be added to AdaptiveCard rendered object.</span></span>
 
 ```objective-c
       CustomProgressBarRenderer *progressBarRenderer = [[CustomProgressBarRenderer alloc] init];

@@ -11,9 +11,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553579"
 ---
-# <a name="actions---ios"></a><span data-ttu-id="26f3c-102">操作-iOS</span><span class="sxs-lookup"><span data-stu-id="26f3c-102">Actions - iOS</span></span>
+# <a name="actions---ios"></a><span data-ttu-id="78f0f-102">操作-iOS</span><span class="sxs-lookup"><span data-stu-id="78f0f-102">Actions - iOS</span></span>
 
-<span data-ttu-id="26f3c-103">开发人员可以通过实现 ACRActionDelegate，此类 SubmitAction 和 OpenUrl 接收操作并将其设置为 AdaptiveCard 的实例。</span><span class="sxs-lookup"><span data-stu-id="26f3c-103">Developers can receive actions such SubmitAction and OpenUrl by implementing ACRActionDelegate, and set it to instance of AdaptiveCard.</span></span>
+<span data-ttu-id="78f0f-103">开发人员可以通过实现 ACRActionDelegate 来接收 SubmitAction 和 OpenUrl 等操作, 并将其设置为 AdaptiveCard 的实例。</span><span class="sxs-lookup"><span data-stu-id="78f0f-103">Developers can receive actions such SubmitAction and OpenUrl by implementing ACRActionDelegate, and set it to instance of AdaptiveCard.</span></span>
 
 ```objective-c
 //// delegate implementation

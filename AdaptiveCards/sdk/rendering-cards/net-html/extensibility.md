@@ -1,5 +1,5 @@
 ---
-title: 可扩展性-.NET HTML SDK
+title: 扩展性-.NET HTML SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,13 +11,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552529"
 ---
-# <a name="extensibility---net-html"></a><span data-ttu-id="14e83-102">可扩展性-.NET HTML</span><span class="sxs-lookup"><span data-stu-id="14e83-102">Extensibility - .NET HTML</span></span>
+# <a name="extensibility---net-html"></a><span data-ttu-id="77e9d-102">扩展性-.NET HTML</span><span class="sxs-lookup"><span data-stu-id="77e9d-102">Extensibility - .NET HTML</span></span>
 
-## <a name="custom-element-rendering"></a><span data-ttu-id="14e83-103">自定义元素呈现</span><span class="sxs-lookup"><span data-stu-id="14e83-103">Custom Element Rendering</span></span>
+## <a name="custom-element-rendering"></a><span data-ttu-id="77e9d-103">自定义元素呈现</span><span class="sxs-lookup"><span data-stu-id="77e9d-103">Custom Element Rendering</span></span>
 
-<span data-ttu-id="14e83-104">可以使用呈现器的完全控制`ElementRenderers`属性设置为**添加**，**删除**，或**重写**默认呈现器。</span><span class="sxs-lookup"><span data-stu-id="14e83-104">For full control of the renderer you can use the `ElementRenderers` property to **add**, **remove**, or **override** default renderers.</span></span>
+<span data-ttu-id="77e9d-104">若要完全控制呈现器，可以使用 `ElementRenderers` 属性来**添加**、**删除**或**重写**默认呈现器。</span><span class="sxs-lookup"><span data-stu-id="77e9d-104">For full control of the renderer you can use the `ElementRenderers` property to **add**, **remove**, or **override** default renderers.</span></span>
 
-<span data-ttu-id="14e83-105">下面的示例演示如何可以定义一个自定义`"type": "Rating"`元素和呈现它。</span><span class="sxs-lookup"><span data-stu-id="14e83-105">The following example shows how you could define a custom `"type": "Rating"` element and render it.</span></span>
+<span data-ttu-id="77e9d-105">以下示例显示了如何定义并呈现一个自定义 `"type": "Rating"` 元素。</span><span class="sxs-lookup"><span data-stu-id="77e9d-105">The following example shows how you could define a custom `"type": "Rating"` element and render it.</span></span>
 
 ```csharp
 // Register the new type with the JSON parser

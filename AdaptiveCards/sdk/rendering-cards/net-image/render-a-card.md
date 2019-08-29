@@ -1,5 +1,5 @@
 ---
-title: 呈现卡-.NET 图像呈现 SDK
+title: 呈现卡片-.NET 图像呈现 SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,9 +11,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552489"
 ---
-# <a name="render-a-card---net-image"></a><span data-ttu-id="28c04-102">呈现卡-.NET 图像</span><span class="sxs-lookup"><span data-stu-id="28c04-102">Render a card - .NET Image</span></span>
+# <a name="render-a-card---net-image"></a><span data-ttu-id="1dc70-102">呈现卡片 .NET 映像</span><span class="sxs-lookup"><span data-stu-id="1dc70-102">Render a card - .NET Image</span></span>
 
-<span data-ttu-id="28c04-103">下面介绍了如何呈现使用.NET 映像 SDK 的卡。</span><span class="sxs-lookup"><span data-stu-id="28c04-103">Here's how to render a card using the .NET Image SDK.</span></span>
+<span data-ttu-id="1dc70-103">下面介绍如何使用 .NET 映像 SDK 呈现卡片。</span><span class="sxs-lookup"><span data-stu-id="1dc70-103">Here's how to render a card using the .NET Image SDK.</span></span>
 
 ```csharp
 try

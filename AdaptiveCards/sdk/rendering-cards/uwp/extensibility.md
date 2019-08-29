@@ -1,5 +1,5 @@
 ---
-title: 可扩展性-UWP SDK
+title: 扩展性-UWP SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,11 +11,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553039"
 ---
-# <a name="extensibility---uwp"></a><span data-ttu-id="4eb47-102">可扩展性-UWP</span><span class="sxs-lookup"><span data-stu-id="4eb47-102">Extensibility - UWP</span></span>
+# <a name="extensibility---uwp"></a><span data-ttu-id="cfced-102">扩展性-UWP</span><span class="sxs-lookup"><span data-stu-id="cfced-102">Extensibility - UWP</span></span>
 
-## <a name="changing-per-element-rendering"></a><span data-ttu-id="4eb47-103">更改每个元素呈现</span><span class="sxs-lookup"><span data-stu-id="4eb47-103">Changing per element rendering</span></span>
+## <a name="changing-per-element-rendering"></a><span data-ttu-id="cfced-103">更改每个元素的呈现</span><span class="sxs-lookup"><span data-stu-id="cfced-103">Changing per element rendering</span></span>
 
-<span data-ttu-id="4eb47-104">实现呈现器类并将其设置在呈现器</span><span class="sxs-lookup"><span data-stu-id="4eb47-104">Implement a renderer class and set it in the renderer</span></span>
+<span data-ttu-id="cfced-104">实现呈现器类并在呈现器中设置它</span><span class="sxs-lookup"><span data-stu-id="cfced-104">Implement a renderer class and set it in the renderer</span></span>
 
 ```csharp
 // My custom renderer is going to replace how textblocks should render!

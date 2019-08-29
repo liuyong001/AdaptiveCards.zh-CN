@@ -1,5 +1,5 @@
 ---
-title: 托管配置-UWP SDK
+title: 主机配置-UWP SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,13 +11,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553669"
 ---
-# <a name="host-config---uwp"></a><span data-ttu-id="7799c-102">主机配置-UWP</span><span class="sxs-lookup"><span data-stu-id="7799c-102">Host config - UWP</span></span>
+# <a name="host-config---uwp"></a><span data-ttu-id="b98fe-102">主机配置-UWP</span><span class="sxs-lookup"><span data-stu-id="b98fe-102">Host config - UWP</span></span>
 
-<span data-ttu-id="7799c-103">若要自定义呈现器您提供 HostConfig 对象的实例。</span><span class="sxs-lookup"><span data-stu-id="7799c-103">To customize the renderer you provide an instance of the HostConfig object.</span></span> <span data-ttu-id="7799c-104">(请参阅[主机配置架构](../../../rendering-cards/host-config.md)有关完整说明。)</span><span class="sxs-lookup"><span data-stu-id="7799c-104">(See [Host Config Schema](../../../rendering-cards/host-config.md) for the full description.)</span></span>
+<span data-ttu-id="b98fe-103">若要自定义呈现器, 请提供 HostConfig 对象的实例。</span><span class="sxs-lookup"><span data-stu-id="b98fe-103">To customize the renderer you provide an instance of the HostConfig object.</span></span> <span data-ttu-id="b98fe-104">(有关完整的说明, 请参阅[主机配置架构](../../../rendering-cards/host-config.md)。)</span><span class="sxs-lookup"><span data-stu-id="b98fe-104">(See [Host Config Schema](../../../rendering-cards/host-config.md) for the full description.)</span></span>
 
-> <span data-ttu-id="7799c-105">因此，你可以设置你想要更改的属性，则将使用默认值，实例化 HostConfig 对象。</span><span class="sxs-lookup"><span data-stu-id="7799c-105">The HostConfig object will be instantiated with defaults, so you can set just the properties you want to change.</span></span>
+> <span data-ttu-id="b98fe-105">HostConfig 对象将用默认值实例化, 因此你可以仅设置要更改的属性。</span><span class="sxs-lookup"><span data-stu-id="b98fe-105">The HostConfig object will be instantiated with defaults, so you can set just the properties you want to change.</span></span>
 
-<span data-ttu-id="7799c-106">例如：</span><span class="sxs-lookup"><span data-stu-id="7799c-106">Example:</span></span>
+<span data-ttu-id="b98fe-106">例如：</span><span class="sxs-lookup"><span data-stu-id="b98fe-106">Example:</span></span>
 
 ```csharp
 var hostConfig = new AdaptiveHostConfig() 
@@ -33,9 +33,9 @@ var hostConfig = new AdaptiveHostConfig()
 renderer.HostConfig = hostConfig;
 ```
 
-> <span data-ttu-id="7799c-107">或者，您可以从 JSON 字符串加载 HostConfig。</span><span class="sxs-lookup"><span data-stu-id="7799c-107">Alternatively, you can load the HostConfig from a JSON string.</span></span>
+> <span data-ttu-id="b98fe-107">或者, 可以从 JSON 字符串加载 HostConfig。</span><span class="sxs-lookup"><span data-stu-id="b98fe-107">Alternatively, you can load the HostConfig from a JSON string.</span></span>
 
-<span data-ttu-id="7799c-108">例如：</span><span class="sxs-lookup"><span data-stu-id="7799c-108">Example:</span></span>
+<span data-ttu-id="b98fe-108">例如：</span><span class="sxs-lookup"><span data-stu-id="b98fe-108">Example:</span></span>
 
 ```csharp
 var hostConfig = AdaptiveHostConfig.FromJsonString(jsonString); 
@@ -43,4 +43,4 @@ var hostConfig = AdaptiveHostConfig.FromJsonString(jsonString);
 renderer.HostConfig = hostConfig;
 ```
 
-<span data-ttu-id="7799c-109">将其传递到 UWPRenderer 时需要设置默认 HostConfig 要用于您呈现每个卡。</span><span class="sxs-lookup"><span data-stu-id="7799c-109">When you pass it in to the UWPRenderer you are setting the default HostConfig to use for every card you render.</span></span>
+<span data-ttu-id="b98fe-109">在将其传递给 UWPRenderer 时, 将设置默认的 HostConfig, 以便将其用于每个呈现的卡。</span><span class="sxs-lookup"><span data-stu-id="b98fe-109">When you pass it in to the UWPRenderer you are setting the default HostConfig to use for every card you render.</span></span>

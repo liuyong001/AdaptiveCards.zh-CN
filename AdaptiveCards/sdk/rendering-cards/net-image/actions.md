@@ -11,6 +11,6 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552399"
 ---
-# <a name="actions---net-image"></a><span data-ttu-id="f0954-102">操作-.NET 映像</span><span class="sxs-lookup"><span data-stu-id="f0954-102">Actions - .NET Image</span></span>
+# <a name="actions---net-image"></a><span data-ttu-id="d603e-102">操作-.NET 映像</span><span class="sxs-lookup"><span data-stu-id="d603e-102">Actions - .NET Image</span></span>
 
-<span data-ttu-id="f0954-103">操作是不受支持，考虑这呈现的图像。</span><span class="sxs-lookup"><span data-stu-id="f0954-103">Actions are unsupported, considering this renders to an image.</span></span>
+<span data-ttu-id="d603e-103">操作不受支持, 因为这会呈现给映像。</span><span class="sxs-lookup"><span data-stu-id="d603e-103">Actions are unsupported, considering this renders to an image.</span></span>

@@ -11,11 +11,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552969"
 ---
-# <a name="actions---uwp"></a><span data-ttu-id="a7204-102">操作-UWP</span><span class="sxs-lookup"><span data-stu-id="a7204-102">Actions - UWP</span></span>
+# <a name="actions---uwp"></a><span data-ttu-id="b919e-102">操作-UWP</span><span class="sxs-lookup"><span data-stu-id="b919e-102">Actions - UWP</span></span>
 
-<span data-ttu-id="a7204-103">任何**操作**数据卡中将呈现为 UWP**按钮**的但这取决于您的应用程序来处理在用户按它们 （除了...ShowCard 操作时，会发生什么情况请参阅代码段的详细信息）。</span><span class="sxs-lookup"><span data-stu-id="a7204-103">Any **actions** within the card will render as UWP **Button**'s, but it's up to your app to handle what happens when a user presses them (except for ShowCard actions... see code snippet for more info).</span></span>
+<span data-ttu-id="b919e-103">智能卡中的所有**操作**都将呈现为 UWP**按钮**, 但会由您的应用程序来处理用户按下操作时所发生的情况 (ShowCard 操作除外)。有关详细信息, 请参阅代码片段。</span><span class="sxs-lookup"><span data-stu-id="b919e-103">Any **actions** within the card will render as UWP **Button**'s, but it's up to your app to handle what happens when a user presses them (except for ShowCard actions... see code snippet for more info).</span></span>
 
-<span data-ttu-id="a7204-104">`RenderedAdaptiveCard`对象提供`Action`事件实现此目的。</span><span class="sxs-lookup"><span data-stu-id="a7204-104">The `RenderedAdaptiveCard` object provides an `Action` event for this purpose.</span></span>
+<span data-ttu-id="b919e-104">`RenderedAdaptiveCard` 对象提供 `Action` 事件以实现该目的。</span><span class="sxs-lookup"><span data-stu-id="b919e-104">The `RenderedAdaptiveCard` object provides an `Action` event for this purpose.</span></span>
 
 ```csharp
 // Render a card (as previously shown)

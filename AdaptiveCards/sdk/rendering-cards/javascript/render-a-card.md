@@ -1,5 +1,5 @@
 ---
-title: 呈现卡片的 JavaScript SDK
+title: 呈现卡-JavaScript SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
@@ -11,13 +11,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553119"
 ---
-# <a name="render-a-card---javascript"></a><span data-ttu-id="931a0-102">呈现卡-JavaScript</span><span class="sxs-lookup"><span data-stu-id="931a0-102">Render a card - JavaScript</span></span>
+# <a name="render-a-card---javascript"></a><span data-ttu-id="9e6e8-102">呈现卡-JavaScript</span><span class="sxs-lookup"><span data-stu-id="9e6e8-102">Render a card - JavaScript</span></span>
 
-<span data-ttu-id="931a0-103">下面介绍了如何呈现使用 JavaScript SDK 的卡。</span><span class="sxs-lookup"><span data-stu-id="931a0-103">Here's how to render a card using the JavaScript SDK.</span></span>
+<span data-ttu-id="9e6e8-103">下面介绍如何使用 JavaScript SDK 呈现卡片。</span><span class="sxs-lookup"><span data-stu-id="9e6e8-103">Here's how to render a card using the JavaScript SDK.</span></span>
 
-## <a name="usage"></a><span data-ttu-id="931a0-104">用法</span><span class="sxs-lookup"><span data-stu-id="931a0-104">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="9e6e8-104">用法</span><span class="sxs-lookup"><span data-stu-id="9e6e8-104">Usage</span></span>
 
-### <a name="import-the-module"></a><span data-ttu-id="931a0-105">导入模块</span><span class="sxs-lookup"><span data-stu-id="931a0-105">Import the module</span></span>
+### <a name="import-the-module"></a><span data-ttu-id="9e6e8-105">导入模块</span><span class="sxs-lookup"><span data-stu-id="9e6e8-105">Import the module</span></span>
 
 ```js
 // import the module
@@ -30,7 +30,7 @@ var AdaptiveCards = require("adaptivecards");
 AdaptiveCards.renderCard(...);
 ```
 
-## <a name="render-a-card"></a><span data-ttu-id="931a0-106">呈现数据卡</span><span class="sxs-lookup"><span data-stu-id="931a0-106">Render a card</span></span>
+## <a name="render-a-card"></a><span data-ttu-id="9e6e8-106">呈现卡片</span><span class="sxs-lookup"><span data-stu-id="9e6e8-106">Render a card</span></span>
 
 ```js
 // Author a card

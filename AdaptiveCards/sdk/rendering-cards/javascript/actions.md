@@ -11,7 +11,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553109"
 ---
-# <a name="actions---javascript"></a><span data-ttu-id="29664-102">操作-JavaScript</span><span class="sxs-lookup"><span data-stu-id="29664-102">Actions - JavaScript</span></span>
+# <a name="actions---javascript"></a><span data-ttu-id="ae037-102">操作-JavaScript</span><span class="sxs-lookup"><span data-stu-id="ae037-102">Actions - JavaScript</span></span>
 
 ```js
 // Set the adaptive card's event handlers. onExecuteAction is invoked
