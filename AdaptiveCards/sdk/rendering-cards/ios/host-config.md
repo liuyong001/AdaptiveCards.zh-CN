@@ -1,5 +1,5 @@
 ---
-title: 主机配置的 iOS SDK
+title: 主机配置-iOS SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -13,7 +13,7 @@ ms.locfileid: "59553699"
 ---
 # <a name="host-config---ios"></a>主机配置-iOS
 
-可以通过 HostConfig 可以生成 JSON 字符串来配置主机
+可以通过 JSON 字符串生成的 HostConfig 配置主机
 
 ```objective-c
 ACOParseResult *hostconfigParseResult = [ACOHostConfig FromJson:self.hostconfig];
@@ -25,9 +25,9 @@ ACOParseResult *hostconfigParseResult = [ACOHostConfig FromJson:self.hostconfig]
 ACOHostConfig *defaultConfig = [[ACHostConfig alloc] init];
 ```
 
-## <a name="render-a-card-using-host-config"></a>呈现使用主机配置的卡
+## <a name="render-a-card-using-host-config"></a>使用主机配置呈现卡
 
-Rederer 采用自适应卡和主机配置。HostConfig 可为零，而如果 nil，将使用默认值。
+呈现器采用自适应卡片和主机配置。HostConfig 可以为 nil。如果为 nil，则会使用默认值。
 
 ```objective-c
 ACRRenderResult *renderResult;

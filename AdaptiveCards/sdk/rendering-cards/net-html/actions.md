@@ -13,12 +13,12 @@ ms.locfileid: "59553309"
 ---
 # <a name="actions---net-html"></a>操作-.NET HTML
 
-顶级卡`actions`将呈现为 HTML `<button>`。 由于这是服务器端库，这取决于您按下按钮时绑定客户端事件处理程序。 每个`<button>`HTML 中会具有可以使用的属性进行正确的行为。
+顶级卡片`actions`将呈现为 HTML `<button>`。 由于这是一个服务器端库, 因此在按下按钮时, 将由您来连接客户端事件处理程序。 HTML `<button>`中的每个都具有可用于连接正确行为的特性。
 
-某些元素具有`selectAction`使它们可调用的属性 （列，容器映像）。 如果某个元素有`selectAction`呈现器将添加的 CSS 类`ac-selectable`，以及以下属性。
+某些元素具有`selectAction`属性 (容器、列、图像), 使其可调用。 如果元素具有`selectAction` `ac-selectable`, 则呈现器将添加的 CSS 类以及以下属性。
 
 操作类型 | CSS 类 | 其他属性
 ---|---|---
-`Action.OpenUrl` | `ac-action-openUrl` | `data-ac-url` (`url`属性从智能卡)
-`Action.Submit` | `ac-action-submit` | `data-ac-data` (`data`属性从智能卡)
-`Action.ShowCard` | `ac-action-showCard` | `data-ac-showcardid` (`id`的`<div>`包含内部卡)
+`Action.OpenUrl` | `ac-action-openUrl` | `data-ac-url`(卡片`url`中的属性)
+`Action.Submit` | `ac-action-submit` | `data-ac-data`(卡片`data`中的属性)
+`Action.ShowCard` | `ac-action-showCard` | `data-ac-showcardid``id` (`<div>`包含内部卡的)

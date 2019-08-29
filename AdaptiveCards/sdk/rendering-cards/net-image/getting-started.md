@@ -11,11 +11,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552859"
 ---
-# <a name="getting-started---net-image"></a>获取已开始-.NET 映像
+# <a name="getting-started---net-image"></a>入门-.NET 映像
 
-如我们所述[Getting Started](../../../authoring-cards/getting-started.md)页上，自适应卡是一个 JSON 序列化卡对象模型。 此库，可轻松地转换为 PNG 图像呈现到该 JSON。
+正如我们在[入门](../../../authoring-cards/getting-started.md)"页中所述, 自适应卡是 JSON 序列化的卡对象模型。 利用此库, 可以轻松地将 JSON 转换成 PNG 图像。
 
-此包甚至可在服务器上生成映像，并为你实现所有"神奇 STA 线程"东西。 
+此包甚至可以在服务器上用于生成映像, 并为您实现所有 "幻 STA 线程" goo。 
 
 ## <a name="nuget-install"></a>NuGet 安装
 
@@ -27,4 +27,4 @@ Install-Package AdaptiveCards.Rendering.Wpf -IncludePrerelease
 
 ## <a name="next-steps"></a>后续步骤
 
-请参阅[呈现卡片](render-a-card.md)以了解后续步骤 ！
+请参阅[呈现卡片](render-a-card.md)，了解后续步骤！

@@ -11,9 +11,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553619"
 ---
-# <a name="getting-started---net-wpf"></a>获取已开始-.NET WPF
+# <a name="getting-started---net-wpf"></a>入门-.NET WPF
 
-如我们所述[Getting Started](../../../authoring-cards/getting-started.md)页上，自适应卡是一个 JSON 序列化卡对象模型。 此库，可轻松地将该 JSON 呈现到 WPF UI，你可以使用您的应用程序中。
+正如我们在[入门](../../../authoring-cards/getting-started.md)"页中所述, 自适应卡是 JSON 序列化的卡对象模型。 利用此库, 可以轻松地将 JSON 呈现到可在应用中使用的 WPF UI 中。
 
 ## <a name="nuget-install"></a>NuGet 安装
 
@@ -23,9 +23,9 @@ ms.locfileid: "59553619"
 Install-Package AdaptiveCards.Rendering.Wpf
 ```
 
-### <a name="xceed-enhanced-input-package"></a>Xceed 增强输入的包
+### <a name="xceed-enhanced-input-package"></a>Xceed 增强型输入包
 
-此可选包增强了超出 WPF 提供了现成的自适应卡输入控件。 它具有的依赖关系 `Extended.Wpf.Toolkit`
+此可选包可增强自适应卡输入控件, 而 WPF 不提供该功能。 它依赖于`Extended.Wpf.Toolkit`
 
 [![Nuget 安装](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.Xceed.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf.Xceed)
 
@@ -37,8 +37,8 @@ Install-Package AdaptiveCards.Rendering.Wpf.Xceed
 
 ![可视化工具屏幕截图](../../../resources/media/tools/wpfvisualizer.png)
 
-[WPF 可视化工具示例](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet/Samples/WPFVisualizer)用于可视化使用 WPF 的卡。  一个`Host Config`编辑器生成用于编辑和查看主机的配置设置。 将这些设置保存为 JSON 中呈现应用程序中使用它们。
+[Wpf 可视化工具示例](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet/Samples/WPFVisualizer)使你可以使用 wpf 可视化卡片。  中`Host Config`内置了编辑器, 用于编辑和查看主机配置设置。 将这些设置保存为 JSON, 以便在应用程序中进行呈现。
 
 ## <a name="next-steps"></a>后续步骤
 
-请参阅[呈现卡片](render-a-card.md)以了解后续步骤 ！
+请参阅[呈现卡片](render-a-card.md)，了解后续步骤！

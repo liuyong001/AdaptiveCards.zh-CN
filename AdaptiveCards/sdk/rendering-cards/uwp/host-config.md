@@ -1,5 +1,5 @@
 ---
-title: 托管配置-UWP SDK
+title: 主机配置-UWP SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -13,9 +13,9 @@ ms.locfileid: "59553669"
 ---
 # <a name="host-config---uwp"></a>主机配置-UWP
 
-若要自定义呈现器您提供 HostConfig 对象的实例。 (请参阅[主机配置架构](../../../rendering-cards/host-config.md)有关完整说明。)
+若要自定义呈现器, 请提供 HostConfig 对象的实例。 (有关完整的说明, 请参阅[主机配置架构](../../../rendering-cards/host-config.md)。)
 
-> 因此，你可以设置你想要更改的属性，则将使用默认值，实例化 HostConfig 对象。
+> HostConfig 对象将用默认值实例化, 因此你可以仅设置要更改的属性。
 
 例如：
 
@@ -33,7 +33,7 @@ var hostConfig = new AdaptiveHostConfig()
 renderer.HostConfig = hostConfig;
 ```
 
-> 或者，您可以从 JSON 字符串加载 HostConfig。
+> 或者, 可以从 JSON 字符串加载 HostConfig。
 
 例如：
 
@@ -43,4 +43,4 @@ var hostConfig = AdaptiveHostConfig.FromJsonString(jsonString);
 renderer.HostConfig = hostConfig;
 ```
 
-将其传递到 UWPRenderer 时需要设置默认 HostConfig 要用于您呈现每个卡。
+在将其传递给 UWPRenderer 时, 将设置默认的 HostConfig, 以便将其用于每个呈现的卡。

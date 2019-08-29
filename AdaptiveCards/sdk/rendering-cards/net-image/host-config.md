@@ -11,6 +11,6 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553439"
 ---
-# <a name="host-config---net-image"></a>托管配置-.NET 映像
+# <a name="host-config---net-image"></a>主机配置-.NET 映像
 
-请参阅[WPF docs](../net-wpf/getting-started.md)有关这些选项将完整逐一介绍。
+有关这些选项的完整运行, 请参阅[WPF 文档](../net-wpf/getting-started.md)。

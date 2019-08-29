@@ -1,5 +1,5 @@
 ---
-title: 可扩展性-UWP SDK
+title: 扩展性-UWP SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,11 +11,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553039"
 ---
-# <a name="extensibility---uwp"></a>可扩展性-UWP
+# <a name="extensibility---uwp"></a>扩展性-UWP
 
-## <a name="changing-per-element-rendering"></a>更改每个元素呈现
+## <a name="changing-per-element-rendering"></a>更改每个元素的呈现
 
-实现呈现器类并将其设置在呈现器
+实现呈现器类并在呈现器中设置它
 
 ```csharp
 // My custom renderer is going to replace how textblocks should render!

@@ -13,7 +13,7 @@ ms.locfileid: "59553579"
 ---
 # <a name="actions---ios"></a>操作-iOS
 
-开发人员可以通过实现 ACRActionDelegate，此类 SubmitAction 和 OpenUrl 接收操作并将其设置为 AdaptiveCard 的实例。
+开发人员可以通过实现 ACRActionDelegate 来接收 SubmitAction 和 OpenUrl 等操作, 并将其设置为 AdaptiveCard 的实例。
 
 ```objective-c
 //// delegate implementation

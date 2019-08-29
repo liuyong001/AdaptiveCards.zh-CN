@@ -11,13 +11,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552639"
 ---
-# <a name="getting-started---ios"></a>获取已开始-iOS
+# <a name="getting-started---ios"></a>入门-iOS
 
-此呈现器针对 iOS 的本机控件。
+此呈现器面向 iOS 本机控件。
 
 ## <a name="install-pod"></a>安装 pod
 
-这是可作为一个 pod。
+此功能以 pod 形式提供。
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/AdaptiveCards.svg)](https://cocoapods.org/pods/AdaptiveCards)
 
@@ -33,4 +33,4 @@ ms.locfileid: "59552639"
 
 ## <a name="next-steps"></a>后续步骤
 
-请参阅[呈现卡片](render-a-card.md)以了解后续步骤 ！
+请参阅[呈现卡片](render-a-card.md)，了解后续步骤！

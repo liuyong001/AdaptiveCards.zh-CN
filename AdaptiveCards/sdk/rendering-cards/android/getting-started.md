@@ -19,7 +19,7 @@ ms.locfileid: "67134278"
 
 [![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)
 
-可以在 ![此处找到已发布的包](https://search.maven.org/search?q=g:io.adaptivecards)
+可以在 ![此处](https://search.maven.org/search?q=g:io.adaptivecards)
 
 若要将库包括到项目中，必须将以下行包括到项目 gradle.build 的 dependencies 节中
 

@@ -17,7 +17,7 @@ Android 呈现器不支持本机样式设置。v1.2 引入了对某些属性的�
 
 ## <a name="action-sentiment"></a>操作情绪
 
-操作情绪包括在 **v1.2** 中。虽然该版本不像其他版本那样支持许多样式，但可以对带有“破坏性”情绪或“正面”情绪的操作进行样式设置，只需实现一个有效的样式并将以下行添加到项目的 styles.xml 中即可  
+操作情绪包括在 **v1.2** 中。虽然该版本不像其他版本那样支持许多样式，但可以对带有“破坏性”情绪或“正面”情绪的操作进行样式设置，只需实现一个有效的样式并将以下行添加到项目的 styles.xml 中即可
 
 ```styles.xml
  <item name="adaptiveActionDestructive">@style/adaptiveActionDestructive</item>

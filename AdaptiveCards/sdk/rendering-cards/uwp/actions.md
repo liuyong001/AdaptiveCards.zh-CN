@@ -13,9 +13,9 @@ ms.locfileid: "59552969"
 ---
 # <a name="actions---uwp"></a>操作-UWP
 
-任何**操作**数据卡中将呈现为 UWP**按钮**的但这取决于您的应用程序来处理在用户按它们 （除了...ShowCard 操作时，会发生什么情况请参阅代码段的详细信息）。
+智能卡中的所有**操作**都将呈现为 UWP**按钮**, 但会由您的应用程序来处理用户按下操作时所发生的情况 (ShowCard 操作除外)。有关详细信息, 请参阅代码片段。
 
-`RenderedAdaptiveCard`对象提供`Action`事件实现此目的。
+`RenderedAdaptiveCard` 对象提供 `Action` 事件以实现该目的。
 
 ```csharp
 // Render a card (as previously shown)

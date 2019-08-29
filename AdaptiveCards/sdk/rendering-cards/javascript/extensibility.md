@@ -1,5 +1,5 @@
 ---
-title: 可扩展性-JavaScript SDK
+title: 扩展性-JavaScript SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
@@ -11,16 +11,16 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552629"
 ---
-# <a name="extensibility---javascript"></a>可扩展性-JavaScript
+# <a name="extensibility---javascript"></a>扩展性-JavaScript
 
-## <a name="implement-and-register-a-custom-element"></a>实现和注册自定义元素
+## <a name="implement-and-register-a-custom-element"></a>实现并注册自定义元素
 
-用于创建自定义的自适应卡元素类型的步骤如下：
-- 创建一个新类从推动 `CardElement`
-- 实现其`getJsonTypeName`， `parse`， `toJSON`，`internalRender`和`renderSpeech`方法
-- 通过将其添加到呈现器的元素注册表注册
+创建自定义自适应卡元素类型的步骤如下:
+- 创建新类`CardElement`
+- 实现其`getJsonTypeName`、 `parse`、 `toJSON`和方法`renderSpeech` `internalRender`
+- 通过将其添加到呈现器的元素注册表来注册它
 
-让我们举个例子，并实现一个简单的进度栏元素：
+我们来看一个示例并实现一个简单的进度栏元素:
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -136,15 +136,15 @@ export class ProgressBar extends Adaptive.CardElement {
 }
 ```
 
-完成了。 现在只需注册进度栏类呈现器：
+完成了。 现在只需向呈现器注册进度栏类:
 
 ```typescript
 Adaptive.AdaptiveCard.elementTypeRegistry.registerType("ProgressBar", () => { return new ProgressBar(); });
 ```
 
-## <a name="implement-and-register-a-custom-action"></a>实现和注册自定义操作
+## <a name="implement-and-register-a-custom-action"></a>实现并注册自定义操作
 
-创建自定义的自适应卡操作的步骤实质上是与用于自定义元素相同的。 下面是一个简单的示例仅显示具有可配置的文本的消息框的警报操作：
+创建自定义自适应卡操作的步骤实质上与自定义元素的步骤相同。 下面是一个简单的警报操作示例, 只显示具有可配置文本的消息框:
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -176,7 +176,7 @@ export class AlertAction extends Adaptive.Action {
 }
 ```
 
-现在注册新的操作：
+现在, 注册新操作:
 
 ```
 Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { return new AlertAction(); });
@@ -184,7 +184,7 @@ Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { re
 
 ## <a name="example"></a>示例
 
-下面是使用进度条元素和 AlertAction 操作的示例卡：
+下面是一个示例卡, 它使用 ProgressBar 元素和 AlertAction 操作:
 ```
 {
     "type": "AdaptiveCard",
@@ -212,4 +212,4 @@ Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { re
 }
 ```
 
-下面是如何呈现：![图像](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)
+下面是它的呈现方式: ![图像](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)

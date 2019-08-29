@@ -1,5 +1,5 @@
 ---
-title: 本机样式-.NET 图像呈现 SDK
+title: 本机样式设置-.NET 图像呈现 SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -13,4 +13,4 @@ ms.locfileid: "59553139"
 ---
 # <a name="native-styling---net-image"></a>本机样式-.NET 映像
 
-请参阅[WPF docs](../net-wpf/getting-started.md)有关这些选项将完整逐一介绍。
+有关这些选项的完整运行, 请参阅[WPF 文档](../net-wpf/getting-started.md)。

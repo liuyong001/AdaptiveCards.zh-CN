@@ -1,5 +1,5 @@
 ---
-title: 可扩展性-.NET HTML SDK
+title: 扩展性-.NET HTML SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,13 +11,13 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552529"
 ---
-# <a name="extensibility---net-html"></a>可扩展性-.NET HTML
+# <a name="extensibility---net-html"></a>扩展性-.NET HTML
 
 ## <a name="custom-element-rendering"></a>自定义元素呈现
 
-可以使用呈现器的完全控制`ElementRenderers`属性设置为**添加**，**删除**，或**重写**默认呈现器。
+若要完全控制呈现器，可以使用 `ElementRenderers` 属性来**添加**、**删除**或**重写**默认呈现器。
 
-下面的示例演示如何可以定义一个自定义`"type": "Rating"`元素和呈现它。
+以下示例显示了如何定义并呈现一个自定义 `"type": "Rating"` 元素。
 
 ```csharp
 // Register the new type with the JSON parser

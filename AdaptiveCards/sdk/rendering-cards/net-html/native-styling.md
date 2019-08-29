@@ -1,5 +1,5 @@
 ---
-title: 本机样式-.NET HTML SDK
+title: 本机样式设置-.NET HTML SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,24 +11,24 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552559"
 ---
-# <a name="native-styling---net-html"></a>本机样式-.NET HTML
+# <a name="native-styling---net-html"></a>本机样式设置-.NET HTML
 
-尽管主机配置可以帮助您了解大多数的方式有每个平台上，很可能您将只需在每个平台上的某些本机样式设置。 
+虽然主机配置在每个平台上都可获得大多数方法, 但你可能需要在每个平台上执行一些本机样式。 
 
-HTML 轻松这通过将 CSS 类添加到每个元素。
+HTML 通过向每个元素添加 CSS 类来简化这一过程。
 
 | 元素 | CSS 类 |
 |---|---|
 | AdaptiveCard | ac-adaptivecard |
-| 所有操作 | ac-pushButton | 
-| 选择操作 | ac-selectable |
+| 所有操作 | ac-按键 | 
+| 选择操作 | 可选择交流电 |
 | Action.OpenUrl  | ac-action-openUrl |
 | Action.ShowCard | ac-action-showCard |
 | Action.Submit  | ac-action-submit  |
 | ActionSet | ac-actionset |
-| 列 | ac-column |
+| 列 | ac 列 |
 | ColumnSet | ac-columnset |
-| 容器 | ac-container |
+| 容器 | ac-容器 |
 | 所有输入 | ac-input |
 | Input.ChoiceSet | ac-multichoiceInput  |
 | Input.Date | ac-dateInput |
@@ -36,7 +36,7 @@ HTML 轻松这通过将 CSS 类添加到每个元素。
 | Input.Text | ac-textInput |
 | Input.Time | ac-timeInput |
 | Input.Toggle| - |
-| 图像  | ac-image |
+| 图像  | ac-映像 |
 | ImageSet  | ac-imageset |
 | FactSet | ac-factset |
 | TextBlock  | ac-textblock |

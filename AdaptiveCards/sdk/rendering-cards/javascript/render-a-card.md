@@ -1,5 +1,5 @@
 ---
-title: 呈现卡片的 JavaScript SDK
+title: 呈现卡-JavaScript SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
@@ -13,7 +13,7 @@ ms.locfileid: "59553119"
 ---
 # <a name="render-a-card---javascript"></a>呈现卡-JavaScript
 
-下面介绍了如何呈现使用 JavaScript SDK 的卡。
+下面介绍如何使用 JavaScript SDK 呈现卡片。
 
 ## <a name="usage"></a>用法
 
@@ -30,7 +30,7 @@ var AdaptiveCards = require("adaptivecards");
 AdaptiveCards.renderCard(...);
 ```
 
-## <a name="render-a-card"></a>呈现数据卡
+## <a name="render-a-card"></a>呈现卡片
 
 ```js
 // Author a card

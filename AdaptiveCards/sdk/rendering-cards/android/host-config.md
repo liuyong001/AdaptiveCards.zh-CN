@@ -1,5 +1,5 @@
 ---
-title: 托管配置-Android SDK
+title: 主机配置-Android SDK
 author: bekao
 ms.author: bekao
 ms.date: 09/27/2017
@@ -13,9 +13,9 @@ ms.locfileid: "59553339"
 ---
 # <a name="host-config---android"></a>主机配置-Android
 
-若要自定义呈现器您提供 HostConfig 对象的实例。 (请参阅[主机配置架构](../../../rendering-cards/host-config.md)有关完整说明。)
+若要自定义呈现器, 请提供 HostConfig 对象的实例。 (有关完整的说明, 请参阅[主机配置架构](../../../rendering-cards/host-config.md)。)
 
-若要从字符串创建 HostConfig 对象，请使用 DeserializeFromString 方法
+若要通过字符串创建 HostConfig 对象, 请使用 DeserializeFromString 方法
 
 ```java
 HostConfig hostConfig = HostConfig.DeserializeFromString(hostConfigText);

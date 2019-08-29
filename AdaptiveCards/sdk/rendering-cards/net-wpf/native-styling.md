@@ -1,5 +1,5 @@
 ---
-title: 本机样式的.NET WPF SDK
+title: 本机样式 .NET WPF SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
@@ -11,22 +11,22 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552719"
 ---
-# <a name="native-styling---net-wpf"></a>本机样式的.NET WPF
+# <a name="native-styling---net-wpf"></a>本机样式设置-.NET WPF
 
-尽管主机配置可以帮助您了解大多数的方式有每个平台上，很可能您将只需在每个平台上的某些本机样式设置。 
+虽然主机配置在每个平台上都可获得大多数方法, 但你可能需要在每个平台上执行一些本机样式。 
 
-WPF 来实现轻松这允许将传入 ResourceDictionary 细粒度的样式设置、 行为、 动画等。
+WPF 通过允许您传递 ResourceDictionary 以实现精细的样式、行为、动画等, 从而使其变得简单。
 
-| 元素 | 样式名称： |
+| 元素 | 样式名称 |
 |---|---|
 | AdaptiveCard | Adaptive.Card| 
 | Action.OpenUrl  | Adaptive.Action.OpenUrl  |
 | Action.ShowCard | Adaptive.Action.ShowCard |
 | Action.Submit  | Adaptive.Action.Submit  |
-| 列 | Adaptive.Column, Adaptive.Action.Tap |
+| 列 | 自适应. 列, 自适应。 |
 | ColumnSet | Adaptive.ColumnSet, Adaptive.VerticalSeparator |
 | 容器 | Adaptive.Container|
-| Input.ChoiceSet | Adaptive.Input.ChoiceSet,  Adaptive.Input.ChoiceSet.ComboBox, Adaptive.Input.ChoiceSet.CheckBox,  Adaptive.Input.ChoiceSet.Radio,  Adaptive.Input.ChoiceSet.ComboBoxItem |
+| Input.ChoiceSet | ChoiceSet、ChoiceSet、ChoiceSet、ChoiceSet、、ChoiceSet、ComboBoxItem、、、、、、。 |
 | Input.Date | Adaptive.Input.Text.Date
 | Input.Number | Adaptive.Input.Text.Number |
 | Input.Text | Adaptive.Input.Text |
@@ -37,7 +37,7 @@ WPF 来实现轻松这允许将传入 ResourceDictionary 细粒度的样式设�
 | FactSet | Adaptive.FactSet, Adaptive.Fact.Title, Adaptive.Fact.Value |
 | TextBlock  | Adaptive.TextBlock |
 
-此示例 XAML 资源字典，其中所有 Textblock 的背景设置为浅绿色。 您可能希望某些比这更高级 😁
+此示例 XAML 资源字典, 它将所有 Textblock 的背景设置为浅绿色。 你可能希望比此更高级的东西😁
 
 ```xml
 <ResourceDictionary
@@ -59,4 +59,4 @@ renderer.ResourcesPath = <path-to-my-resource-dictionary.xaml>;
 ```
 
 > [!IMPORTANT]
-> **有关服务器端映像生成的注意事项**WPF 呈现器提供`RenderCardToImageAsync`可用于服务器端映像生成的方法。 您必须只使用`ResourcesPath`属性如果在此环境中使用。 请参阅[图像呈现](../net-image/getting-started.md)docs 的详细信息
+> **有关服务器端映像生成的说明**WPF 呈现器提供`RenderCardToImageAsync`可用于生成服务器端映像的方法。 仅在此环境中`ResourcesPath`使用属性时, 才能使用此属性。 有关详细信息, 请参阅[图像呈现](../net-image/getting-started.md)文档

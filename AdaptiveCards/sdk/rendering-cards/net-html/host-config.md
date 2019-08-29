@@ -11,11 +11,11 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552409"
 ---
-# <a name="host-config---net-html"></a>托管配置-.NET HTML
+# <a name="host-config---net-html"></a>主机配置-.NET HTML
 
-一个[主机配置](../../../rendering-cards/host-config.md)是所有呈现器了解一个共享的配置对象。 这允许你定义常见样式 （例如，字体系列，字体大小，默认间距） 以及将被自动解释每个平台呈现器的行为 （例如，最大数量的操作）。 
+[主机配置](../../../rendering-cards/host-config.md)是所有呈现器都理解的共享配置对象。 可以通过它来定义常见样式（例如，字体系列、字体大小、默认间距）和行为（例如，操作的最大数量）。每个平台呈现器会自动解释这些样式和行为。 
 
-目标是，每个平台呈现器生成的本机 UI 看起来非常类似，但对您来说最少的工作量。
+这样的目的是确保每个平台呈现器生成的本机 UI 在外观上非常相似，尽量减少你的工作。
 
 ```csharp
 // Construct programmatically

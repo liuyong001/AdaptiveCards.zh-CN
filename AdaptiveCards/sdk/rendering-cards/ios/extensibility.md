@@ -1,5 +1,5 @@
 ---
-title: 可扩展性-iOS SDK
+title: 扩展性-iOS SDK
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
@@ -11,12 +11,12 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553559"
 ---
-# <a name="extensibility---ios"></a>可扩展性-iOS
+# <a name="extensibility---ios"></a>扩展性-iOS
 
-## <a name="changing-per-element-rendering"></a>更改每个元素呈现
+## <a name="changing-per-element-rendering"></a>更改每个元素的呈现
 
-开发人员可以自定义查找范围 renderred AdaptiveCards 元素，如 TextBlock。
-下面的示例演示如何一个可以更改 NumberInput 背景色。
+开发人员可以自定义 renderred AdaptiveCards 元素的外观, 例如 TextBlock。
+下面的示例演示如何更改 NumberInput 的背景色。
 
 ```objective-c
 ACRRegistration *registration = [ACRRegistration getInstance];
@@ -51,10 +51,10 @@ ACRRegistration *registration = [ACRRegistration getInstance];
   }
   ```
 
- ## <a name="additional-property"></a>附加属性
+ ## <a name="additional-property"></a>其他属性
 
- 开发人员还可以在其他属性作为 json 有效负载的一部分发送。
-例如，除了"间距"和"id"的 BaseCardElement 的 json 有效负载，其中一个可以向其 json 有效负载添加 TextBlock 的角半径。
+ 开发人员还可以作为 json 有效负载的一部分发送其他属性。
+例如, 除了 "BaseCardElement" 的 json 有效负载的 "间距" 和 "id" 外, 还可以将 TextBlock 的圆角的半径添加到其 json 有效负载中。
 
  ```objective-c
  "type":"TextBlock",
@@ -72,8 +72,8 @@ ACRRegistration *registration = [ACRRegistration getInstance];
 ```
  ## <a name="custom-parsing"></a>自定义分析
 
-开发人员也可以具有自定义分析，并已添加到 adpative 卡如进度栏的新 UI 元素。 请有关详细信息，检查 CustomProgressBarRenderer.mm。
-自定义分析程序必须实现 ACOIBaseCardElementParser 协议。 deserializeToCustomElement 方法应分析给定外被当作 json 有效负载，并返回指向 UIView 对象，它将添加到 AdaptiveCard 呈现对象的指针。
+开发人员还可以自定义分析, 并将新的 UI 元素添加到 adpative 卡, 如进度栏。 有关详细信息, 请查看 CustomProgressBarRenderer.mm。
+自定义分析器必须实现 ACOIBaseCardElementParser 协议。 deserializeToCustomElement 方法应将给定的 json 负载分析为外, 并返回一个指向 UIView 对象的指针, 该对象将添加到 AdaptiveCard 呈现的对象。
 
 ```objective-c
       CustomProgressBarRenderer *progressBarRenderer = [[CustomProgressBarRenderer alloc] init];

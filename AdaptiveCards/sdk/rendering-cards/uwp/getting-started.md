@@ -11,9 +11,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59552899"
 ---
-# <a name="getting-started---uwp"></a>获取已开始-UWP
+# <a name="getting-started---uwp"></a>入门-UWP
 
-这是一个呈现器目标的 UWP 本机控件。
+这是面向 UWP 本机控件的呈现器。
 
 ## <a name="install-nuget-package"></a>安装 NuGet 包
 
@@ -35,4 +35,4 @@ using AdaptiveCards.Rendering.Uwp;
 
 ## <a name="next-steps"></a>后续步骤
 
-请参阅[呈现卡片](render-a-card.md)以了解后续步骤 ！
+请参阅[呈现卡片](render-a-card.md)，了解后续步骤！

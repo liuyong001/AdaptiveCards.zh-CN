@@ -13,4 +13,4 @@ ms.locfileid: "59553299"
 ---
 # <a name="native-styling---ios"></a>本机样式-iOS
 
-不支持。
+不受支持。
