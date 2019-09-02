@@ -6,19 +6,19 @@ ms.date: 06/26/2017
 ms.topic: article
 ms.openlocfilehash: 64eeaefbc2ac775b69bd48cc853beb729cb2c37f
 ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2019
 ms.locfileid: "67137990"
 ---
 # <a name="handling-speech"></a>处理语音
 
-为自适应卡具有支持语音`speak`属性，其中包含如何卡应被朗读用户的信息。
+自适应卡片有一个支持语音功能的 `speak` 属性，其中包含的信息会告知卡片如何向用户大声朗读相关内容。
 
-可以使用带批注的语音标记[SSML 标记](https://msdn.microsoft.com/en-us/library/office/hh361578(v=office.14).aspx)。 SSML 提供功能控制的速度，音、 语音的转折点。  它甚至允许您对音频进行流式处理或呈现 TTS 音频流从你自己的服务，为您提供了大量的自定义项。
+可以使用 [SSML 标记](https://msdn.microsoft.com/en-us/library/office/hh361578(v=office.14).aspx)来标注语音标记。 可以通过 SSML 控制语音的速度、语气和音调。  它甚至允许你流式传输音频，或者呈现由你自己的服务提供的 TTS 音频流，让你可以进行自定义。
 
-有 2 个模式由主机应用程序朗读属性用法：
-* **交付**-卡传递客户端时可能会选择读取 Speak 属性来描述作为一个整体的卡的卡。
-* **按需**-为了支持更丰富的可访问性模型 speak 标记每个元素的架构支持。  
-这允许客户端向具有辅助功能要求收件人读取每个元素。
+主机应用程序可以通过 2 种模式来使用 speak 属性：
+* **按交付** - 将卡片交付给客户时，客户可以选择让系统读出对卡片进行整体说明的卡片 Speak 属性。
+* **按需** - 架构支持为每个元素设置一个 speak 标记，这样就可以支持内容更丰富的辅助功能模型。  
+这样客户端就可以按照辅助功能要求将每个元素读给接收者。
 

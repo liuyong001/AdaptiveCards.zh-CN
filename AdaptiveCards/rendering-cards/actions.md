@@ -6,15 +6,15 @@ ms.date: 06/26/2017
 ms.topic: article
 ms.openlocfilehash: 42ba1ca4ba2ecd508bdee2f04061293d48349aab
 ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 04/12/2019
 ms.locfileid: "59553369"
 ---
 # <a name="actions"></a>操作
 
-默认情况下，操作将呈现为在卡上的按钮，但这取决于您的应用程序以使其按预期工作。 每个 SDK 有相当于`OnAction`必须处理的事件。
+默认情况下，操作在卡上会呈现为按钮，但应用可以根据你的需要来定义操作的行为。 每个 SDK 都有 `OnAction` 事件的等效项，必须对其进行处理。
 
-* **Action.OpenUrl** -打开指定`url`。  
-* **Action.Submit** -提取的提交结果，并将其发送到源。 如何向的源发送它是卡片的完全取决于您。
-* **Action.ShowCard** -调用一个对话框，并将子卡呈现到该对话框。 请注意，只需处理此 if`ShowCardActionMode`设置为`popup`。
+* **Action.OpenUrl** - 打开指定的 `url`。  
+* **Action.Submit** - 获取提交的结果并将其发送到源。 如何将其发送到卡片的源完全取决于你自己。
+* **Action.ShowCard** - 调用某个对话并将子卡呈现到该对话中。 请注意，只有在 `ShowCardActionMode` 设置为 `popup` 的情况下，才需要对此进行处理。

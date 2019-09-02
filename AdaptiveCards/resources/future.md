@@ -1,50 +1,50 @@
 ---
-title: Adaptive Cards Roadmap
+title: 自适应卡片路线图
 author: matthidinger
 ms.author: mahiding
 ms.date: 05/16/2018
 ms.topic: article
 ms.openlocfilehash: f879c164b3471347ba8fa058827b3d79b09be4cd
 ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2019
 ms.locfileid: "67138000"
 ---
-# <a name="future-work"></a>将来的工作
+# <a name="future-work"></a>未来工作
 
-虽然我们已定义自适应卡的极好进度，就仍有很多工作要做。 我们希望是，通过等 botness，和 Slack 等很好的合作伙伴和 Kik 活跃的开发人员社区，我们可以创建一个强大的生态系统的跨平台卡。
+虽然我们已在定义自适应卡片方面有了很大的进展，但仍有大量工作要做。 我们希望，通过 Botness 之类的开发人员社区的积极参与，以及 Slack 和 Kik 之类的合作伙伴的通力协作，我们可以打造一个跨平台卡片的良好生态系统。
 
 ## <a name="roadmap"></a>路线图
 
-您可以看到我们[当前 （非最终） 路线图此处](https://portal.productboard.com/adaptivecards/1-adaptive-cards-portal/tabs/1-backlog)。 请注意，此处上的所有内容可能会发生更改，并且并不保证数据传送。
+你可以在[这里查看我们当前（并非最终）的路线图](https://portal.productboard.com/adaptivecards/1-adaptive-cards-portal/tabs/1-backlog)。 请注意，此处的任何内容都可能会更改，不保证寄送。
 
-## <a name="future-ideas"></a>将来的想法
+## <a name="future-ideas"></a>未来创意
 
-以下是我们有了，只需在灵感阶段中的一些将来观点。 如果您感兴趣的这些任何，让我们知道在注释中。
+下面是我们的一些未来创意，仍处于集体讨论阶段。 如果你对其中的任何内容感兴趣，请在评论中给我们留言。
 
-### <a name="great-looking-cards-from-data"></a>从数据的绝佳美观卡
+### <a name="great-looking-cards-from-data"></a>外观良好的卡片离不开数据
 
-我们知道已有他们的卡背后的明确定义数据的许多卡作者。 我们的计划就是浏览将允许卡生成的模板化模型 （服务器端或客户端） 根据数据和定义完善且可自定义模板的存储库。
+我们知道，许多卡片作者已经有可以在卡片上使用的定义好的数据。 我们的计划是探索出一个模板化的模型，这样，用户就可以使用数据以及定义好的可自定义模板的库来生成卡片（不管是在服务器端还是在客户端）。
 
-### <a name="make-cards-responsive"></a>使卡响应
+### <a name="make-cards-responsive"></a>让卡片响应快
 
-卡布局应为被动变为可用空间。 自适应卡是适应不同的设备，用户体验样式和 ui 框架，但它们不是被动尚未。 必须允许卡生成者提供对呈现库的必要提示，以便它们可以智能地更改可维护的卡片的意图的方式布局元素上定义其他属性。
+卡片布局应该可以根据可用空间大小进行调整。 自适应卡片可以适应不同的设备、UX 样式和 UI 框架，但它们还无法主动进行调整。 必须在元素上定义其他属性，让卡片生产者可以为呈现库提供必需的提示，这样库就能够以智能方式更改布局，使卡片的用途不变。
 
-### <a name="responsive-exploration"></a>响应式探索
+### <a name="responsive-exploration"></a>响应式浏览
 
-* 添加**重要性**属性用于批注的内容的重要性。 可以删除不太重要的内容以适应可用空间
-* 添加**约束**并**策略**描述如何做出反应时不能满足约束的属性。 
-  * 隐藏的内容或内容折叠到小的大小。
-  * 添加的阈值，超出时，更改`columnSet`到轮播的列。
+* 添加 **importance** 属性，标注内容的重要性。 可以根据空间大小删除不太重要的内容
+* 添加 **constraints** 和 **policy** 属性，说明在无法满足约束条件的情况下无法进行应对。 
+  * 隐藏内容，或者将内容折叠以降低其大小
+  * 添加一个阈值，超过该阈值时更改 `columnSet`，将列循环展示
 
-### <a name="new-element-types"></a>新的元素类型
+### <a name="new-element-types"></a>新元素类型
 
-* 映射？ -将地图嵌入到卡具有交互性或回退到位图
-* *哪些元素执行您想要或需要*？
+* 地图？ - 将地图嵌入具有交互功能的卡片中，或者回退到位图
+* 你想要或需要什么元素？ 
 
-### <a name="new-rendering-libraries"></a>新呈现库
+### <a name="new-rendering-libraries"></a>新的呈现库
 
-* 反应？
+* React？
 * Xamarin？
-* *你想什么框架？*
+* 你想要什么框架？ 
