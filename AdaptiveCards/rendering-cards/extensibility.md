@@ -6,13 +6,13 @@ ms.date: 06/26/2017
 ms.topic: article
 ms.openlocfilehash: b6d303e15f8d51aa3f1f944304b1fa4f11f9c206
 ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/14/2019
 ms.locfileid: "67138110"
 ---
-# <a name="extensibility"></a><span data-ttu-id="e6ab4-102">扩展性</span><span class="sxs-lookup"><span data-stu-id="e6ab4-102">Extensibility</span></span>
+# <a name="extensibility"></a><span data-ttu-id="e8e47-102">扩展性</span><span class="sxs-lookup"><span data-stu-id="e8e47-102">Extensibility</span></span>
 
-<span data-ttu-id="e6ab4-103">每个 SDK，可重写的呈现任何元素，或者甚至添加对您定义的整个新元素的支持。</span><span class="sxs-lookup"><span data-stu-id="e6ab4-103">Each SDK allows you to override the rendering of any element, or even add support for entirely new elements that you define.</span></span>  <span data-ttu-id="e6ab4-104">例如，可以更改`Input.Date`呈现器仍保留的呈现器输出的其余部分的同时发出自定义控件。</span><span class="sxs-lookup"><span data-stu-id="e6ab4-104">For example, you can change the `Input.Date` renderer to emit your own custom control while still retaining the rest of the output of the renderer.</span></span> <span data-ttu-id="e6ab4-105">也可以添加对自定义支持`Rating`给您的元素定义。</span><span class="sxs-lookup"><span data-stu-id="e6ab4-105">Or you can add support for a custom `Rating` element to you define.</span></span>
+<span data-ttu-id="e8e47-103">每个 SDK 都允许你重写任何元素的呈现，甚至允许你为自己定义的全新元素添加支持。</span><span class="sxs-lookup"><span data-stu-id="e8e47-103">Each SDK allows you to override the rendering of any element, or even add support for entirely new elements that you define.</span></span>  <span data-ttu-id="e8e47-104">例如，可以更改 `Input.Date` 呈现器，以便在仍然保留呈现器的其余输出的情况下，发出你自己的自定义控制。</span><span class="sxs-lookup"><span data-stu-id="e8e47-104">For example, you can change the `Input.Date` renderer to emit your own custom control while still retaining the rest of the output of the renderer.</span></span> <span data-ttu-id="e8e47-105">也可添加对你定义的自定义 `Rating` 元素的支持。</span><span class="sxs-lookup"><span data-stu-id="e8e47-105">Or you can add support for a custom `Rating` element to you define.</span></span>
 
-<span data-ttu-id="e6ab4-106">有关代码示例，请展开**SDK**左侧的节点->**呈现卡** -> **你想要使用的 SDK**  ->  **可扩展性**</span><span class="sxs-lookup"><span data-stu-id="e6ab4-106">For example code, please expand the **SDK** node on the left -> **Rendering Cards** -> **the SDK you'd like to use** -> **Extensibility**</span></span>
+<span data-ttu-id="e8e47-106">如需示例代码，请展开左侧的 **SDK** 节点，然后单击“呈现卡片”   -> “要使用的 SDK”   ->   “可扩展性”</span><span class="sxs-lookup"><span data-stu-id="e8e47-106">For example code, please expand the **SDK** node on the left -> **Rendering Cards** -> **the SDK you'd like to use** -> **Extensibility**</span></span>
