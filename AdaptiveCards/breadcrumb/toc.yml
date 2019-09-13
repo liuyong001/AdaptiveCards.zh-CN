@@ -1,14 +1,7 @@
-items:
 - name: Docs
-  href: /
-  homepage: /
+  tocHref: /
+  topicHref: /
   items:
-  - name: 自适应卡片
-    tocHref: /adaptive-cards/
-    topicHref: /adaptive-cards/index
-ms.openlocfilehash: 57e140b8abd9afaa4937ca18deca22cb25e9f024
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
-ms.translationtype: HT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552319"
+    - name: 自适应卡片
+      tocHref: /adaptive-cards/
+      topicHref: /adaptive-cards/index
