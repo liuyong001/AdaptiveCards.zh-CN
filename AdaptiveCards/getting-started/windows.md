@@ -4,16 +4,14 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 20b324c12cd7cec10f2142fc2cf76039b5c329de
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 65494ed437303d26a202c9a5b95f88255147cbd0
+ms.sourcegitcommit: 48838a50b5f0316e15b48d740a7dd0a5f96ebae4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "59552849"
+ms.lasthandoff: 09/12/2019
+ms.locfileid: "70923076"
 ---
 # <a name="adaptive-cards-for-windows-developers"></a>面向 Windows 开发人员的自适应卡片
-
-
 
 ## <a name="timeline"></a>时间线
 
@@ -34,6 +32,12 @@ userActivity.DisplayText = article.Title; //used for details tile text
 userActivity.VisualElements.Content = AdaptiveCardBuilder.CreateAdaptiveCardFromJson(jsonString);
 await userActivity.SaveAsync();
 ```
+
+### <a name="learning-module"></a>学习模块
+
+这里有一个非常棒的 45 分钟的学习模块，其中包含了从头到尾的这些步骤。
+
+[将自适应卡集成到 Windows 10 时间线](https://docs.microsoft.com/en-us/learn/modules/integrate-app-into-windows-10-timeline/)
 
 ### <a name="learn-more"></a>了解详细信息
 
