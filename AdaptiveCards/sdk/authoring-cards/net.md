@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/01/2017
 ms.topic: article
-ms.openlocfilehash: fb1a79da288cbce77c4f684b384982feb96e7a8c
-ms.sourcegitcommit: f8de9c02b92cd8927a18e59e5650c92b2b78db06
+ms.openlocfilehash: 10400d5db3aac8ea60e5f03f5ab5d9b013211954
+ms.sourcegitcommit: 4dd40521cd39313657f1dab642f49ff04098ba35
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2019
-ms.locfileid: "68523841"
+ms.lasthandoff: 09/27/2019
+ms.locfileid: "71343735"
 ---
 # <a name="net-sdk-for-authoring-cards"></a>用于创作插件的 .NET SDK
 
@@ -33,7 +33,7 @@ Install-Package AdaptiveCards
 using AdaptiveCards;
 // ...
 
-AdaptiveCard card = new AdaptiveCard();
+AdaptiveCard card = new AdaptiveCard(new AdaptiveSchemaVersion(1, 0));
 
 card.Body.Add(new AdaptiveTextBlock() 
 {
