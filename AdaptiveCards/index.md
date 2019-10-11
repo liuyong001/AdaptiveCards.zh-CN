@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 487acab86d80d563210abe07968520ea7669498a
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 27c7d5ac7da3ae182667cbf8efa90d29f110d1d3
+ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299542"
+ms.lasthandoff: 10/08/2019
+ms.locfileid: "72042534"
 ---
 # <a name="adaptive-cards-overview"></a>自适应卡片概述 
 
@@ -76,8 +76,8 @@ Markdown 的目标也是在保持简单的同时增强表达能力，可以轻�
 如果对某样功能没有把握，可以稍后添加相关内容，不必忍受其中的错误。 如果我们发现自己在争论是否应添加某项内容，则可以选择暂时不用它。通常情况下，与其使用我们不希望支持的旧属性，不如以后再添加相关内容。
 
 
-## <a name="build-2018-session"></a>Build 2018 会议
+## <a name="build-2019-session"></a>Build 2019 会议
 
-在 Build 2018 进行的以下研讨会介绍了自适应卡片在机器人、Cortana、Outlook 和 Windows 中的应用。 
+Microsoft Build 大会上的以下会议在各种用例中展示了自适应卡片。 
 
-<iframe src="https://medius.studios.ms/Embed/Video/BRK2401?SFYT=true" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wT1yFr_j6IM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
