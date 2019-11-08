@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: b99a2905fb000653b7ee75204221b832a2b5a907
-ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
+ms.openlocfilehash: 42a1f43fbcfe1416820637af750acc960b9effde
+ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917125"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73750399"
 ---
 # <a name="adaptive-cards-template-language"></a>自适应卡模板语言
 
@@ -135,12 +135,9 @@ var card = template.expand(dataContext);
 
 自适应卡设计器已更新为支持模板化。 
 
-> 试用以下位置的 "vnext" 预览：  **[https://vnext.adaptivecards.io/designer](https://vnext.adaptivecards.io/designer)**
+> 请在以下网址尝试：  **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)**
 
-[![图像](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](http://vnext.adaptivecards.io/designer)
-
- 
-此 "vnext" URL 将产生 bug，并将频繁部署。 **清除缓存**以确保具有最新版本，如果发现 bug，请告诉我们！
+[![图像](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](https://adaptivecards.io/designer)
 
 * **示例数据编辑器**-在此处指定示例数据，以在 "预览模式" 中查看数据绑定卡。 此窗格中有一个小按钮，用于填充现有示例数据中的数据结构。
 * **数据结构**-这是示例数据的结构。 可以将字段拖到设计图面上以创建对它们的绑定 
@@ -346,7 +343,4 @@ var card = template.expand(dataContext);
 
 ## <a name="examples"></a>示例
 
-到目前为止，我们仅创建了有限数量的示例，但请查看此处以开始使用。
-
-* 通过单击 "**打开示例**" 在[设计器](http://vnext.adaptivecards.io/designer)中加载示例
-* 或者只是直接[浏览它们的目录](https://github.com/Microsoft/AdaptiveCards/tree/js/template-engine/samples/v2.0/Scenarios)
+浏览 "更新的[示例" 页](https://adaptivecards.io/samples)，浏览各种新模板卡。
