@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 07/29/2019
 ms.topic: article
-ms.openlocfilehash: fdfe7b46614f046155ab84a5a487105d55afd7cb
-ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
+ms.openlocfilehash: 11ade4c2a41111f372873ea9a0677fe823c5b0ab
+ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72042539"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73750422"
 ---
 # <a name="adaptive-cards-templating-preview"></a>自适应卡片模板化（预览）
 
@@ -57,13 +57,13 @@ ms.locfileid: "72042539"
 > 
 > 打开一个新的标签页，按以下示例操作
 >
-> **https://vnext.adaptivecards.io/designer**
+> **https://adaptivecards.io/designer**
 > 
 > 单击“预览模式”按钮，在设计模式和预览模式之间切换。 
 
 ![设计器屏幕截图](content/2019-08-01-13-58-27.png)
 
-[“vNext 设计器”](https://vnext.adaptivecards.io/designer)添加了相关支持，允许用户创作模板，并提供用于在设计时预览卡片的**示例数据**。
+新更新的设计器添加了相关支持，允许用户创作模板，并提供用于在设计时预览卡片的**示例数据**。
 
 请将以下示例粘贴到“卡片有效负载编辑器”窗格中：  
 
