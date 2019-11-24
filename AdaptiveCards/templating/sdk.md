@@ -39,11 +39,11 @@ npm install adaptivecards-templating
 <script src="https://unpkg.com/adaptivecards-templating/dist/adaptivecards-templating.min.js"></script>
 ``` 
 
-### <a name="usage"></a>用法
+### <a name="usage"></a>Usage
 
 下面的示例假定还安装了[adaptivecards](https://www.npmjs.com/package/adaptivecards)库，以便呈现卡。 
 
-如果不打算呈现卡，则可以删除 `parse` 和 @no__t 的代码。 
+如果不打算着色卡，可以删除 `parse` 和 `render` 代码。 
 
 ```js
 import * as ACData from "adaptivecards-templating";
