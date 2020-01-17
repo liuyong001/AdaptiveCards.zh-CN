@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 07/29/2019
 ms.topic: article
-ms.openlocfilehash: 11ade4c2a41111f372873ea9a0677fe823c5b0ab
-ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
+ms.openlocfilehash: 6a818e5009a0ec65e7e17fe47cc0172d2e34ae31
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73750422"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145547"
 ---
 # <a name="adaptive-cards-templating-preview"></a>自适应卡片模板化（预览）
 
@@ -180,7 +180,7 @@ ms.locfileid: "73750422"
 平台 | 安装 | 文档
 --- | --- | ---
 JavaScript | `npm install adaptivecards-templating` | [文档](https://www.npmjs.com/package/adaptivecards-templating)
-.NET | `nuget install AdaptiveCards.Templating` | [文档](https://docs.microsoft.com/en-us/adaptive-cards/templating/sdk#net)
+.NET | `nuget install AdaptiveCards.Templating` | [文档](https://docs.microsoft.com/adaptive-cards/templating/sdk#net)
 
 ### <a name="javascript-example"></a>JavaScript 示例
 
