@@ -1,15 +1,15 @@
 ---
 title: 本机样式设置 - Android SDK
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: ebb033c68b9aedcaacb1989ffb1bec48707a9026
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: d0c6b56e0497b78aa149f73dc1d32537689c0386
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134241"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145477"
 ---
 # <a name="native-styling---android"></a>本机样式设置 - Android
 
