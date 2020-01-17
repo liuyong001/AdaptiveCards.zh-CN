@@ -4,7 +4,7 @@
       href: android/getting-started.md
     - name: 呈现一张卡片
       href: android/render-a-card.md
-    - name: 操作
+    - name: “操作”
       href: android/actions.md
     - name: 主机配置
       href: android/host-config.md
@@ -18,7 +18,7 @@
       href: ios/getting-started.md
     - name: 呈现一张卡片
       href: ios/render-a-card.md
-    - name: 操作
+    - name: “操作”
       href: ios/actions.md
     - name: 主机配置
       href: ios/host-config.md
@@ -32,7 +32,7 @@
       href: javascript/getting-started.md
     - name: 呈现一张卡片
       href: javascript/render-a-card.md
-    - name: 操作
+    - name: “操作”
       href: javascript/actions.md
     - name: 主机配置
       href: javascript/host-config.md
@@ -48,7 +48,7 @@
       href: net-html/getting-started.md
     - name: 呈现一张卡片
       href: net-html/render-a-card.md
-    - name: 操作
+    - name: “操作”
       href: net-html/actions.md
     - name: 主机配置
       href: net-html/host-config.md
@@ -62,7 +62,7 @@
       href: net-wpf/getting-started.md
     - name: 呈现一张卡片
       href: net-wpf/render-a-card.md
-    - name: 操作
+    - name: “操作”
       href: net-wpf/actions.md
     - name: 主机配置
       href: net-wpf/host-config.md
@@ -76,7 +76,7 @@
       href: net-image/getting-started.md
     - name: 呈现一张卡片
       href: net-image/render-a-card.md
-    - name: 操作
+    - name: “操作”
       href: net-image/actions.md
     - name: 主机配置
       href: net-image/host-config.md
@@ -90,7 +90,7 @@
       href: uwp/getting-started.md
     - name: 呈现一张卡片
       href: uwp/render-a-card.md
-    - name: 操作
+    - name: “操作”
       href: uwp/actions.md
     - name: 主机配置
       href: uwp/host-config.md
@@ -102,3 +102,15 @@
   items:
     - name: 入门
       href: react-native/getting-started.md
+- name: Xamarin.Android
+  items:
+    - name: 入门
+      href: xamarin/android/getting-started.md
+    - name: 呈现一张卡片
+      href: xamarin/android/render-a-card.md
+    - name: “操作”
+      href: xamarin/android/actions.md
+    - name: 主机配置
+      href: xamarin/android/host-config.md
+    - name: 本机样式设置
+      href: xamarin/android/native-styling.md
