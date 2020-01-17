@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 42a1f43fbcfe1416820637af750acc960b9effde
-ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
+ms.openlocfilehash: 2c583f774451e60f825cd8fd2c38f2ea34c2f8de
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73750399"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145397"
 ---
 # <a name="adaptive-cards-template-language"></a>自适应卡模板语言
 
@@ -187,8 +187,9 @@ var card = template.expand(dataContext);
 
 此部分是 "暗幻"。 欢迎提供反馈。
 
-* 如果对象的 `$data` 属性设置为一个**数组**，则**将对数组中的每个项重复该对象本身。** 
-* 由于它是重复的，因此在属性绑定中使用的 `$data` 的范围限定为数组中的**单个项**。
+* 如果自适应卡元素的 `$data` 属性绑定到**数组**，则**会为数组中的每个项重复该元素本身。** 
+* 属性值中使用的任何绑定表达式（`{myProperty}`）都将作用于数组中的**单个项**。
+* 如果绑定到字符串数组，请使用 `{$data}` 访问单个字符串元素。 例如，`"text": "{$data}"`
 
 例如，下面的 `TextBlock` 将重复3次，因为 `$data` 是数组。 请注意，`text` 属性如何绑定到数组内单个对象的 `name` 属性。 
 
@@ -231,7 +232,7 @@ var card = template.expand(dataContext);
 }
 ```
 
-## <a name="functions"></a>函数
+## <a name="functions"></a>功能
 
 无需一些 helper 函数即可完成任何模板化语言。 我们将提供一组可在每个 SDK 上使用的标准函数。 
 
@@ -244,7 +245,7 @@ var card = template.expand(dataContext);
 * toUpper *（尚未工作）*
 * toLower *（尚未工作）*
 
-### <a name="number-functions"></a>Number 函数
+### <a name="number-functions"></a>数值函数
 
 * 格式（货币、小数点等） *（尚未工作）*
 
@@ -287,7 +288,7 @@ var card = template.expand(dataContext);
 }
 ```
 
-**使用情况**
+**用法**
 
 ```json
 {

@@ -1,15 +1,15 @@
 ---
 title: 操作 - Android SDK
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 49b0b45abeb54381bd7b4b548219a09ad5da10c1
-ms.sourcegitcommit: 8c8067206f283d97a5aa4ec65ba23d3fe18962f1
+ms.openlocfilehash: 680aab595123ce35654d760f0e1dbbe406c8f29d
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2019
-ms.locfileid: "68299530"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145517"
 ---
 # <a name="actions---android"></a>操作 - Android
 
@@ -19,7 +19,7 @@ ms.locfileid: "68299530"
 > [1.1 版中的重大更改](#breaking-changes-in-v11)
 > 
 
-执行卡操作时, 将调用传递到实现```ICardActionHandler```接口的呈现调用的类。 下面介绍如何定义操作处理程序：
+执行卡操作时，会调用传递给实现 ```ICardActionHandler``` 接口的呈现调用的类。 下面介绍如何定义操作处理程序：
 
 ```java
 public class ActionHandler implements ICardActionHandler
@@ -118,19 +118,19 @@ public class ActionHandler implements ICardActionHandler
 
 ## <a name="breaking-changes-in-v11"></a>1\.1 版中的重大更改
 
-此版本中包含的媒体元素需要由实现```ICardActionHandler```的类实现两个新方法, 这些方法是:
+此版本中包含的媒体元素需要两个新方法来实现 ```ICardActionHandler```的类，这些方法包括：
 
-* ```onMediaPlay```当在任何媒体元素中首次按 "播放" 按钮时调用
-* ```onMediaStop```当媒体结束时调用
+* 当在任何媒体元素中首次按 "播放" 按钮时，将调用 ```onMediaPlay```
+* 当媒体结束时调用 ```onMediaStop```
 
-这些方法的签名包括:
+这些方法的签名包括：
 
 ```java
 public void onMediaPlay(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
 public void onMediaStop(BaseCardElement mediaElement, RenderedAdaptiveCard renderedAdaptiveCard)
 ```
 
-上一示例中的 ActionHandler 的实现现在如下所示:
+上一示例中的 ActionHandler 的实现现在如下所示：
 
 ```java
 public class ActionHandler implements ICardActionHandler

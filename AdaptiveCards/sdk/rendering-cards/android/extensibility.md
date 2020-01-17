@@ -1,15 +1,15 @@
 ---
 title: Android SDK
-author: bekao
-ms.author: bekao
+author: almedina-ms
+ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: 9e13ebad04c780db83d25129a9f5829a9d43ef69
-ms.sourcegitcommit: ce044dc969d9b9c47a52bd361bfe2b746071913b
+ms.openlocfilehash: ae5c1b2addf6fc5bcdda3defebb6de5925b58507
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72917121"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145507"
 ---
 # <a name="extensibility---android"></a>扩展性 - Android
 
@@ -380,7 +380,7 @@ public class ResourceResolver implements IResourceResolver
 
 可以看到，最大的更改是
 
-* 已将 ```loadOnlineImage(String, GenericImageLoaderAsync)``` 重命名为 ```resolveImageResource(String, GenericImageLoaderAsync)```
+* ```loadOnlineImage(String, GenericImageLoaderAsync)``` 已重命名为 ```resolveImageResource(String, GenericImageLoaderAsync)```
 * ```resolveImageResource(String, GenericImageLoaderAsync)``` 的重载已添加为 ```resolveImageResource(String, GenericImageLoaderAsync, int)``` 以支持最大宽度需要的方案
 
 ## <a name="custom-media-loading"></a>自定义媒体加载
