@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/30/2018
 ms.topic: article
-ms.openlocfilehash: 1acc30c0347ea5527de2af1fe74e605c7589cbc6
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 1c3ad2a4588244a8bd30011a4b6e25e37062624a
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "59553279"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145377"
 ---
 # <a name="adaptive-cards-for-bot-developers"></a>面向机器人开发人员的自适应卡片
 
@@ -18,7 +18,7 @@ ms.locfileid: "59553279"
 > [!NOTE]
 > 目前的预览版不支持 Skype。 请参阅[合作伙伴状态](../resources/partners.md)页，了解最新信息。
 
-## <a name="try-it-out"></a>试用
+## <a name="try-it-out"></a>试试吧
 
 单击接下来的链接，[与我们的潜水机器人聊天](http://contososcubademo.azurewebsites.net/)。 说“`I'm looking for scuba`”，它就会帮助你预约梦想中的潜水之旅。  
 
@@ -49,7 +49,7 @@ ms.locfileid: "59553279"
 }
 ```
 
-### <a name="step-1-add-an-adaptive-card-attachment"></a>第 1 步：添加自适应卡片 `attachment`
+### <a name="step-1-add-an-adaptive-card-attachment"></a>步骤 1：添加自适应卡片 `attachment`
 
 若要添加文本之外的内容，可以利用 Bot Framework 的 `attachments`。 
 
@@ -100,7 +100,7 @@ ms.locfileid: "59553279"
 
 除了可自定义的文本，自适应卡片还提供更为丰富的内容。 
 
-你可以： 
+您可以： 
 
 * 向卡片添加`Images`
 * 使用`Containers`和`Columns`来组织内容
@@ -115,8 +115,8 @@ ms.locfileid: "59553279"
 
 平台|安装|了解详细信息
 --------|-------|----------
-.NET | `Install-Package AdaptiveCards -IncludePrerelease` | [Bot Framework .NET Docs](https://docs.microsoft.com/en-us/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
-NodeJS | `npm install adaptivecards` | [Bot Framework NodeJS Docs](https://docs.microsoft.com/en-us/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
+.NET | `Install-Package AdaptiveCards -IncludePrerelease` | [Bot Framework .NET Docs](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
+NodeJS | `npm install adaptivecards` | [Bot Framework NodeJS Docs](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
 
 
 ## <a name="channel-status"></a>通道状态

@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: 92b334a237c56c453a15a8a4a5f1a516c73abc57
-ms.sourcegitcommit: 16a274ce5596001a1c5ab252d9d2a3db6a5a9a0d
+ms.openlocfilehash: f0a7221b69127db6e13ab83f60b637f35979ae5f
+ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73750408"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76145527"
 ---
 # <a name="partners"></a>合作伙伴 
 
@@ -19,11 +19,11 @@ ms.locfileid: "73750408"
 
 ## <a name="live"></a>Live
 
-平台 | 描述 | 文档 | 版本
+平台 | 说明 | 文档 | 版本
 ---------|-------------|---------------|---------
-[Bot Framework Web Chat](https://github.com/Microsoft/BotFramework-WebChat)  | 嵌入式 Web 聊天控件，适用于 Microsoft Bot Framework | [入门](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.2 (Web Chat 4.6)
-[Cortana 技能](https://docs.microsoft.com/en-us/cortana/skills/adaptive-cards) | Windows 10 虚拟助手 | [入门](https://docs.microsoft.com/en-us/adaptive-cards/get-started/bots) | 1.0
-[Windows 时间线](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | 以全新方式继续完成你过去在此电脑、其他 Windows 电脑以及 iOS/Android 设备上启动的活动。 | [入门](https://docs.microsoft.com/en-us/adaptive-cards/get-started/windows) | 1.0
-[Outlook 可操作邮件](https://docs.microsoft.com/en-us/outlook/actionable-messages/)  | 将可操作邮件附加到电子邮件 | [入门](https://docs.microsoft.com/en-us/outlook/actionable-messages/) | 1.0
-[Microsoft Teams](https://products.office.com/en-US/microsoft-teams/group-chat-software) | 一个平台，综合了工作区聊天、会议和便笺功能 | [入门](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/cards/cards-reference#adaptive-card) | 1.0
+[Bot Framework Web Chat](https://github.com/Microsoft/BotFramework-WebChat)  | 嵌入式 Web 聊天控件，适用于 Microsoft Bot Framework | [入门](https://docs.microsoft.com/adaptive-cards/get-started/bots) | 1.2 (Web Chat 4.6)
+[Cortana 技能](https://docs.microsoft.com/cortana/skills/adaptive-cards) | Windows 10 虚拟助手 | [入门](https://docs.microsoft.com/adaptive-cards/get-started/bots) | 1.0
+[Windows 时间线](https://blogs.windows.com/windowsexperience/2017/12/19/announcing-windows-10-insider-preview-build-17063-pc/) | 以全新方式继续完成你过去在此电脑、其他 Windows 电脑以及 iOS/Android 设备上启动的活动。 | [入门](https://docs.microsoft.com/adaptive-cards/get-started/windows) | 1.0
+[Outlook 可操作邮件](https://docs.microsoft.com/outlook/actionable-messages/)  | 将可操作邮件附加到电子邮件 | [入门](https://docs.microsoft.com/outlook/actionable-messages/) | 1.0
+[Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) | 一个平台，综合了工作区聊天、会议和便笺功能 | [入门](https://docs.microsoft.com/microsoftteams/platform/concepts/cards/cards-reference#adaptive-card) | 1.0
 [Cisco WebEx Teams](https://www.webex.com/team-collaboration.html) | Webex Teams 帮助加快项目速度、构建更好的关系以及解决业务难题。 | [入门](https://developer.webex.com/docs/api/guides/cards) | 1.1
