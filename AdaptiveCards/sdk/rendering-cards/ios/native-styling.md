@@ -17,9 +17,9 @@ ms.locfileid: "76727468"
 
 存在以下 Xib
 
-| XIB | 사용 패턴 |
+| XIB | 用法 |
 |---|---|
-| ACRButton. xib | 按钮 |
+| ACRButton. xib | buttons |
 | ACRCellForCompactMode. xib   | ChoiceSet compact 模式|
 | ACRDatePicker. xib | DatePicker 的输入日期 |
 | ACRDateTextField. xib  | 输入的文本字段。日期 |
@@ -28,7 +28,7 @@ ms.locfileid: "76727468"
 | ACRPickerView. xib | ChoiceSet |
 | ACRQuickActionMultilineView. xib  | Multilines 的快速操作 |
 | ACRQuickActionView. xib | 快速操作 |
-| ACRTextField. xib | 입력 |
+| ACRTextField. xib | 输入 |
 
 可以通过 XCode IB 编辑 XIB。
 将 Xib 编辑为规范后。

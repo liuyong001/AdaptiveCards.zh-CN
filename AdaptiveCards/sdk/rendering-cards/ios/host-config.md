@@ -36,10 +36,10 @@ renderResult = [ACRRenderer render:cardParseResult.card
                    widthConstraint:300.0];
 ```
 
-## <a name="customization"></a>사용자 지정
+## <a name="customization"></a>自定义
 
 有三种方法可自定义自适应卡呈现：
 
-1. 호스트 구성
+1. 主机配置
 2. XIB
 3. 自定义元素呈现
