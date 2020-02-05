@@ -1,61 +1,61 @@
 ---
-title: 自适应卡模板服务
+title: 自适应卡片模板服务
 author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
 ms.openlocfilehash: 81d1e598b6157b6ba1fedbf458a7c624705afcd5
 ms.sourcegitcommit: a16f53ba10a8607deacde5c8cc78927cac58657c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 08/09/2019
 ms.locfileid: "68878884"
 ---
-# <a name="adaptive-cards-template-service"></a>自适应卡模板服务
+# <a name="adaptive-cards-template-service"></a>自适应卡片模板服务
 
-自适应卡模板服务是一种概念证明服务, 它允许任何人查找、参与和共享一组众所周知的模板。
+自适应卡片模板服务是一项概念证明服务，允许任何人查找、贡献以及共享一组已知的模板。
 
-如果希望显示某些数据, 但不希望为其编写自定义的自适应卡, 则此方法非常有用。
+如果你要显示一些数据，但不想为其编写自定义的自适应卡片，则可使用此服务。
 
-> 有关[自适应卡模板的概述](index.md), 请阅读此概述
+> 有关此方面的内容，请参阅[自适应卡片模板化概述](index.md)
 
 > [!IMPORTANT] 
 > 
-> *条款和协议* 
+> 条款和协议  
 > 
-> 此**alpha 级别**服务 "按原样" 提供, 并具有所有错误, 不支持任何方式。 从服务收集的任何数据都服从[Microsoft 隐私声明](https://go.microsoft.com/fwlink/?LinkID=824704)。
+> 此 **Alpha 级别**服务“按原样”提供，包含所有错误，且不提供任何方式的支持。 从服务进行的任何数据收集都需遵循 [Microsoft 隐私声明](https://go.microsoft.com/fwlink/?LinkID=824704)的要求。
 > 
-> 这些功能**处于预览阶段, 可能会有所更改**。 你的反馈不仅是欢迎的, 而且确保我们能够提供**所**需的功能至关重要。
+> 这些功能为**预览版，可能会更改**。 我们欢迎你的反馈，它很重要，可以确保我们提供**你**需要的功能。
 
-## <a name="how-does-the-service-help-me"></a>服务如何帮助我？
+## <a name="how-does-the-service-help-me"></a>此服务如何帮助我？
 
-假设我只获取了一段数据, 可能是它的财务数据、Microsoft Graph 数据、schema.org 数据或来自我的组织中的自定义数据。 
+假设我刚获得一份数据，该数据可能是财务数据、Microsoft Graph 数据、schema.org 数据或来自我的组织中的自定义数据。 
 
-现在, 我想向用户显示数据。 
+现在，我想要向用户显示该数据。 
 
-过去, 这意味着在我向最终用户提供的所有前端堆栈中编写自定义 UI 代码。
+传统上，这意味着在我向最终用户提供的所有前端堆栈中编写自定义 UI 代码。
 
-但如果我的应用程序可以基于数据类型 "了解" 新的 UI 模板, 该怎么办？ 任何人都可以在自己的项目中、组织内或整个 internet 上参与、增强和共享公共 UI 模板。
+但如果我的应用可以根据数据类型“学习”新的 UI 模板，会出现什么情况？ 任何人都可以在自己的项目中、组织内或整个 Internet 上参与、增强和共享公共 UI 模板。
 
-## <a name="what-is-the-card-template-service"></a>什么是卡模板服务？
+## <a name="what-is-the-card-template-service"></a>什么是卡片模板服务？
 
-卡模板服务是一个简单的 REST 终结点, 可帮助:
+卡片模板服务是一个简单的 REST 终结点，它有助于：
 
-* 通过分析数据的结构**查找**模板
-* **获取**模板以便可以直接将其绑定到客户端,*而无需将数据发送到服务器或离开设备*
-* 当客户端数据绑定不合适或不可行时, 在服务器上**填充**模板
+* 通过分析数据的结构来**查找**模板
+* **获取**模板，以便直接将其绑定到客户端，无需将数据发送到服务器或离开设备 
+* 当客户端数据绑定不合适或不可行时，**填充**服务器上的模板
 
-毕竟, 是:
+其背后的事实是：
 
-* GitHub 支持的共享开源模板存储库。 *(存储库当前是专用的, 但会在我们连接到一些松动的末尾后立即公开)*
-* 所有模板都是存储库中的平面 JSON 文件, 它们可对开发人员工作流的一个自然部分进行编辑、贡献和共享。
-* 此服务的代码将可用, 因此你可以在任何位置进行托管。 
+* 有一个 GitHub 支持的共享开源模板存储库。 （存储库目前为专用，但一旦我们准备就绪，就会将其公开） 
+* 在存储库中，所有模板都是平面 JSON 文件，因此可以很自然地在开发人员工作流中进行编辑、贡献和共享。
+* 此服务的代码将可用，因此你可以在自己感觉最合理的任何位置进行托管。 
 
 ## <a name="using-the-service"></a>使用服务
 
 ### <a name="get-all-templates"></a>获取所有模板 
 
-此终结点返回所有已知模板的列表。
+此终结点返回一个包含所有已知模板的列表。
 
 > `HTTP GET https://templates.adaptivecards.io/list`
 
@@ -85,15 +85,15 @@ ms.locfileid: "68878884"
 
 #### <a name="example"></a>示例
 
-假设我只是点击了一个[Microsoft Graph](https://graph.microsoft.com)的终结点来获取组织数据。
+假设我刚点击 [Microsoft Graph](https://graph.microsoft.com) 终结点来获取有关我的组织数据。
 
 > `HTTP GET https://graph.microsoft.com/v1.0/me/`
 
-![图形资源管理器屏幕快照](content/2019-08-01-12-08-13.png)
+![Graph 浏览器屏幕截图](content/2019-08-01-12-08-13.png)
 
-该 API 返回了**JSON 数据**, 但如何使用自适应卡向用户**显示它**？ 
+该 API 返回了 **JSON 数据**，但我如何使用自适应卡片向用户**显示它**？ 
 
-首先, 我想要查看是否存在此类数据的模板, 因此我使用`/find` `POST body`中的数据对终结点发出 HTTP 请求。
+首先，我想要查看是否存在此类数据的模板，因此使用 `POST body` 中的数据向 `/find` 终结点发出 HTTP 请求。
 
 ```
 HTTP POST https://templates.adaptivecards.io/find
@@ -116,7 +116,7 @@ HTTP POST https://templates.adaptivecards.io/find
 }
 ```
 
-**回复**
+**响应：**
 
 ```json
 [
@@ -127,21 +127,21 @@ HTTP POST https://templates.adaptivecards.io/find
 ]
 ```
 
-服务将返回任何匹配模板的列表, 同时还会返回`confidence`一个, 指示匹配项的接近程度。 现在, 我可以使用该模板 URL 来**获取**模板, 或将其**填充**到服务器端。
+服务返回任何匹配模板的列表，以及一个 `confidence`，指示匹配程度。 现在，我可以使用该模板 URL 来**获取**模板，或在服务器端**填充**它。
 
 ### <a name="get-a-template"></a>获取模板
 
-[使用 Templatng sdk](sdk.md), 可在运行时使用数据填充从此终结点检索的模板。
+从此终结点检索的模板可以在运行时[使用模板化 SDK](sdk.md) 填充数据。
 
 > `HTTP GET https://templates.adaptivecards.io/[TEMPLATE-PATH]`
 
-你还可以将 "示例数据" 包含在模板中, 以便在设计器中进行编辑更友好:
+还可以让“示例数据”包含在模板中，这样就可以在设计器中更方便地进行编辑：
 
 > `HTTP GET https://templates.adaptivecards.io/[TEMPLATE-PATH]?sampleData=true`
 
 #### <a name="example"></a>示例
 
-接下来, 我们将获取从`/find`上面返回的 Microsoft Graph 配置文件模板。
+让我们获取已从上面的 `/find` 返回的 Microsoft Graph 配置文件模板。
 
 `HTTP GET https://templates.adaptivecards.io/graph.microsoft.com/Profile.json`
 
@@ -165,17 +165,17 @@ HTTP POST https://templates.adaptivecards.io/find
 }
 ```
 
-现在, 将此模板与模板[化 sdk](sdk.md)结合使用, 以创建现成的自适应卡。
+现在，请将此模板与[模板化 SDK](sdk.md) 配合使用，创建可以呈现的自适应卡片。
 
-### <a name="populate-a-template-server-side"></a>填充模板服务器端
+### <a name="populate-a-template-server-side"></a>在服务器端填充模板
 
-在某些情况下, 在客户端上填充模板可能没有意义。  对于这些用例, 可以让服务返回完全填充的自适应卡, 并准备好将其传递到任何自适应卡呈现器。
+某些情况下，在客户端填充模板可能没有意义。  对于这些用例，可以让服务返回一张完全填充的自适应卡片，该卡片可以传递给任何自适应卡片呈现器。
 
 > `HTTP POST https://templates.adaptivecards.io/[TEMPLATE-PATH]`
 
 #### <a name="example"></a>示例
 
-接下来, `/find`使用上面的数据来填充返回的 Microsoft Graph 配置文件模板。
+让我们使用上面的数据填充已从 `/find` 返回的 Microsoft Graph 配置文件模板。
 
 ```
 HTTP POST https://templates.adaptivecards.io/graph.microsoft.com/Profile.json
@@ -218,18 +218,18 @@ HTTP POST https://templates.adaptivecards.io/graph.microsoft.com/Profile.json
 }
 ```
 
-请注意`"{name}"`, 响应如何在`GET`请求中将第`TextBlock`一个`"Megan Bowen"`替换为 (而不是) 的文本。 现在可以将此 AdaptiveCard 传递到任何自适应卡呈现器, 而无需通过客户端模板化。
+请注意响应如何将第一个 `TextBlock` 的文本替换为 `"Megan Bowen"` 而不是 `"{name}"`，如 `GET` 请求中所示。 现在可以将此 AdaptiveCard 传递给任何自适应卡片呈现器，无需进行客户端模板化。
 
-## <a name="contributing-templates"></a>参与模板
+## <a name="contributing-templates"></a>贡献模板
 
-此模板服务由 GitHub 存储库 (当前为**专用**) 来支持, 但我们会在我们占用一些松动的结束后打开源。
+此模板服务受 GitHub 存储库（目前为**专用**）的支持，但我们会在准备就绪后开源。
 
-我们希望使用 GitHub 作为模板的后备存储, 我们可以 "变得大众化" 创作、增强和共享模板的过程。 任何人都可以提交包含一个全新模板的拉取请求, 或对现有模板进行增强... GitHub 的开发人员友好体验中都有。
+我们希望使用 GitHub 作为模板的后备存储，这样就可以“推广”创作、增强和共享模板的过程。 任何人都可以提交包含一个全新模板的拉取请求，或者对现有模板进行增强操作，这一切都在便于开发人员使用的 GitHub 体验中提供。
 
-## <a name="self-hosting-the-service"></a>自承载服务
+## <a name="self-hosting-the-service"></a>自托管此服务
 
-并非所有类型的数据都适用于中承载`https://templates.adaptivecards.io`的 "中心" 自适应卡模板服务。 
+并非所有类型的数据都适用于 `https://templates.adaptivecards.io` 上托管的自适应卡片模板“中心”服务。 
 
-我们想要确保任何人都可以在你的组织内托管模板服务, 因此, 将提供源代码, 并使部署到 Azure 或你自己的后端变得非常简单。
+我们希望确保任何人都可以在你的组织内托管模板服务，因此，我们会提供源代码，并会极大地简化将内容部署到 Azure 或你自己的后端的操作。
 
-稍后将对此进行详细介绍。
+我们稍后会对此进行详细介绍。

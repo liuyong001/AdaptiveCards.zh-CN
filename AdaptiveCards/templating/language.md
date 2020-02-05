@@ -1,41 +1,41 @@
 ---
-title: 自适应卡模板语言
+title: 自适应卡片模板语言
 author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
 ms.openlocfilehash: 2c583f774451e60f825cd8fd2c38f2ea34c2f8de
 ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/16/2020
 ms.locfileid: "76145397"
 ---
-# <a name="adaptive-cards-template-language"></a>自适应卡模板语言
+# <a name="adaptive-cards-template-language"></a>自适应卡片模板语言
 
-模板化可将**数据**与自适应卡中的**布局**分离。 模板语言是用于创作模板的语法。 
+模板化可以将自适应卡片中的**数据**与**布局**分开。 模板语言是用于创作模板的语法。 
 
-> 有关[自适应卡模板的概述](index.md)，请阅读此概述
+> 有关此方面的内容，请参阅[自适应卡片模板化概述](index.md)
 
 > [!IMPORTANT] 
 > 
 > 这些功能为**预览版，可能会更改**。 我们欢迎你的反馈，它很重要，可以确保我们提供**你**需要的功能。
 
-创作模板时，可以使用 `AdaptiveCard` 负载或在运行时使用[模板化 sdk](sdk.md)来指定数据。
+创作模板时，可以使用 `AdaptiveCard` 有效负载以内联方式指定数据，也可以在运行时使用[模板化 SDK](sdk.md) 来这样做。
 
-## <a name="specify-data-within-the-card"></a>指定卡片内的数据
+## <a name="specify-data-within-the-card"></a>指定卡片中的数据
 
-若要直接在卡有效负载中提供数据，只需将 `$data` 特性添加到 `AdaptiveCard` （见下文）。
+若要直接在卡片有效负载中提供数据，只需将 `$data` 属性添加到 `AdaptiveCard` 即可（见下）。
 
 ## <a name="binding-to-the-data"></a>绑定到数据
 
-您可以绑定到卡的 `body` 或 `actions` 中的数据。
+可以绑定到卡片的 `body` 或 `actions` 中的数据。
 
-* 绑定语法从 `{` 开始，以 `}`结束。 例如，`{myProperty}`
-* 用点表示法访问子对象
+* 绑定语法以 `{` 开头，以 `}` 结尾。 例如 `{myProperty}`
+* 用于访问子对象的点表示法
 * 索引器语法，用于按键或数组中的项检索属性
-* 对于深层层次结构的宽容 null 处理
-* *即将推出语法文档*
+* 针对深层次结构的常规 null 处理
+* 即将发布的转义符语法文档 
 
 ```json
 {
@@ -74,7 +74,7 @@ ms.locfileid: "76145397"
 
 ## <a name="separating-the-template-from-the-data"></a>将模板与数据分离
 
-另外，您还可以创建一个重新使用的卡 "模板"，而不包含数据。 此模板可以存储为文件并添加到源代码管理中。
+另外，还可以创建一个可反复使用的不含数据的卡片“模板”（可能性更高）。 此模板可以存储为文件并添加到源代码管理中。
 
 **EmployeeCardTemplate.json**
 
@@ -98,11 +98,11 @@ ms.locfileid: "76145397"
 }
 ```
 
-然后，使用[模板化 sdk](sdk.md)加载它并在运行时提供数据。
+然后，将其加载并使用 [模板化 SDK](sdk.md) 在运行时提供数据。
 
 **JavaScript 示例**
 
-使用[adaptivecards 模板](https://npmjs.com/package/adaptivecards-templating)包。
+使用 [adaptivecards-templating](https://npmjs.com/package/adaptivecards-templating) 包。
 
 ```js
 var template = new ACData.Template({ 
@@ -133,24 +133,24 @@ var card = template.expand(dataContext);
 
 ## <a name="designer-support"></a>设计器支持
 
-自适应卡设计器已更新为支持模板化。 
+自适应卡片设计器已更新为支持模板化。 
 
-> 请在以下网址尝试：  **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)**
+> 试用网址： **[https://adaptivecards.io/designer](https://adaptivecards.io/designer)**
 
 [![图像](https://user-images.githubusercontent.com/1432195/53214462-88d46980-3601-11e9-908d-253a1bb940a8.png)](https://adaptivecards.io/designer)
 
-* **示例数据编辑器**-在此处指定示例数据，以在 "预览模式" 中查看数据绑定卡。 此窗格中有一个小按钮，用于填充现有示例数据中的数据结构。
-* **数据结构**-这是示例数据的结构。 可以将字段拖到设计图面上以创建对它们的绑定 
-* **预览模式**-按工具栏按钮，在编辑体验和示例数据预览体验之间切换
-* **打开示例**-单击此按钮以打开各种示例负载
+* **示例数据编辑器** - 在此处指定示例数据，以便在“预览模式”下查看数据绑定卡片。 此窗格中有一个小按钮，用于填充现有示例数据中的“数据结构”。
+* **数据结构** - 这是示例数据的结构。 可以将字段拖到设计图面上，以便创建一个绑定，将内容绑定到这些字段 
+* **预览模式** - 按工具栏按钮即可在编辑体验和示例数据预览体验之间切换
+* **打开示例** - 单击此按钮即可打开各种示例有效负载
 
 ## <a name="advanced-binding"></a>高级绑定
 
 ### <a name="binding-scopes"></a>绑定范围
 
-有几个保留关键字可用于访问各种绑定范围。 
+可以通过几个保留关键字来访问各种绑定范围。 
 
-*注意：* 并非所有这些都是在预览版中实现的。
+ 注意：在预览版中，并非所有这些都得到了实现。
 
 ```json
 {
@@ -164,7 +164,7 @@ var card = template.expand(dataContext);
 
 ### <a name="assigning-a-data-context-to-elements"></a>将数据上下文分配给元素
 
-若要为任何元素分配 "数据上下文"，请将 `$data` 特性添加到元素。
+若要为任意元素分配“数据上下文”，请将 `$data` 属性添加到该元素。
 
 ```json
 {
@@ -185,13 +185,13 @@ var card = template.expand(dataContext);
 
 ## <a name="repeating-items-in-an-array"></a>数组中的重复项
 
-此部分是 "暗幻"。 欢迎提供反馈。
+此部分有点“晦涩”。 欢迎反馈。
 
-* 如果自适应卡元素的 `$data` 属性绑定到**数组**，则**会为数组中的每个项重复该元素本身。** 
-* 属性值中使用的任何绑定表达式（`{myProperty}`）都将作用于数组中的**单个项**。
-* 如果绑定到字符串数组，请使用 `{$data}` 访问单个字符串元素。 例如，`"text": "{$data}"`
+* 如果将某个自适应卡片元素的 `$data` 属性绑定到**数组**，则**会针对数组中的每个项重复元素本身。** 
+* 在属性值中使用的任何绑定表达式 (`{myProperty}`) 的作用域都将是数组中的**单个项**。
+* 如果绑定到字符串数组，请使用 `{$data}` 访问单个字符串元素。 例如 `"text": "{$data}"`
 
-例如，下面的 `TextBlock` 将重复3次，因为 `$data` 是数组。 请注意，`text` 属性如何绑定到数组内单个对象的 `name` 属性。 
+举例来说，下面的 `TextBlock` 会重复 3 次，因为其 `$data` 是数组。 请注意 `text` 属性如何绑定到数组内单个对象的 `name` 属性。 
 
 ```json
 {
@@ -210,7 +210,7 @@ var card = template.expand(dataContext);
 }
 ```
 
-**导致：**
+**结果：**
 
 ```json
 {
@@ -234,29 +234,29 @@ var card = template.expand(dataContext);
 
 ## <a name="functions"></a>功能
 
-无需一些 helper 函数即可完成任何模板化语言。 我们将提供一组可在每个 SDK 上使用的标准函数。 
+如果没有帮助程序函数，则任何模板化语言都不是完整的。 我们会提供一组可在每个 SDK 上使用的标准函数。 
 
-此处的语法仍在无线上，因此请立即回来查看，但以下是我们所计划的入门：
+此处的语法仍未确定，因此请稍后回来查看。不过，下面是我们所计划内容的开头：
 
 ### <a name="string-functions"></a>字符串函数
 
 * substr
-* indexOf *（尚未工作）*
-* toUpper *（尚未工作）*
-* toLower *（尚未工作）*
+* indexOf（尚不能使用） 
+* toUpper（尚不能使用） 
+* toLower（尚不能使用） 
 
 ### <a name="number-functions"></a>数值函数
 
-* 格式（货币、小数点等） *（尚未工作）*
+* 格式化（货币、小数等）（尚不能使用） 
 
 ### <a name="date-functions"></a>日期函数
 
-* 正在分析众所周知的日期字符串格式 *（尚未处理）*
-* 格式众所周知的日期/时间表示形式 *（尚未处理）*
+* 分析众所周知的日期字符串格式（尚不能使用） 
+* 针对众所周知的日期/时间表示方式进行格式设置（尚不能使用） 
 
 ### <a name="conditional-functions"></a>条件函数
 
-* if （*expression*， *trueValue*， *falseValue*）
+* if(*表达式*, *trueValue*, *falseValue*)
 
 **`if` 示例**
 
@@ -269,11 +269,11 @@ var card = template.expand(dataContext);
 
 ### <a name="data-manipulation"></a>数据操作
 
-* JSON。分析-分析 JSON 字符串的能力 
+* JSON.parse - 分析 JSON 字符串的功能 
 
 **`JSON.parse` 示例**
 
-这是 Azure DevOps 响应，其中 `message` 属性是 JSON 序列化的字符串。 若要访问字符串中的值，需要在模板中使用 `JSON.parse` 函数。
+这是 Azure DevOps 响应，其中的 `message` 属性是一个 JSON 序列化字符串。 若要访问字符串中的值，需要在模板中使用 `JSON.parse` 函数。
 
 **数据** 
 
@@ -297,7 +297,7 @@ var card = template.expand(dataContext);
 }
 ```
 
-**导致**
+**结果**
 
 ```json
 {
@@ -308,11 +308,11 @@ var card = template.expand(dataContext);
 
 ### <a name="custom-functions"></a>自定义函数
 
-我们希望确保主机可以添加自定义功能，这意味着，如果不支持某个函数，我们需要提供对回退支持的可靠支持。 我们仍在评估这一点。
+我们希望确保主机可以添加自定义函数。这意味着，如果某个函数不受支持，我们需要提供对回退支持的可靠支持。 我们仍在对此进行评估。
 
 ## <a name="conditional-layout"></a>条件布局
 
-若要在满足条件时删除整个元素，请使用 `$when` 属性。 如果 `$when` 的计算结果为 `false` 元素将不会显示给用户。
+若要在满足条件时删除整个元素，请使用 `$when` 属性。 如果 `$when` 的计算结果为 `false`，则此元素不会显示给用户。
 
 ```json
 {
@@ -337,11 +337,11 @@ var card = template.expand(dataContext);
 }
 ```
 
-### <a name="composing-templates"></a>撰写模板
+### <a name="composing-templates"></a>组合模板
 
-当前不支持组合模板 "部件"。 但我们会探索选项，希望不久就能分享。 这里欢迎你的想法！
+目前不支持将模板“部件”组合到一起。 但是，我们会探索相关选项，希望不久就能为大家提供更多此方面的内容。 欢迎你在此提供自己的想法！
 
 
 ## <a name="examples"></a>示例
 
-浏览 "更新的[示例" 页](https://adaptivecards.io/samples)，浏览各种新模板卡。
+请浏览更新的[“示例”页](https://adaptivecards.io/samples)，其中包含各种新的模板化卡片。
