@@ -4,23 +4,23 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 464fda8c83f9943d316f43fec811511ab9696916
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 4c43637d81bcf43251638133c66d1c77b92ace56
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552629"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454670"
 ---
-# <a name="extensibility---javascript"></a><span data-ttu-id="50e05-102">扩展性-JavaScript</span><span class="sxs-lookup"><span data-stu-id="50e05-102">Extensibility - JavaScript</span></span>
+# <a name="extensibility---javascript"></a><span data-ttu-id="82a76-102">扩展性-JavaScript</span><span class="sxs-lookup"><span data-stu-id="82a76-102">Extensibility - JavaScript</span></span>
 
-## <a name="implement-and-register-a-custom-element"></a><span data-ttu-id="50e05-103">实现并注册自定义元素</span><span class="sxs-lookup"><span data-stu-id="50e05-103">Implement and register a custom element</span></span>
+## <a name="implement-and-register-a-custom-element"></a><span data-ttu-id="82a76-103">实现并注册自定义元素</span><span class="sxs-lookup"><span data-stu-id="82a76-103">Implement and register a custom element</span></span>
 
-<span data-ttu-id="50e05-104">创建自定义自适应卡元素类型的步骤如下:</span><span class="sxs-lookup"><span data-stu-id="50e05-104">The steps for creating a custom Adaptive Card element type are:</span></span>
-- <span data-ttu-id="50e05-105">创建新类`CardElement`</span><span class="sxs-lookup"><span data-stu-id="50e05-105">Create a new class driving from `CardElement`</span></span>
-- <span data-ttu-id="50e05-106">实现其`getJsonTypeName`、 `parse`、 `toJSON`和方法`renderSpeech` `internalRender`</span><span class="sxs-lookup"><span data-stu-id="50e05-106">Implement its `getJsonTypeName`, `parse`, `toJSON`, `internalRender` and `renderSpeech` methods</span></span>
-- <span data-ttu-id="50e05-107">通过将其添加到呈现器的元素注册表来注册它</span><span class="sxs-lookup"><span data-stu-id="50e05-107">Register it by adding it to the renderer's element registry</span></span>
+<span data-ttu-id="82a76-104">创建自定义自适应卡元素类型的步骤如下：</span><span class="sxs-lookup"><span data-stu-id="82a76-104">The steps for creating a custom Adaptive Card element type are:</span></span>
+- <span data-ttu-id="82a76-105">创建一个新类，从 `CardElement`</span><span class="sxs-lookup"><span data-stu-id="82a76-105">Create a new class driving from `CardElement`</span></span>
+- <span data-ttu-id="82a76-106">实现其 `getJsonTypeName`、`parse`、`toJSON`、`internalRender` 和 `renderSpeech` 方法</span><span class="sxs-lookup"><span data-stu-id="82a76-106">Implement its `getJsonTypeName`, `parse`, `toJSON`, `internalRender` and `renderSpeech` methods</span></span>
+- <span data-ttu-id="82a76-107">通过将其添加到呈现器的元素注册表来注册它</span><span class="sxs-lookup"><span data-stu-id="82a76-107">Register it by adding it to the renderer's element registry</span></span>
 
-<span data-ttu-id="50e05-108">我们来看一个示例并实现一个简单的进度栏元素:</span><span class="sxs-lookup"><span data-stu-id="50e05-108">Let's take an example and implement a simple Progress Bar element:</span></span>
+<span data-ttu-id="82a76-108">我们来看一个示例并实现一个简单的进度栏元素：</span><span class="sxs-lookup"><span data-stu-id="82a76-108">Let's take an example and implement a simple Progress Bar element:</span></span>
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -136,15 +136,15 @@ export class ProgressBar extends Adaptive.CardElement {
 }
 ```
 
-<span data-ttu-id="50e05-109">完成了。</span><span class="sxs-lookup"><span data-stu-id="50e05-109">That's it.</span></span> <span data-ttu-id="50e05-110">现在只需向呈现器注册进度栏类:</span><span class="sxs-lookup"><span data-stu-id="50e05-110">Now just register the Progress Bar class with the renderer:</span></span>
+<span data-ttu-id="82a76-109">就这么简单。</span><span class="sxs-lookup"><span data-stu-id="82a76-109">That's it.</span></span> <span data-ttu-id="82a76-110">现在只需向呈现器注册进度栏类：</span><span class="sxs-lookup"><span data-stu-id="82a76-110">Now just register the Progress Bar class with the renderer:</span></span>
 
 ```typescript
 Adaptive.AdaptiveCard.elementTypeRegistry.registerType("ProgressBar", () => { return new ProgressBar(); });
 ```
 
-## <a name="implement-and-register-a-custom-action"></a><span data-ttu-id="50e05-111">实现并注册自定义操作</span><span class="sxs-lookup"><span data-stu-id="50e05-111">Implement and register a custom action</span></span>
+## <a name="implement-and-register-a-custom-action"></a><span data-ttu-id="82a76-111">实现并注册自定义操作</span><span class="sxs-lookup"><span data-stu-id="82a76-111">Implement and register a custom action</span></span>
 
-<span data-ttu-id="50e05-112">创建自定义自适应卡操作的步骤实质上与自定义元素的步骤相同。</span><span class="sxs-lookup"><span data-stu-id="50e05-112">The steps for creating a custom Adaptive Card action are essentially the same as those for custom elements.</span></span> <span data-ttu-id="50e05-113">下面是一个简单的警报操作示例, 只显示具有可配置文本的消息框:</span><span class="sxs-lookup"><span data-stu-id="50e05-113">Here is a simple example of an Alert Action that simply displays a message box with configurable text:</span></span>
+<span data-ttu-id="82a76-112">创建自定义自适应卡操作的步骤实质上与自定义元素的步骤相同。</span><span class="sxs-lookup"><span data-stu-id="82a76-112">The steps for creating a custom Adaptive Card action are essentially the same as those for custom elements.</span></span> <span data-ttu-id="82a76-113">下面是一个简单的警报操作示例，只显示具有可配置文本的消息框：</span><span class="sxs-lookup"><span data-stu-id="82a76-113">Here is a simple example of an Alert Action that simply displays a message box with configurable text:</span></span>
 
 ```typescript
 import * as Adaptive from "adaptivecards";
@@ -176,15 +176,15 @@ export class AlertAction extends Adaptive.Action {
 }
 ```
 
-<span data-ttu-id="50e05-114">现在, 注册新操作:</span><span class="sxs-lookup"><span data-stu-id="50e05-114">Now register the new action:</span></span>
+<span data-ttu-id="82a76-114">现在，注册新操作：</span><span class="sxs-lookup"><span data-stu-id="82a76-114">Now register the new action:</span></span>
 
 ```
 Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { return new AlertAction(); });
 ```
 
-## <a name="example"></a><span data-ttu-id="50e05-115">示例</span><span class="sxs-lookup"><span data-stu-id="50e05-115">Example</span></span>
+## <a name="example"></a><span data-ttu-id="82a76-115">示例</span><span class="sxs-lookup"><span data-stu-id="82a76-115">Example</span></span>
 
-<span data-ttu-id="50e05-116">下面是一个示例卡, 它使用 ProgressBar 元素和 AlertAction 操作:</span><span class="sxs-lookup"><span data-stu-id="50e05-116">Here is a sample card that uses both the ProgressBar element and AlertAction action:</span></span>
+<span data-ttu-id="82a76-116">下面是一个示例卡，它使用 ProgressBar 元素和 AlertAction 操作：</span><span class="sxs-lookup"><span data-stu-id="82a76-116">Here is a sample card that uses both the ProgressBar element and AlertAction action:</span></span>
 ```
 {
     "type": "AdaptiveCard",
@@ -212,4 +212,4 @@ Adaptive.AdaptiveCard.actionTypeRegistry.registerType("Action.Alert", () => { re
 }
 ```
 
-<span data-ttu-id="50e05-117">下面是它的呈现方式: ![图像](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)</span><span class="sxs-lookup"><span data-stu-id="50e05-117">And here is how it renders: ![image](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)</span></span>
+<span data-ttu-id="82a76-117">下面是它的呈现方式： ![映像](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)</span><span class="sxs-lookup"><span data-stu-id="82a76-117">And here is how it renders: ![image](https://user-images.githubusercontent.com/1334689/52665466-8155e780-2ec0-11e9-841a-7d272ad1d103.png)</span></span>

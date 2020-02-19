@@ -4,18 +4,18 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: d1d3410b19071f601b31e14882f2cccb4d1e6ccb
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 98b4374ce6a31d6d7ec2416d3b4e451ef1c59d1b
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552969"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454100"
 ---
-# <a name="actions---uwp"></a><span data-ttu-id="b919e-102">操作-UWP</span><span class="sxs-lookup"><span data-stu-id="b919e-102">Actions - UWP</span></span>
+# <a name="actions---uwp"></a><span data-ttu-id="ccfb4-102">操作-UWP</span><span class="sxs-lookup"><span data-stu-id="ccfb4-102">Actions - UWP</span></span>
 
-<span data-ttu-id="b919e-103">智能卡中的所有**操作**都将呈现为 UWP**按钮**, 但会由您的应用程序来处理用户按下操作时所发生的情况 (ShowCard 操作除外)。有关详细信息, 请参阅代码片段。</span><span class="sxs-lookup"><span data-stu-id="b919e-103">Any **actions** within the card will render as UWP **Button**'s, but it's up to your app to handle what happens when a user presses them (except for ShowCard actions... see code snippet for more info).</span></span>
+<span data-ttu-id="ccfb4-103">智能卡中的所有**操作**都将呈现为 UWP**按钮**，但会由您的应用程序来处理用户按下操作时所发生的情况（ShowCard 操作除外）。有关详细信息，请参阅代码片段。</span><span class="sxs-lookup"><span data-stu-id="ccfb4-103">Any **actions** within the card will render as UWP **Button**'s, but it's up to your app to handle what happens when a user presses them (except for ShowCard actions... see code snippet for more info).</span></span>
 
-<span data-ttu-id="b919e-104">`RenderedAdaptiveCard` 对象提供 `Action` 事件以实现该目的。</span><span class="sxs-lookup"><span data-stu-id="b919e-104">The `RenderedAdaptiveCard` object provides an `Action` event for this purpose.</span></span>
+<span data-ttu-id="ccfb4-104">`RenderedAdaptiveCard` 对象提供 `Action` 事件以实现该目的。</span><span class="sxs-lookup"><span data-stu-id="ccfb4-104">The `RenderedAdaptiveCard` object provides an `Action` event for this purpose.</span></span>
 
 ```csharp
 // Render a card (as previously shown)
