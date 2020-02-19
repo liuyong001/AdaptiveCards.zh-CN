@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 1809a022481e4fb28d2db454cfe90e07d09279ff
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: a011ffc43c2990cd8eb568b9f1c449cf541f9a70
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553599"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454610"
 ---
 # <a name="host-config---javascript"></a>主机配置-JavaScript
 
@@ -30,7 +30,7 @@ var renderedCard = adaptiveCard.render();
 
 ## <a name="customization"></a>自定义
 
-有三种方法可自定义自适应卡呈现: 
+有三种方法可自定义自适应卡呈现： 
 1. 主机配置
 2. CSS 样式
 3. 自定义元素呈现

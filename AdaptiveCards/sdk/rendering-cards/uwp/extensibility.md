@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 198726d2fe310778afabccf05341d5c1de5cd968
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: ffe22e1e9b8632cbceedb4bfc26b285b4a9b0075
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553039"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454010"
 ---
 # <a name="extensibility---uwp"></a>扩展性-UWP
 

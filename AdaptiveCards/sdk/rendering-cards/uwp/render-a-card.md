@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 1a72cb9ba72811d4e98a48116fa08245e13a6392
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: d7e101bbabfccf162797a3a8e154028f29bdc84b
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552429"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454080"
 ---
 # <a name="render-a-card---uwp"></a>呈现卡片-UWP
 

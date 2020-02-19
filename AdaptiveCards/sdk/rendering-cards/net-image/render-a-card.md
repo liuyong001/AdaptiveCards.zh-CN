@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: ae32007d75abe4fb452ee48e32dd4e9bea8dfa4f
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: d46bd3cba22ffa416edd249f8836db17bc97386f
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552489"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454350"
 ---
 # <a name="render-a-card---net-image"></a>呈现卡片 .NET 映像
 

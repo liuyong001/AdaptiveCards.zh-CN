@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 6f086d268abcaeb7fa159b74708597e89aafaf53
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 687a90dd572ba2df786816fdd9dc313746cca982
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552889"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454640"
 ---
 # <a name="native-styling---javascript"></a>本机样式设置-JavaScript
 
@@ -19,11 +19,11 @@ ms.locfileid: "59552889"
 
 | CSS 类 | 用法 |
 |---|---|
-| .ac-container | 存放 |
-| . 交流电-可选  | 元素与`selectAction` |
-| .ac-image | image |
+| .ac-container | 容器 |
+| . 交流电-可选  | 具有 `selectAction` 的元素 |
+| .ac-image | 图像 |
 | .ac-pushButton | 呈现的操作类似于按钮 |
-| .ac-linkButton  | 呈现的操作, 如链接 |
+| .ac-linkButton  | 呈现的操作，如链接 |
 | .ac-input | 输入控件|
 | .ac-textInput| 文本输入 |
 | .ac-multiline | 多行文本输入 |

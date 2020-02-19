@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 5aedc2b0bb19cb7a26caa16c8490d0d2f3c93282
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: d1df38608abde9ad26c78bbc5f66eb3bbb3d1971
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552529"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454530"
 ---
 # <a name="extensibility---net-html"></a>扩展性-.NET HTML
 

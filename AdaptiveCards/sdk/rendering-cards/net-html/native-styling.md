@@ -4,16 +4,16 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 620940dee873742898d58979c61827320bc3c202
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 5b829d9eefe933f133c8532030856849802c5eb5
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59552559"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454490"
 ---
 # <a name="native-styling---net-html"></a>本机样式设置-.NET HTML
 
-虽然主机配置在每个平台上都可获得大多数方法, 但你可能需要在每个平台上执行一些本机样式。 
+虽然主机配置在每个平台上都可获得大多数方法，但你可能需要在每个平台上执行一些本机样式。 
 
 HTML 通过向每个元素添加 CSS 类来简化这一过程。
 
@@ -36,7 +36,7 @@ HTML 通过向每个元素添加 CSS 类来简化这一过程。
 | Input.Text | ac-textInput |
 | Input.Time | ac-timeInput |
 | Input.Toggle| - |
-| 图像  | ac-映像 |
+| 映像  | ac-映像 |
 | ImageSet  | ac-imageset |
 | FactSet | ac-factset |
 | TextBlock  | ac-textblock |

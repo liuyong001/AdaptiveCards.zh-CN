@@ -4,22 +4,22 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 4a6030dda12ab8d9a1e5c387cec63d45e84660d8
-ms.sourcegitcommit: aa044167fd0b32b485ea2ce014afcf0b332bf1a2
+ms.openlocfilehash: 29786fe5e533e67558df88f58b1330aa6646b532
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69529841"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454616"
 ---
 # <a name="getting-started---javascript"></a>入门-JavaScript
 
-正如我们在[入门](../../../authoring-cards/getting-started.md)"页中所述, 自适应卡是 JSON 序列化的卡对象模型。 这是用于在浏览器中生成客户端 HTML 的 JavaScript SDK。
+正如我们在[入门](../../../authoring-cards/getting-started.md)"页中所述，自适应卡是 JSON 序列化的卡对象模型。 这是用于在浏览器中生成客户端 HTML 的 JavaScript SDK。
 
 ## <a name="install"></a>安装
 
 ### <a name="node"></a>节点
 
-[![npm 安装](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards)
+[![npm install](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards)
 
 ```console
 npm install adaptivecards

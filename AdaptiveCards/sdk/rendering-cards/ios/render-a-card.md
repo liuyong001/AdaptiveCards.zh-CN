@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 7d8d8410c030584dc5a518af7e6473d1d51f3991
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: d47b94595c22afa51a0d4cf9666771203cd79c7e
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134325"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454740"
 ---
 # <a name="render-a-card---ios"></a>呈现卡片 - iOS
 
@@ -31,7 +31,7 @@ NSArray<ACRParseWarning *> warnings = cardPraseResult.parseWarnings;
 
 ## <a name="render-a-card"></a>呈现一张卡片
 
-呈现器采用自适应卡片和主机配置。HostConfig 可以为 nil。如果为 nil，则会使用默认值。
+Rederer 采用自适应卡和主机配置。HostConfig 可以为 nil，如果为 nil，则使用默认值。
 返回的 UIView 使用 autolayout。 宽度将受 widthConstraint 所设置的值的约束。 如果使用了值 0，则不受约束。
 高度不受约束，在返回后，高度为所有呈现的内容的总计。 若要约束视图维度，请使用 NSLayoutConstraint。 具体维度可以从其 superview 的 viewcontroller 的 viewDidLayoutSubview 上下文访问；也可以从其同名方法访问（如果使用了 ACRViewController）。
 

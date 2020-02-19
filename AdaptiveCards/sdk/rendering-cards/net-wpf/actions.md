@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 39ddbc47fd123c5f25ba778925f0bf1bf1845f54
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: dfee76c5dc0a8caafcd693b47337c28f84e71a53
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134335"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454340"
 ---
 # <a name="actions---net-wpf"></a>操作 - .NET WPF
 

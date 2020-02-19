@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: f847b83a17456dbf80f869ef8ef0df699e57f50e
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 1445754d968ee531dc1e2b1816df1189c286d479
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67134298"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454110"
 ---
 # <a name="render-a-card---net-wpf"></a>呈现卡片 - .NET WPF
 

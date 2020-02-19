@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/28/2017
 ms.topic: article
-ms.openlocfilehash: 6e20e19d9b72c034675abc8e37f2493986127c20
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 16e4b3e057137e361be52d654fa937c5dae5ff6f
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553119"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454580"
 ---
 # <a name="render-a-card---javascript"></a>呈现卡-JavaScript
 
