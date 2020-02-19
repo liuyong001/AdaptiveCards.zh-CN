@@ -22,7 +22,7 @@
   items:
     - name: 入门
       href: rendering-cards/getting-started.md
-    - name: 操作
+    - name: “操作”
       href: rendering-cards/actions.md
     - name: 主机配置
       href: rendering-cards/host-config.md
