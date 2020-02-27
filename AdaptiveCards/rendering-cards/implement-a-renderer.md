@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 09/15/2017
 ms.topic: article
-ms.openlocfilehash: b39493f82f3378e5a554abc6df890d6821869671
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 607ce40e70e0e54e61a572853a521d2dd70a5c23
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67138020"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454910"
 ---
 # <a name="adaptive-card-renderer-specification"></a>自适应卡片呈现器规范
 
@@ -68,7 +68,7 @@ ms.locfileid: "67138020"
 
 ### <a name="columns"></a>列
 
-1. `Column` `width` **必须**通过“自动”、“拉伸”或加权比率进行解释。
+1. `Column` `width` **必须**通过“auto”、“stretch”或加权比率进行解释。
 
 ### <a name="textblock"></a>TextBlock
 
@@ -116,7 +116,7 @@ ms.locfileid: "67138020"
 1. 呈现器**必须**允许主机应用注册自定义元素类型。 例如，添加对自定义 `Rating` 元素的支持
 1. 呈现器**必须**允许主机应用删除对默认元素的支持。 例如，如果主机应用不希望支持 `Action.Submit`，则可将其删除。
 
-## <a name="actions"></a>操作
+## <a name="actions"></a>“操作”
 
 1. 如果 HostConfig `supportsInteractivity` 为 `false`，则呈现器**不得**呈现任何操作。
 1. `actions` 属性在某些类型的操作栏中**必须**呈现为按钮，这些按钮通常位于卡片底部。 
