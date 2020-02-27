@@ -1,17 +1,17 @@
 ---
-title: 操作
+title: “操作”
 author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 42ba1ca4ba2ecd508bdee2f04061293d48349aab
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 34283b52f0c4902c71ea33634676832c7dfec5c9
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553369"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454940"
 ---
-# <a name="actions"></a>操作
+# <a name="actions"></a>“操作”
 
 默认情况下，操作在卡上会呈现为按钮，但应用可以根据你的需要来定义操作的行为。 每个 SDK 都有 `OnAction` 事件的等效项，必须对其进行处理。
 

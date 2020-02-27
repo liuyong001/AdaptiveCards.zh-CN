@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: bffa49012a8ebe686fc033f98b2438d2e9e959cc
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: 63426b2250407cc40af8c46975c10f57d1028a40
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67138030"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454900"
 ---
 # <a name="renderer-status"></a>呈现器状态
 下面的表显示了每个呈现器的当前状态，具体取决于其公开发布的版本。
@@ -52,7 +52,7 @@ ms.locfileid: "67138030"
 |删除元素呈现器 | ✅ | ✅ | ✅ | ✅ | ✅ |
 |[重写/添加/删除操作呈现器](https://github.com/Microsoft/AdaptiveCards/issues/1671) | ✅ | ✅ | ❌ | ✅ | ✅ |
 
-### <a name="actions"></a>操作
+### <a name="actions"></a>“操作”
 
 | 功能 | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |

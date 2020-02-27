@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 0a5f99268ce483fddd99f4493b386db796c3e9d2
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: a562a05a91676dc5e6d8b51690acc4788802fb99
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67138090"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454930"
 ---
 # <a name="rendering-cards-inside-your-application"></a>在应用程序中呈现卡片
 
@@ -21,7 +21,7 @@ ms.locfileid: "67138090"
 
 ## <a name="adaptive-cards-sdks"></a>自适应卡片 SDK
 
-|平台|安装|内部版本|文档|状态|
+|平台|安装|生成|Docs|状态|
 |---|---|---|---|---|
 | JavaScript | [![npm install](https://img.shields.io/npm/v/adaptivecards.svg)](https://www.npmjs.com/package/adaptivecards) | [源](https://github.com/Microsoft/AdaptiveCards/tree/master/source/nodejs)| [文档](../sdk/rendering-cards/javascript/getting-started.md) | ![生成状态](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20564.svg) |
 | .NET WPF | [![Nuget 安装](https://img.shields.io/nuget/vpre/AdaptiveCards.Rendering.Wpf.svg)](https://www.nuget.org/packages/AdaptiveCards.Rendering.Wpf) | [源](https://github.com/Microsoft/AdaptiveCards/tree/master/source/dotnet)| [文档](../sdk/rendering-cards/net-wpf/getting-started.md) | ![生成状态](https://img.shields.io/vso/build/Microsoft/56cf629e-8f3a-4412-acbc-bf69366c552c/20596.svg) |

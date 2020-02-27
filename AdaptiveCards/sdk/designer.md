@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/15/2019
 ms.topic: article
-ms.openlocfilehash: 285f02be2bc45b280461ff39a0c64b70d7029fc5
-ms.sourcegitcommit: aa044167fd0b32b485ea2ce014afcf0b332bf1a2
+ms.openlocfilehash: 8b961380a62e9704128d9ba1112d5e2c13a34e7e
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/16/2019
-ms.locfileid: "69536816"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454790"
 ---
 # <a name="adaptive-cards-designer-sdk"></a>自适应卡片设计器 SDK
 

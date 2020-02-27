@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/16/2018
 ms.topic: article
-ms.openlocfilehash: f879c164b3471347ba8fa058827b3d79b09be4cd
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: b11edbedca83bb26d2990d029a220165f68bc1ca
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67138000"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454890"
 ---
 # <a name="future-work"></a>未来工作
 

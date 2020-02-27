@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 81d1e598b6157b6ba1fedbf458a7c624705afcd5
-ms.sourcegitcommit: a16f53ba10a8607deacde5c8cc78927cac58657c
+ms.openlocfilehash: 8ccccd3c3e67324acf123e03b947372e1517faab
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/09/2019
-ms.locfileid: "68878884"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454980"
 ---
 # <a name="adaptive-cards-template-service"></a>自适应卡片模板服务
 

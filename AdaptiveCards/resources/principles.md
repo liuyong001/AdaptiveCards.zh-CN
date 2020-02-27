@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 5/14/2018
 ms.topic: article
-ms.openlocfilehash: 78fe44463c4ddb832ba0cc72d456b6d21518bac4
-ms.sourcegitcommit: 99c7b64d6fc66da336c454951406fb42cd2a7427
+ms.openlocfilehash: 243ad63fc585c5afc3fa396b86ff6261e8a7ee93
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59553149"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454810"
 ---
 # <a name="motivations-and-principles"></a>动因和原则
 

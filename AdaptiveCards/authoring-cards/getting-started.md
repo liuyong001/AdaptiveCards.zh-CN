@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/9/2017
 ms.topic: article
-ms.openlocfilehash: 9d363da0c10b242e23d2594984292fcc1f31382f
-ms.sourcegitcommit: e002a988c570072d5bc24a1242eaaac0c9ce90df
+ms.openlocfilehash: c9a0ad07ba5fefbcdc35239591c02fe0720b5b66
+ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2019
-ms.locfileid: "59552679"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "77454840"
 ---
 # <a name="getting-started"></a>入门 
 
@@ -77,7 +77,7 @@ ms.locfileid: "59552679"
 * **Input.ChoiceSet** - 为用户提供一组选项供其选取
 * **Input.Toggle** - 为用户提供一个在两个项之间进行切换的切换式选项供其选取
 
-## <a name="actions"></a>操作
+## <a name="actions"></a>“操作”
 
 操作会将按钮添加到卡片上。 这些按钮可以执行多种操作，例如打开 URL 或提交某些数据。
 
