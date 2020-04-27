@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 2c583f774451e60f825cd8fd2c38f2ea34c2f8de
-ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
+ms.openlocfilehash: ffd2ec065550f483bf602483eebf622565f7f47a
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76145397"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82136173"
 ---
 # <a name="adaptive-cards-template-language"></a>自适应卡片模板语言
 
@@ -80,7 +80,7 @@ ms.locfileid: "76145397"
 
 ```json
 {
-    "type": "AdaptivCard",
+    "type": "AdaptiveCard",
     "body": [
         {
             "type": "TextBlock",
@@ -232,7 +232,7 @@ var card = template.expand(dataContext);
 }
 ```
 
-## <a name="functions"></a>功能
+## <a name="functions"></a>函数
 
 如果没有帮助程序函数，则任何模板化语言都不是完整的。 我们会提供一组可在每个 SDK 上使用的标准函数。 
 

@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 5/14/2018
 ms.topic: article
 ms.openlocfilehash: 243ad63fc585c5afc3fa396b86ff6261e8a7ee93
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77454810"
 ---
 # <a name="motivations-and-principles"></a>动因和原则
@@ -32,7 +32,7 @@ ms.locfileid: "77454810"
 
 ## <a name="principles-governing-adaptive-cards"></a>自适应卡片背后的原则
 
-1.  **自适应卡片是一种简单的声明性卡片格式**  
+1.  **自适应卡片是一种简单的声明性卡片格式  **
 
     1.  它不是用来替代 HTML 或 XAML，也不充当其备用选项
     2.  自适应卡片**没有“代码隐藏”**
@@ -46,7 +46,7 @@ ms.locfileid: "77454810"
     2.  同样，它不依赖于 HTML、XAML 或任何其他图形/UI 框架
     3.  这样，只要存在呈现器，自适应卡片就可以在任何平台上进行本机呈现
 
-3.  **自适应卡片格式是一种共享属性** 
+3.  **自适应卡片格式是一种共享属性 **
 
     1.  此格式及其 SDK 都是开源的，由社区推动其发展
     2.  因此，此格式不由任何单一团队拥有，其发展不由任何单一团队推动
@@ -55,7 +55,7 @@ ms.locfileid: "77454810"
 
     1.  相反，我们在设计它时已考虑到要让它满足各种应用程序和用例的需求
 
-5.   **自适应卡片工作组负责控制格式的演变**
+5.  ** 自适应卡片工作组负责控制格式的演变**
 
     1.  此工作组的成员是许多对格式的成功做出了很大贡献的 Microsoft 员工
     2.  工作组每周召开一次会议（目前的会议时间为周一），审核功能建议、讨论和会审未决问题，并会对 vNext 工作项目的总体进展进行跟踪

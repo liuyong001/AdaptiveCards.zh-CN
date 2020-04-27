@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 11/09/2017
 ms.topic: article
 ms.openlocfilehash: f7ea40b80df4d976c0a8a86b15254018fdf2fac6
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77454870"
 ---
 # <a name="text-features"></a>文本功能
@@ -103,7 +103,7 @@ ms.locfileid: "77454870"
 为了在每个平台上恰当地解释日期/时间函数，必须应用一些规则。 如果规则得不到满足，则会向用户显示原始字符串，这不是大家希望的。
 
 1. **区分大小写**（必须全部大写）
-1. `{{`、`}}` 或括号之间**不能有空格**
+1. **、** 或括号之间`{{`不能有空格`}}`
 1. **严格的 [RFC 3389](https://tools.ietf.org/html/rfc3339) 格式设置**（参见下面的示例）
 1. **必须是**有效的日期和时间
 

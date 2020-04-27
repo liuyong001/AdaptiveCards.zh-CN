@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 5/14/2018
 ms.topic: article
 ms.openlocfilehash: 9ab264f749e173100e97dfa31400fb8516041776
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77454880"
 ---
 # <a name="adaptive-cards-media"></a>自适应卡片媒体

@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 03/14/2019
 ms.topic: article
 ms.openlocfilehash: f0c5a61d3406e1defffefc575ee0a6ec78fba93d
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77454830"
 ---
 # <a name="tools-and-samples"></a>工具和示例

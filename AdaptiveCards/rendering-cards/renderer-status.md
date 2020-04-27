@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
 ms.openlocfilehash: 63426b2250407cc40af8c46975c10f57d1028a40
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77454900"
 ---
 # <a name="renderer-status"></a>呈现器状态
@@ -52,7 +52,7 @@ ms.locfileid: "77454900"
 |删除元素呈现器 | ✅ | ✅ | ✅ | ✅ | ✅ |
 |[重写/添加/删除操作呈现器](https://github.com/Microsoft/AdaptiveCards/issues/1671) | ✅ | ✅ | ❌ | ✅ | ✅ |
 
-### <a name="actions"></a>“操作”
+### <a name="actions"></a>操作
 
 | 功能 | HTML | .NET | UWP | iOS | Android |
 |--- | --- | --- | --- | --- | --- | --- |

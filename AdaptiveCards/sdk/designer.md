@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 08/15/2019
 ms.topic: article
 ms.openlocfilehash: 8b961380a62e9704128d9ba1112d5e2c13a34e7e
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77454790"
 ---
 # <a name="adaptive-cards-designer-sdk"></a>自适应卡片设计器 SDK
