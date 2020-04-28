@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 05/30/2018
 ms.topic: article
 ms.openlocfilehash: 1c3ad2a4588244a8bd30011a4b6e25e37062624a
-ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "76145377"
 ---
 # <a name="adaptive-cards-for-bot-developers"></a>面向机器人开发人员的自适应卡片

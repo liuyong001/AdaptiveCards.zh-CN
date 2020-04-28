@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 09/15/2017
 ms.topic: article
 ms.openlocfilehash: 607ce40e70e0e54e61a572853a521d2dd70a5c23
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "77454910"
 ---
 # <a name="adaptive-card-renderer-specification"></a>自适应卡片呈现器规范

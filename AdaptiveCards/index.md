@@ -5,10 +5,10 @@ ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
 ms.openlocfilehash: 27c7d5ac7da3ae182667cbf8efa90d29f110d1d3
-ms.sourcegitcommit: ef03c0eff3272a36cfa88daf99c4d57e4bae9599
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "72042534"
 ---
 # <a name="adaptive-cards-overview"></a>自适应卡片概述 
