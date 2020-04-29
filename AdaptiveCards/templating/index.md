@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 07/29/2019
 ms.topic: article
-ms.openlocfilehash: 6a818e5009a0ec65e7e17fe47cc0172d2e34ae31
-ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
+ms.openlocfilehash: ab3a3f335b52a06dbb2219159e15e5033e715ba1
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76145547"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82136163"
 ---
 # <a name="adaptive-cards-templating-preview"></a>自适应卡片模板化（预览）
 
@@ -27,7 +27,7 @@ ms.locfileid: "76145547"
 
 目前不可能使用[自适应卡片设计器](https://adaptivecards.io/designer)来创建卡片并使用该 JSON 为有效负载填充**动态内容**。 为此，必须编写自定义代码来构建 JSON 字符串，或使用对象模型 SDK 来构建表示卡片的 OM 并将其序列化为 JSON。 不管什么情况，设计器执行的是一次性单向操作，一旦将卡片设计转换为代码，就不容易在以后调整它。
 
-### <a name="it-makes-tranmissions-over-the-wire-smaller"></a>降低通过网络传输的数据的大小
+### <a name="it-makes-transmissions-over-the-wire-smaller"></a>降低通过网络传输的数据的大小
 
 想象一下，如果可以**直接在客户端上**将模板和数据组合在一起，会是一种什么情景。 这意味着，如果多次使用同一模板，或者要使用新数据来更新它，只需将新数据发送到设备即可，设备可以反复使用同一模板。
 

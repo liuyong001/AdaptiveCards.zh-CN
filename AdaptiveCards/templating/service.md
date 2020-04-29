@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/01/2019
 ms.topic: article
-ms.openlocfilehash: 8ccccd3c3e67324acf123e03b947372e1517faab
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.openlocfilehash: db211fc3bac27dc980ae87983a918a35730f8e5e
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77454980"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82136183"
 ---
 # <a name="adaptive-cards-template-service"></a>自适应卡片模板服务
 
@@ -85,7 +85,7 @@ ms.locfileid: "77454980"
 
 #### <a name="example"></a>示例
 
-假设我刚点击 [Microsoft Graph](https://graph.microsoft.com) 终结点来获取有关我的组织数据。
+假设我刚访问 [Microsoft Graph](https://graph.microsoft.com) 终结点来获取有关我的组织数据。
 
 > `HTTP GET https://graph.microsoft.com/v1.0/me/`
 
@@ -222,14 +222,14 @@ HTTP POST https://templates.adaptivecards.io/graph.microsoft.com/Profile.json
 
 ## <a name="contributing-templates"></a>贡献模板
 
-此模板服务受 GitHub 存储库（目前为**专用**）的支持，但我们会在准备就绪后开源。
+模板托管在 GitHub 上的 [adaptivecards-templates](https://github.com/microsoft/adaptivecards-templates) 存储库中。
 
 我们希望使用 GitHub 作为模板的后备存储，这样就可以“推广”创作、增强和共享模板的过程。 任何人都可以提交包含一个全新模板的拉取请求，或者对现有模板进行增强操作，这一切都在便于开发人员使用的 GitHub 体验中提供。
 
 ## <a name="self-hosting-the-service"></a>自托管此服务
 
-并非所有类型的数据都适用于 `https://templates.adaptivecards.io` 上托管的自适应卡片模板“中心”服务。 
+并非所有类型的数据都适用于 `https://templates.adaptivecards.io` 上托管的“中心”自适应卡片模板服务。 
 
-我们希望确保任何人都可以在你的组织内托管模板服务，因此，我们会提供源代码，并会极大地简化将内容部署到 Azure 或你自己的后端的操作。
+我们希望确保任何人都可以在你的组织内托管模板服务，因此，源代码已在 GitHub 上提供，并且可以轻松部署到你自己的 Azure 函数。 
 
-我们稍后会对此进行详细介绍。
+从此处开始➡ [adaptivecards-templates](https://github.com/microsoft/adaptivecards-templates)
