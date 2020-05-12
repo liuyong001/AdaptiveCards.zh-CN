@@ -4,20 +4,20 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: d47b94595c22afa51a0d4cf9666771203cd79c7e
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.openlocfilehash: 6248c174775db687a5419f8feb6e0b23b0dcd870
+ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77454740"
+ms.lasthandoff: 04/24/2020
+ms.locfileid: "82136193"
 ---
-# <a name="render-a-card---ios"></a><span data-ttu-id="6fe96-102">呈现卡片 - iOS</span><span class="sxs-lookup"><span data-stu-id="6fe96-102">Render a card - iOS</span></span>
+# <a name="render-a-card---ios"></a><span data-ttu-id="9c1cf-102">呈现卡片 - iOS</span><span class="sxs-lookup"><span data-stu-id="9c1cf-102">Render a card - iOS</span></span>
 
-<span data-ttu-id="6fe96-103">下面介绍如何使用 iOS SDK 来呈现卡片。</span><span class="sxs-lookup"><span data-stu-id="6fe96-103">Here's how to render a card using the iOS SDK.</span></span>
+<span data-ttu-id="9c1cf-103">下面介绍如何使用 iOS SDK 来呈现卡片。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-103">Here's how to render a card using the iOS SDK.</span></span>
 
-## <a name="create-a-card-from-a-json-string"></a><span data-ttu-id="6fe96-104">根据 JSON 字符串创建卡片</span><span class="sxs-lookup"><span data-stu-id="6fe96-104">Create a card from a JSON string</span></span>
+## <a name="create-a-card-from-a-json-string"></a><span data-ttu-id="9c1cf-104">根据 JSON 字符串创建卡片</span><span class="sxs-lookup"><span data-stu-id="9c1cf-104">Create a card from a JSON string</span></span>
 
-<span data-ttu-id="6fe96-105">AdaptiveCard 根据 JSON 字符串生成</span><span class="sxs-lookup"><span data-stu-id="6fe96-105">AdaptiveCard is generated from JSON string</span></span>
+<span data-ttu-id="9c1cf-105">AdaptiveCard 根据 JSON 字符串生成</span><span class="sxs-lookup"><span data-stu-id="9c1cf-105">AdaptiveCard is generated from JSON string</span></span>
 
 ```objective-c
 
@@ -29,11 +29,11 @@ NSArray<NSError *> errors = cardParseResult.parseErrors;
 NSArray<ACRParseWarning *> warnings = cardPraseResult.parseWarnings;
 ```
 
-## <a name="render-a-card"></a><span data-ttu-id="6fe96-106">呈现一张卡片</span><span class="sxs-lookup"><span data-stu-id="6fe96-106">Render a Card</span></span>
+## <a name="render-a-card"></a><span data-ttu-id="9c1cf-106">呈现一张卡片</span><span class="sxs-lookup"><span data-stu-id="9c1cf-106">Render a Card</span></span>
 
-<span data-ttu-id="6fe96-107">Rederer 采用自适应卡和主机配置。HostConfig 可以为 nil，如果为 nil，则使用默认值。</span><span class="sxs-lookup"><span data-stu-id="6fe96-107">Rederer takes adaptive card and host config. HostConfig can be nil, and if nil, default value will be used.</span></span>
-<span data-ttu-id="6fe96-108">返回的 UIView 使用 autolayout。</span><span class="sxs-lookup"><span data-stu-id="6fe96-108">Returned UIView uses autolayout.</span></span> <span data-ttu-id="6fe96-109">宽度将受 widthConstraint 所设置的值的约束。</span><span class="sxs-lookup"><span data-stu-id="6fe96-109">Width will be constraint to the value set by widthConstraint.</span></span> <span data-ttu-id="6fe96-110">如果使用了值 0，则不受约束。</span><span class="sxs-lookup"><span data-stu-id="6fe96-110">If 0 value is used, it won't be bound.</span></span>
-<span data-ttu-id="6fe96-111">高度不受约束，在返回后，高度为所有呈现的内容的总计。</span><span class="sxs-lookup"><span data-stu-id="6fe96-111">Height is not bound, and when returned it will have the height of sums of all contents rendered.</span></span> <span data-ttu-id="6fe96-112">若要约束视图维度，请使用 NSLayoutConstraint。</span><span class="sxs-lookup"><span data-stu-id="6fe96-112">To bound the view dimension, please use NSLayoutConstraint.</span></span> <span data-ttu-id="6fe96-113">具体维度可以从其 superview 的 viewcontroller 的 viewDidLayoutSubview 上下文访问；也可以从其同名方法访问（如果使用了 ACRViewController）。</span><span class="sxs-lookup"><span data-stu-id="6fe96-113">The exact dimension is accessible from the context of viewDidLayoutSubview of its superview's viewcontroller or its method with the same name if ACRViewController is used.</span></span>
+<span data-ttu-id="9c1cf-107">Rederer 采用自适应卡和主机配置。HostConfig 可以为 nil，如果为 nil，则使用默认值。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-107">Rederer takes adaptive card and host config. HostConfig can be nil, and if nil, default value will be used.</span></span>
+<span data-ttu-id="9c1cf-108">返回的 UIView 使用 autolayout。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-108">Returned UIView uses autolayout.</span></span> <span data-ttu-id="9c1cf-109">宽度将受 widthConstraint 所设置的值的约束。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-109">Width will be constraint to the value set by widthConstraint.</span></span> <span data-ttu-id="9c1cf-110">如果使用了值 0，则不受约束。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-110">If 0 value is used, it won't be bound.</span></span>
+<span data-ttu-id="9c1cf-111">高度不受约束，在返回后，高度为所有呈现的内容的总计。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-111">Height is not bound, and when returned it will have the height of sums of all contents rendered.</span></span> <span data-ttu-id="9c1cf-112">若要约束视图维度，请使用 NSLayoutConstraint。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-112">To bound the view dimension, please use NSLayoutConstraint.</span></span> <span data-ttu-id="9c1cf-113">具体维度可以从其 superview 的 viewcontroller 的 viewDidLayoutSubview 上下文访问；也可以从其同名方法访问（如果使用了 ACRViewController）。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-113">The exact dimension is accessible from the context of viewDidLayoutSubview of its superview's viewcontroller or its method with the same name if ACRViewController is used.</span></span>
 
 ```objective-c
 ACRRenderResult *renderResult;
@@ -41,7 +41,7 @@ if(cardParseResult.isValid){
     renderResult = [ACRRenderer render:cardParseResult.card config:nil widthConstraint:335];
 }
 ``` 
-### <a name="example"></a><span data-ttu-id="6fe96-114">示例</span><span class="sxs-lookup"><span data-stu-id="6fe96-114">Example</span></span>
+### <a name="example"></a><span data-ttu-id="9c1cf-114">示例</span><span class="sxs-lookup"><span data-stu-id="9c1cf-114">Example</span></span>
 
 ```objective-c
 --------------------------------------------------------------------------------
@@ -97,7 +97,7 @@ ViewController.m
 
 ```swift
 --------------------------------------------------------------------------------
-ViewController.swft
+ViewController.swift
 --------------------------------------------------------------------------------
 
 import UIKit
