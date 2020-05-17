@@ -23,7 +23,7 @@ ms.locfileid: "76145387"
 
 可以通过 [`Windows.ApplicationModel.UserActivities.UserActivity`](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities.useractivity) API 将活动填充到时间线中。
 
-将通过 `Content` 的 `VisualElement` 属性提供自适应卡片，如下所示：
+将通过 `VisualElement` 的 `Content` 属性提供自适应卡片，如下所示：
 
 ```csharp
 UserActivity userActivity = await channel.GetOrCreateUserActivityAsync(activityId, new HostName("contoso.com"));
