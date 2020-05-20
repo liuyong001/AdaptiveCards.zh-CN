@@ -22,7 +22,7 @@
   items:
     - name: 入门
       href: rendering-cards/getting-started.md
-    - name: 操作
+    - name: “操作”
       href: rendering-cards/actions.md
     - name: 主机配置
       href: rendering-cards/host-config.md
@@ -40,7 +40,7 @@
       href: sdk/rendering-cards/toc.yml
     - name: 设计器 SDK
       href: sdk/designer.md
-- name: 模板化（预览）
+- name: 模板化
   items:
     - name: 概述
       href: templating/index.md
