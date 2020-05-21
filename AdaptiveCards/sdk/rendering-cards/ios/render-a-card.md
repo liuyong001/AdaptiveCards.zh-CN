@@ -4,20 +4,20 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 6248c174775db687a5419f8feb6e0b23b0dcd870
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 3970a6ee0673388069cedbcfbe3ef1e6670eb748
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82136193"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631398"
 ---
-# <a name="render-a-card---ios"></a><span data-ttu-id="9c1cf-102">呈现卡片 - iOS</span><span class="sxs-lookup"><span data-stu-id="9c1cf-102">Render a card - iOS</span></span>
+# <a name="render-a-card---ios"></a><span data-ttu-id="401d5-102">呈现卡片 - iOS</span><span class="sxs-lookup"><span data-stu-id="401d5-102">Render a card - iOS</span></span>
 
-<span data-ttu-id="9c1cf-103">下面介绍如何使用 iOS SDK 来呈现卡片。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-103">Here's how to render a card using the iOS SDK.</span></span>
+<span data-ttu-id="401d5-103">下面介绍如何使用 iOS SDK 来呈现卡片。</span><span class="sxs-lookup"><span data-stu-id="401d5-103">Here's how to render a card using the iOS SDK.</span></span>
 
-## <a name="create-a-card-from-a-json-string"></a><span data-ttu-id="9c1cf-104">根据 JSON 字符串创建卡片</span><span class="sxs-lookup"><span data-stu-id="9c1cf-104">Create a card from a JSON string</span></span>
+## <a name="create-a-card-from-a-json-string"></a><span data-ttu-id="401d5-104">根据 JSON 字符串创建卡片</span><span class="sxs-lookup"><span data-stu-id="401d5-104">Create a card from a JSON string</span></span>
 
-<span data-ttu-id="9c1cf-105">AdaptiveCard 根据 JSON 字符串生成</span><span class="sxs-lookup"><span data-stu-id="9c1cf-105">AdaptiveCard is generated from JSON string</span></span>
+<span data-ttu-id="401d5-105">AdaptiveCard 根据 JSON 字符串生成</span><span class="sxs-lookup"><span data-stu-id="401d5-105">AdaptiveCard is generated from JSON string</span></span>
 
 ```objective-c
 
@@ -25,23 +25,23 @@ NSString *jsonStr = @"{ \"type\": \"AdaptiveCard\", \"version\": \"1.0\", \"body
 ACOAdaptiveCardParseResult *cardParseResult = [ACOAdaptiveCard fromJson:jsonStr];
 
 /// access for parse warnings and errors
-NSArray<NSError *> errors = cardParseResult.parseErrors;
-NSArray<ACRParseWarning *> warnings = cardPraseResult.parseWarnings;
+NSArray<NSError *> *errors = cardParseResult.parseErrors;
+NSArray<ACRParseWarning *> *warnings = cardParseResult.parseWarnings;
 ```
 
-## <a name="render-a-card"></a><span data-ttu-id="9c1cf-106">呈现一张卡片</span><span class="sxs-lookup"><span data-stu-id="9c1cf-106">Render a Card</span></span>
+## <a name="render-a-card"></a><span data-ttu-id="401d5-106">呈现一张卡片</span><span class="sxs-lookup"><span data-stu-id="401d5-106">Render a Card</span></span>
 
-<span data-ttu-id="9c1cf-107">Rederer 采用自适应卡和主机配置。HostConfig 可以为 nil，如果为 nil，则使用默认值。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-107">Rederer takes adaptive card and host config. HostConfig can be nil, and if nil, default value will be used.</span></span>
-<span data-ttu-id="9c1cf-108">返回的 UIView 使用 autolayout。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-108">Returned UIView uses autolayout.</span></span> <span data-ttu-id="9c1cf-109">宽度将受 widthConstraint 所设置的值的约束。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-109">Width will be constraint to the value set by widthConstraint.</span></span> <span data-ttu-id="9c1cf-110">如果使用了值 0，则不受约束。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-110">If 0 value is used, it won't be bound.</span></span>
-<span data-ttu-id="9c1cf-111">高度不受约束，在返回后，高度为所有呈现的内容的总计。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-111">Height is not bound, and when returned it will have the height of sums of all contents rendered.</span></span> <span data-ttu-id="9c1cf-112">若要约束视图维度，请使用 NSLayoutConstraint。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-112">To bound the view dimension, please use NSLayoutConstraint.</span></span> <span data-ttu-id="9c1cf-113">具体维度可以从其 superview 的 viewcontroller 的 viewDidLayoutSubview 上下文访问；也可以从其同名方法访问（如果使用了 ACRViewController）。</span><span class="sxs-lookup"><span data-stu-id="9c1cf-113">The exact dimension is accessible from the context of viewDidLayoutSubview of its superview's viewcontroller or its method with the same name if ACRViewController is used.</span></span>
+<span data-ttu-id="401d5-107">Rederer 采用自适应卡和主机配置。HostConfig 可以为 nil，如果为 nil，则使用默认值。</span><span class="sxs-lookup"><span data-stu-id="401d5-107">Rederer takes adaptive card and host config. HostConfig can be nil, and if nil, default value will be used.</span></span>
+<span data-ttu-id="401d5-108">返回的 UIView 使用 autolayout。</span><span class="sxs-lookup"><span data-stu-id="401d5-108">Returned UIView uses autolayout.</span></span> <span data-ttu-id="401d5-109">宽度将受 widthConstraint 所设置的值的约束。</span><span class="sxs-lookup"><span data-stu-id="401d5-109">Width will be constraint to the value set by widthConstraint.</span></span> <span data-ttu-id="401d5-110">如果使用了值 0，则不受约束。</span><span class="sxs-lookup"><span data-stu-id="401d5-110">If 0 value is used, it won't be bound.</span></span>
+<span data-ttu-id="401d5-111">高度不受约束，在返回后，高度为所有呈现的内容的总计。</span><span class="sxs-lookup"><span data-stu-id="401d5-111">Height is not bound, and when returned it will have the height of sums of all contents rendered.</span></span> <span data-ttu-id="401d5-112">若要约束视图维度，请使用 NSLayoutConstraint。</span><span class="sxs-lookup"><span data-stu-id="401d5-112">To bound the view dimension, please use NSLayoutConstraint.</span></span> <span data-ttu-id="401d5-113">具体维度可以从其 superview 的 viewcontroller 的 viewDidLayoutSubview 上下文访问；也可以从其同名方法访问（如果使用了 ACRViewController）。</span><span class="sxs-lookup"><span data-stu-id="401d5-113">The exact dimension is accessible from the context of viewDidLayoutSubview of its superview's viewcontroller or its method with the same name if ACRViewController is used.</span></span>
 
 ```objective-c
-ACRRenderResult *renderResult;
+ACRRenderResult *renderResult = nil;
 if(cardParseResult.isValid){
     renderResult = [ACRRenderer render:cardParseResult.card config:nil widthConstraint:335];
 }
 ``` 
-### <a name="example"></a><span data-ttu-id="9c1cf-114">示例</span><span class="sxs-lookup"><span data-stu-id="9c1cf-114">Example</span></span>
+### <a name="example"></a><span data-ttu-id="401d5-114">示例</span><span class="sxs-lookup"><span data-stu-id="401d5-114">Example</span></span>
 
 ```objective-c
 --------------------------------------------------------------------------------
@@ -60,7 +60,7 @@ ViewController.m
     [super viewDidLoad];
 
     NSString *jsonStr = @"{ \"type\": \"AdaptiveCard\", \"version\": \"1.0\", \"body\": [ { \"type\": \"Image\", \"url\": \"http://adaptivecards.io/content/adaptive-card-50.png\", \"horizontalAlignment\":\"center\" }, { \"type\": \"TextBlock\", \"horizontalAlignment\":\"center\", \"text\": \"Hello **Adaptive Cards!**\" } ], \"actions\": [ { \"type\": \"Action.OpenUrl\", \"title\": \"Learn more\", \"url\": \"http://adaptivecards.io\" }, { \"type\": \"Action.OpenUrl\", \"title\": \"GitHub\", \"url\": \"http://github.com/Microsoft/AdaptiveCards\" } ] }";
-    ACRRenderResult *renderResult;
+    ACRRenderResult *renderResult = nil;
     ACOAdaptiveCardParseResult *cardParseResult = [ACOAdaptiveCard fromJson:jsonStr];
     if(cardParseResult.isValid){
         renderResult = [ACRRenderer render:cardParseResult.card config:nil widthConstraint:335];
