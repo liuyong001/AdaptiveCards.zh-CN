@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 6248c174775db687a5419f8feb6e0b23b0dcd870
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 3970a6ee0673388069cedbcfbe3ef1e6670eb748
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82136193"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631398"
 ---
 # <a name="render-a-card---ios"></a>呈现卡片 - iOS
 
@@ -25,8 +25,8 @@ NSString *jsonStr = @"{ \"type\": \"AdaptiveCard\", \"version\": \"1.0\", \"body
 ACOAdaptiveCardParseResult *cardParseResult = [ACOAdaptiveCard fromJson:jsonStr];
 
 /// access for parse warnings and errors
-NSArray<NSError *> errors = cardParseResult.parseErrors;
-NSArray<ACRParseWarning *> warnings = cardPraseResult.parseWarnings;
+NSArray<NSError *> *errors = cardParseResult.parseErrors;
+NSArray<ACRParseWarning *> *warnings = cardParseResult.parseWarnings;
 ```
 
 ## <a name="render-a-card"></a>呈现一张卡片
@@ -36,7 +36,7 @@ Rederer 采用自适应卡和主机配置。HostConfig 可以为 nil，如果为
 高度不受约束，在返回后，高度为所有呈现的内容的总计。 若要约束视图维度，请使用 NSLayoutConstraint。 具体维度可以从其 superview 的 viewcontroller 的 viewDidLayoutSubview 上下文访问；也可以从其同名方法访问（如果使用了 ACRViewController）。
 
 ```objective-c
-ACRRenderResult *renderResult;
+ACRRenderResult *renderResult = nil;
 if(cardParseResult.isValid){
     renderResult = [ACRRenderer render:cardParseResult.card config:nil widthConstraint:335];
 }
@@ -60,7 +60,7 @@ ViewController.m
     [super viewDidLoad];
 
     NSString *jsonStr = @"{ \"type\": \"AdaptiveCard\", \"version\": \"1.0\", \"body\": [ { \"type\": \"Image\", \"url\": \"http://adaptivecards.io/content/adaptive-card-50.png\", \"horizontalAlignment\":\"center\" }, { \"type\": \"TextBlock\", \"horizontalAlignment\":\"center\", \"text\": \"Hello **Adaptive Cards!**\" } ], \"actions\": [ { \"type\": \"Action.OpenUrl\", \"title\": \"Learn more\", \"url\": \"http://adaptivecards.io\" }, { \"type\": \"Action.OpenUrl\", \"title\": \"GitHub\", \"url\": \"http://github.com/Microsoft/AdaptiveCards\" } ] }";
-    ACRRenderResult *renderResult;
+    ACRRenderResult *renderResult = nil;
     ACOAdaptiveCardParseResult *cardParseResult = [ACOAdaptiveCard fromJson:jsonStr];
     if(cardParseResult.isValid){
         renderResult = [ACRRenderer render:cardParseResult.card config:nil widthConstraint:335];

@@ -1,21 +1,21 @@
 ---
-title: Android SDK
+title: Android SDK 扩展性
 author: almedina-ms
 ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: ae5c1b2addf6fc5bcdda3defebb6de5925b58507
-ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
+ms.openlocfilehash: 1281a31c333474c1899831acab28c962ce8e4514
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76145507"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631310"
 ---
 # <a name="extensibility---android"></a>扩展性 - Android
 
 可对 Android 呈现器进行扩展，以支持多个方案，包括：
-* [自定义卡片元素分析](#custom-parsing-of-card-elements)
-* [卡片元素的自定义呈现](#custom-rendering-of-card-elements)
+* [对卡片元素的自定义分析](#custom-parsing-of-card-elements)
+* [对卡片元素的自定义呈现](#custom-rendering-of-card-elements)
 * [自定义操作呈现](#custom-rendering-of-actions)（自1.2 版后）
 * [自定义图像加载](#custom-image-loading)（自 v 1.0.1）
 * [自定义媒体加载](#custom-media-loading)（自1.1 以来）
@@ -91,7 +91,7 @@ AdaptiveCard adaptiveCard = AdaptiveCard.DeserializeFromString(jsonText, element
 >
 > [v1.2 的重大更改](#breaking-changes-for-v12)
 
-若要为类型定义我自己的自定义呈现器，必须首先创建一个从 ```BaseCardElementRenderer```扩展的类：
+若要为类型定义我自己的自定义呈现器，必须首先创建一个扩展自的类 ```BaseCardElementRenderer``` ：
 ```java
 public class MyCardElementRenderer extends BaseCardElementRenderer
 {
@@ -120,9 +120,9 @@ CardRendererRegistration.getInstance().registerRenderer("MyType", new CustomBlah
 RenderedAdaptiveCard renderedCard = AdaptiveCardRenderer.getInstance().render(context, fragmentManager, adaptiveCard, cardActionHandler,  hostConfig);
 ```
 
-### <a name="breaking-changes-for-v12"></a>针对1.2 版的重大更改
+### <a name="breaking-changes-for-v12"></a>v1.2 的重大更改
 
-已将 ```render``` 方法更改为包括 ```RenderedAdaptiveCard``` 参数，并更改了 ContainerStyle 当前包含的 RenderArgs 的 ```ContainerStyle```，以便扩展 BaseCardElementRenderer 的类应如下所示
+```render```方法已更改为包含 ```RenderedAdaptiveCard``` 参数，并且 ```ContainerStyle``` 已针对 ContainerStyle 现在包含的 RenderArgs 进行了更改，以便扩展 BaseCardElementRenderer 的类应如下所示
 
 ```
 public class MyCardElementRenderer extends BaseCardElementRenderer
@@ -144,7 +144,7 @@ public class MyCardElementRenderer extends BaseCardElementRenderer
 }
 ```
 
-下面的代码行演示了如何将其分析为从 ```BaseActionElement```扩展的 ActionElement：
+下面的代码行演示了如何将其分析为从扩展的 ActionElement ```BaseActionElement``` ：
 ```java
 public class MyActionElement extends BaseActionElement
 {
@@ -216,7 +216,7 @@ ParseResult parseResult = AdaptiveCard.DeserializeFromString(jsonText, AdaptiveC
 
 ## <a name="custom-rendering-of-actions"></a>操作的自定义呈现
 
-若要定义自己的类型的自定义操作呈现器，必须首先创建一个从 ```BaseActionElementRenderer```扩展的类：
+若要为类型定义我自己的自定义操作呈现器，必须首先创建一个扩展自的类 ```BaseActionElementRenderer``` ：
 ```java
 public class MyActionRenderer extends BaseActionElementRenderer
 {
@@ -281,11 +281,11 @@ public class OnlineImageLoader implements IOnlineImageLoader
     @Override
     public HttpRequestResult<Bitmap> loadOnlineImage(String url, GenericImageLoaderAsync loader) throws IOException, URISyntaxException
     {
-        String catImnageUri = "http://adaptivecards.io/content/cats/1.png";
-        byte[] bytes = HttpRequestHelper.get(catImnageUri);
+        String catImageUri = "http://adaptivecards.io/content/cats/1.png";
+        byte[] bytes = HttpRequestHelper.get(catImageUri);
         if (bytes == null)
         {
-            throw new IOException("Failed to retrieve content from " + catImnageUri);
+            throw new IOException("Failed to retrieve content from " + catImageUri);
         }
 
         Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
@@ -381,12 +381,12 @@ public class ResourceResolver implements IResourceResolver
 可以看到，最大的更改是
 
 * ```loadOnlineImage(String, GenericImageLoaderAsync)``` 已重命名为 ```resolveImageResource(String, GenericImageLoaderAsync)```
-* ```resolveImageResource(String, GenericImageLoaderAsync)``` 的重载已添加为 ```resolveImageResource(String, GenericImageLoaderAsync, int)``` 以支持最大宽度需要的方案
+* 为 ```resolveImageResource(String, GenericImageLoaderAsync)``` 添加了的重载， ```resolveImageResource(String, GenericImageLoaderAsync, int)``` 以便支持最大宽度是必需的方案
 
 ## <a name="custom-media-loading"></a>自定义媒体加载
 
 > [!IMPORTANT]
-> **请记住 ```IOnlineMediaLoader``` 需要在 API 级别23或 Android M 中添加 ```MediaDataSource```**
+> **请 ```IOnlineMediaLoader``` 记住 ```MediaDataSource``` ，要求在 API 级别23或 Android M 中添加了**
 
 除了包括媒体元素，还包括 IOnlineMediaLoader 接口，这样开发人员就可以重写用于基础 mediaPlayer 元素的 [MediaDataSource](https://developer.android.com/reference/android/media/MediaDataSource)。 **（需要 Android M）**
 

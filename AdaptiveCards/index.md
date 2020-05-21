@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 27c7d5ac7da3ae182667cbf8efa90d29f110d1d3
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 272a7dc7c31fc3da8e5b27ff7479b249c4ef4226
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "72042534"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631295"
 ---
 # <a name="adaptive-cards-overview"></a>自适应卡片概述 
 
@@ -73,7 +73,7 @@ ms.locfileid: "72042534"
 Markdown 的目标也是在保持简单的同时增强表达能力，可以轻松地对文档内容进行一致的描述。  我们相信，自适应卡片同样可以通过简单但表达力强的方式来描述卡片内容。
 
 ### <a name="when-in-doubt-keep-it-out"></a>疑则不用
-如果对某样功能没有把握，可以稍后添加相关内容，不必忍受其中的错误。 如果我们发现自己在争论是否应添加某项内容，则可以选择暂时不用它。通常情况下，与其使用我们不希望支持的旧属性，不如以后再添加相关内容。
+如果对某样功能没有把握，就不必急于添加它，从而也无需忍受其中的错误。 如果我们发现自己在争论是否应添加某项内容，则可以选择暂时不用它。通常情况下，与其使用我们不希望支持的旧属性，不如以后再添加相关内容。
 
 
 ## <a name="build-2019-session"></a>Build 2019 会议

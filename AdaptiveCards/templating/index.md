@@ -2,24 +2,34 @@
 title: 模板化概述
 author: matthidinger
 ms.author: mahiding
-ms.date: 07/29/2019
+ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: ab3a3f335b52a06dbb2219159e15e5033e715ba1
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: db1f44c4465db88d375dec728bcb32d5933ef702
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "82136163"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631374"
 ---
-# <a name="adaptive-cards-templating-preview"></a>自适应卡片模板化（预览）
+# <a name="adaptive-cards-templating"></a>自适应卡片模板化
 
 我们很高兴与大家一起预览用于**创建**、**重复使用**和**共享**自适应卡片的新工具。 
 
 > [!IMPORTANT] 
 > 
-> 这些功能为**预览版，可能会更改**。 我们欢迎你的反馈，它很重要，可以确保我们提供**你**需要的功能。
+> **2020 年 5 月候选发布版本**中的**中断性变更**
+>
+> 如果你使用的是较旧的包，那么你应了解该模板化候选发布版本包含的一些较小的中断性变更。 请参见以下详细内容。
 
-## <a name="how-can-templating-help-you"></a>模板化对你有什么帮助？
+
+## <a name="breaking-changes-as-of-may-2020"></a>2020 年 5 月起的中断性变更
+
+1. 绑定语法已从 `{...}` 更改为 `${...}`。 
+    * 例如：`"text": "Hello {name}"` 变为 `"text": "Hello ${name}"`
+2. JavaScript API 不再包含 `EvaluationContext` 对象。 只需将数据传递到 `expand` 函数。 有关完整的详细信息，请参阅 [SDK 页](sdk.md)。
+3. .NET API 经过了重新设计，以便更紧密地匹配 JavaScript API。 有关完整的详细信息，请参阅 [SDK 页](sdk.md)。
+
+## <a name="how-can-templating-help-you"></a>模板化对你有何帮助
 
 模板化可以将自适应卡片中的**数据**与**布局**分开。 
 
@@ -59,13 +69,13 @@ ms.locfileid: "82136163"
 >
 > **https://adaptivecards.io/designer**
 > 
-> 单击“预览模式”按钮，在设计模式和预览模式之间切换。 
+> 单击“预览模式”按钮，在设计模式和预览模式之间切换。
 
 ![设计器屏幕截图](content/2019-08-01-13-58-27.png)
 
 新更新的设计器添加了相关支持，允许用户创作模板，并提供用于在设计时预览卡片的**示例数据**。
 
-请将以下示例粘贴到“卡片有效负载编辑器”窗格中：  
+请将以下示例粘贴到“卡片有效负载编辑器”窗格中： 
 
 **EmployeeCardTemplate.json**
 
@@ -85,7 +95,7 @@ ms.locfileid: "82136163"
                     "items": [
                         {
                             "type": "Image",
-                            "url": "{photo}",
+                            "url": "${photo}",
                             "altText": "Profile picture",
                             "size": "Small",
                             "style": "Person"
@@ -98,7 +108,7 @@ ms.locfileid: "82136163"
                     "items": [
                         {
                             "type": "TextBlock",
-                            "text": "Hi {name}!",
+                            "text": "Hi ${name}!",
                             "size": "Medium"
                         },
                         {
@@ -112,7 +122,7 @@ ms.locfileid: "82136163"
         },
         {
             "type": "TextBlock",
-            "text": "Your manager is: **{manager.name}**"
+            "text": "Your manager is: **${manager.name}**"
         },
         {
             "type": "TextBlock",
@@ -122,9 +132,9 @@ ms.locfileid: "82136163"
             "type": "FactSet",
             "facts": [
                 {
-                    "$data": "{peers}",
-                    "title": "{name}",
-                    "value": "{title}"
+                    "$data": "${peers}",
+                    "title": "${name}",
+                    "value": "${title}"
                 }
             ]
         }
@@ -163,7 +173,7 @@ ms.locfileid: "82136163"
 }
 ```
 
-单击“预览模式”按钮。  此时会看到卡片按上面提供的示例数据进行呈现。 可以随意调整示例数据，观察卡片进行实时更新。
+单击“预览模式”按钮。 此时会看到卡片按上面提供的示例数据进行呈现。 可以随意调整示例数据，观察卡片进行实时更新。
 
 **祝贺**，你刚刚创作了你的第一个自适应卡片模板！ 接下来，让我们了解如何为模板填充实际数据。
 
@@ -175,12 +185,12 @@ ms.locfileid: "82136163"
 
 > [!NOTE]
 >
-> 在初始预览版中，我们只有有限的一组 SDK 可用。 正式发布后，每个受支持的自适应卡片平台都会有模板化库。
+> 目前已提供了适用于 .NET 和 NodeJS 的模板化 SDK。 随着时间的推移，我们将为所有剩余的自适应卡片平台（如 iOS、Android、UWP 等）发布模板化 SDK。
 
-平台 | 安装 | 文档
---- | --- | ---
-JavaScript | `npm install adaptivecards-templating` | [文档](https://www.npmjs.com/package/adaptivecards-templating)
-.NET | `nuget install AdaptiveCards.Templating` | [文档](https://docs.microsoft.com/adaptive-cards/templating/sdk#net)
+平台 | 程序包 | 安装 | 文档
+--- | --- | --- | ---
+JavaScript | [![npm install](https://img.shields.io/npm/v/adaptivecards-templating.svg)](https://www.npmjs.com/package/adaptivecards-templating) | `npm install adaptivecards-templating` | [文档](https://www.npmjs.com/package/adaptivecards-templating)
+.NET | [![Nuget 安装](https://img.shields.io/nuget/vpre/AdaptiveCards.Templating.svg)](https://www.nuget.org/packages/AdaptiveCards.Templating) | `dotnet add package AdaptiveCards.Templating` | [文档](https://docs.microsoft.com/adaptive-cards/templating/sdk#net)
 
 ### <a name="javascript-example"></a>JavaScript 示例
 
@@ -191,12 +201,11 @@ var template = new ACData.Template({
     // EmployeeCardTemplate goes here
 });
 
-var dataContext = new ACData.EvaluationContext();
-dataContext.$root = {
-    // Data goes here
-};
-
-var card = template.expand(dataContext);
+var card = template.expand({
+    $root: {
+        // Your data goes here
+    }
+});
 // Now you have an AdaptiveCard ready to render!
 ```
 
@@ -218,6 +227,4 @@ var card = template.expand(dataContext);
 
 ## <a name="whats-next-and-sending-feedback"></a>后续内容和发送反馈
 
-我们已经实现了模板化并将呈现方式与数据进行了分离，这离我们“建立一个生态系统，以常规且一致的方式交换卡片内容”的目标更进了一步。
-
-我们会尽快分享更多内容。 在此期间，请通过 [GitHub](https://github.com/microsoft/AdaptiveCards) 提供反馈，或者向 **[@MattHidinger](https://twitter.com/matthidinger)** / **#AdaptiveCards** 发送推文。 
+我们已经实现了模板化并将呈现方式与数据进行了分离，这使我们离“建立一个生态系统，用来以标准化的方式在应用和服务之间交换内容”的目标更进了一步。 我们已准备在这一方面提供许多功能，因此请在 [GitHub](https://github.com/Microsoft/AdaptiveCards/issues)上随时了解最新信息，并告诉我们在你使用这些功能时它们的运行状况如何。
