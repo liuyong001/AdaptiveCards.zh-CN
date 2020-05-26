@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 39bdc64ed3244aca68d36c886a9562d964ded217
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: f6ae9b99decf8176af68334a681eb9e370f04484
+ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76145387"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83631324"
 ---
 # <a name="adaptive-cards-for-windows-developers"></a>面向 Windows 开发人员的自适应卡片
 
