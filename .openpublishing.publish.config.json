@@ -8,7 +8,7 @@
       "build_output_subfolder": "AdaptiveCards",
       "locale": "zh-cn",
       "monikers": [],
-      "open_to_public_contributors": true, 
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
@@ -46,5 +46,8 @@
       }
     }
   ],
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": false,
+  "docs_build_engine": {
+    "name": "docfx_v3"
+  }
 }
