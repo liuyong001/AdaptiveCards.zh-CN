@@ -4,12 +4,12 @@ author: paulcam206
 ms.author: paulcam
 ms.date: 09/18/2018
 ms.topic: reference
-ms.openlocfilehash: 848ce3dd2ccca1f975dfd330c1c88292c753641d
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: d7fda209e6c470659d2fb2b66ac982e9c7183367
+ms.sourcegitcommit: eb71aebe40a592649461e468a87993a10cbe6187
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454920"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84318197"
 ---
 # <a name="what-is-hostconfig"></a>什么是 HostConfig？
 `HostConfig` 是一个**跨平台配置对象**，用于指定自适应卡片呈现器生成 UI 的方式。
@@ -35,7 +35,7 @@ ms.locfileid: "77454920"
    * [`SpacingsConfig`](#schema-spacingsconfig) - 控制元素的布局方式
    * [`TextBlockConfig`](#schema-textblockconfig) - 控制文本显示的参数
 
-# <a name="card-configuration"></a>卡片配置
+## <a name="card-configuration"></a>卡片配置
 
 <a name="schema-adaptivecardconfig"></a>
 ## <a name="adaptivecardconfig"></a>AdaptiveCardConfig
