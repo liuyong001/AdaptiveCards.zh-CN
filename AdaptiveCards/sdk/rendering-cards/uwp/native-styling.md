@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 08/15/2018
 ms.topic: article
-ms.openlocfilehash: 565c61535adc5b316cb8b1f3ad77e511012e7612
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.openlocfilehash: da3c7616ce4fe307eda3073f7037842e3e3df81b
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77454040"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417522"
 ---
 # <a name="native-styling---uwp"></a>本机样式-UWP
 
@@ -19,30 +19,30 @@ UWP 使你可以传递 ResourceDictionary 以实现精细的样式、行为、�
 
 | 元素 | 样式名称 |
 |---|---|
-| AdaptiveCard | Adaptive.Card| 
-| Action.OpenUrl  | Adaptive.Action.OpenUrl  |
-| Action.ShowCard | Adaptive.Action.ShowCard |
-| Action.Submit  | Adaptive.Action.Submit  |
+| AdaptiveCard | 自适应卡| 
+| Action.OpenUrl  | OpenUrl  |
+| Action.ShowCard | ShowCard |
+| Action.Submit  | 自适应. 提交  |
 | 列 | 自适应. 列，自适应。 |
-| ColumnSet | Adaptive.ColumnSet, Adaptive.VerticalSeparator |
-| 容器 | Adaptive.Container|
-| Input.ChoiceSet | ChoiceSet、ChoiceSet、ChoiceSet、ChoiceSet、、ChoiceSet、ComboBoxItem、、、、、、。 |
-| Input.Date | Adaptive.Input.Text.Date
-| Input.Number | Adaptive.Input.Text.Number |
-| Input.Text | Adaptive.Input.Text |
-| Input.Time | Adaptive.Input.Text.Time |
-| Input.Toggle| Adaptive.Input.Toggle|
-| 映像  | Adaptive.Image |
-| ImageSet  | Adaptive.ImageSet |
-| FactSet | Adaptive.FactSet, Adaptive.Fact.Title, Adaptive.Fact.Value |
-| TextBlock  | Adaptive.TextBlock |
+| ColumnSet | 列集，自适应. VerticalSeparator |
+| 容器 | 自适应|
+| 输入. ChoiceSet | ChoiceSet、ChoiceSet、ChoiceSet、ChoiceSet、、ChoiceSet、ComboBoxItem、、、、、、。 |
+| 输入。日期 | 自适应. 文本。
+| 输入。数字 | 自适应. 数字 |
+| 输入。文本 | 自适应. 输入文本 |
+| 输入。时间 | 自适应. 文本。时间 |
+| 输入。切换| 自适应. 输入开关|
+| 映像  | 自适应图像 |
+| ImageSet  | 自适应. ImageSet |
+| FactSet | FactSet、自适应. Title、自适应事实. 值 |
+| TextBlock  | 自适应. TextBlock |
 
-此示例 XAML 资源字典，它将所有 Textblock 的背景设置为浅绿色。 你可能希望比此 😁 更高级的内容
+此示例 XAML 资源字典，它将所有 Textblock 的背景设置为浅绿色。 你可能希望比此更高级的东西😁
 
 ```xml
 <ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml">
     <Style x:Key="Adaptive.TextBlock" TargetType="TextBlock">
         <Setter Property="Background" Value="Aqua"></Setter>
     </Style>

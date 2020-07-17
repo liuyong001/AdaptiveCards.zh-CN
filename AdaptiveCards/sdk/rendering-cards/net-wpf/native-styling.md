@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/19/2017
 ms.topic: article
-ms.openlocfilehash: 204845f942be4e7d04e20e9cd64d826daef26e93
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.openlocfilehash: f9243fc6880c926c04f80f74713e91d1e37cf3d5
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77454020"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417597"
 ---
 # <a name="native-styling---net-wpf"></a>本机样式设置-.NET WPF
 
@@ -19,30 +19,30 @@ WPF 通过允许您传递 ResourceDictionary 以实现精细的样式、行为�
 
 | 元素 | 样式名称 |
 |---|---|
-| AdaptiveCard | Adaptive.Card| 
-| Action.OpenUrl  | Adaptive.Action.OpenUrl  |
-| Action.ShowCard | Adaptive.Action.ShowCard |
-| Action.Submit  | Adaptive.Action.Submit  |
+| AdaptiveCard | 自适应卡| 
+| Action.OpenUrl  | OpenUrl  |
+| Action.ShowCard | ShowCard |
+| Action.Submit  | 自适应. 提交  |
 | 列 | 自适应. 列，自适应。 |
-| ColumnSet | Adaptive.ColumnSet, Adaptive.VerticalSeparator |
-| 容器 | Adaptive.Container|
-| Input.ChoiceSet | ChoiceSet、ChoiceSet、ChoiceSet、ChoiceSet、、ChoiceSet、ComboBoxItem、、、、、、。 |
-| Input.Date | Adaptive.Input.Text.Date
-| Input.Number | Adaptive.Input.Text.Number |
-| Input.Text | Adaptive.Input.Text |
-| Input.Time | Adaptive.Input.Text.Time |
-| Input.Toggle| Adaptive.Input.Toggle|
-| 映像  | Adaptive.Image |
-| ImageSet  | Adaptive.ImageSet |
-| FactSet | Adaptive.FactSet, Adaptive.Fact.Title, Adaptive.Fact.Value |
-| TextBlock  | Adaptive.TextBlock |
+| ColumnSet | 列集，自适应. VerticalSeparator |
+| 容器 | 自适应|
+| 输入. ChoiceSet | ChoiceSet、ChoiceSet、ChoiceSet、ChoiceSet、、ChoiceSet、ComboBoxItem、、、、、、。 |
+| 输入。日期 | 自适应. 文本。
+| 输入。数字 | 自适应. 数字 |
+| 输入。文本 | 自适应. 输入文本 |
+| 输入。时间 | 自适应. 文本。时间 |
+| 输入。切换| 自适应. 输入开关|
+| 映像  | 自适应图像 |
+| ImageSet  | 自适应. ImageSet |
+| FactSet | FactSet、自适应. Title、自适应事实. 值 |
+| TextBlock  | 自适应. TextBlock |
 
-此示例 XAML 资源字典，它将所有 Textblock 的背景设置为浅绿色。 你可能希望比此 😁 更高级的内容
+此示例 XAML 资源字典，它将所有 Textblock 的背景设置为浅绿色。 你可能希望比此更高级的东西😁
 
 ```xml
 <ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    xmlns="https://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="https://schemas.microsoft.com/winfx/2006/xaml">
     <Style x:Key="Adaptive.TextBlock" TargetType="TextBlock">
         <Setter Property="Background" Value="Aqua"></Setter>
     </Style>
@@ -59,4 +59,4 @@ renderer.ResourcesPath = <path-to-my-resource-dictionary.xaml>;
 ```
 
 > [!IMPORTANT]
-> **有关服务器端映像生成的说明**WPF 呈现器提供可用于生成服务器端映像的 `RenderCardToImageAsync` 方法。 仅在此环境中使用时，才能使用 `ResourcesPath` 属性。 有关详细信息，请参阅[图像呈现](../net-image/getting-started.md)文档
+> **有关服务器端映像生成的说明**WPF 呈现器提供 `RenderCardToImageAsync` 可用于生成服务器端映像的方法。 仅 `ResourcesPath` 在此环境中使用属性时，才能使用此属性。 有关详细信息，请参阅[图像呈现](../net-image/getting-started.md)文档
