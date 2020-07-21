@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: db1f44c4465db88d375dec728bcb32d5933ef702
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: 41eb972603b1688a1f1857cec83208b9b55b02c3
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631374"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417615"
 ---
 # <a name="adaptive-cards-templating"></a>自适应卡片模板化
 
@@ -198,14 +198,27 @@ JavaScript | [![npm install](https://img.shields.io/npm/v/adaptivecards-templati
 
 ```js
 var template = new ACData.Template({ 
-    // EmployeeCardTemplate goes here
+    // Card Template JSON
 });
 
 var card = template.expand({
     $root: {
-        // Your data goes here
+        // Data Fields
     }
 });
+
+// Now you have an AdaptiveCard ready to render!
+```
+
+### <a name="c-example"></a>C# 示例
+
+以下 C# 演示了将要用来为模板填充数据的常规模式。
+
+```csharp
+var template = new AdaptiveCards.Templating.AdaptiveCardTemplate(cardJson);
+   
+var card = template.Expand(new {Key="Value"});
+
 // Now you have an AdaptiveCard ready to render!
 ```
 
