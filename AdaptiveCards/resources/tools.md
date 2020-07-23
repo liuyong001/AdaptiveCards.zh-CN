@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 03/14/2019
 ms.topic: article
-ms.openlocfilehash: f0c5a61d3406e1defffefc575ee0a6ec78fba93d
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: f26550a73610073000166357df5b70c1bd8ccdc8
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454830"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417588"
 ---
 # <a name="tools-and-samples"></a>工具和示例
 
@@ -29,7 +29,7 @@ ms.locfileid: "77454830"
 
 可以通过架构验证轻松地进行创作并启用工具功能。
 
-我们提供了完整的 [JSON 架构文件](http://adaptivecards.io/schemas/1.2.0/adaptive-card.json)，用于编辑和验证 json 格式的自适应卡片。 请注意，架构 URL 进行了版本控制，较新版的自适应卡片会有相应的 URL。
+我们提供了完整的 [JSON 架构文件](https://adaptivecards.io/schemas/1.2.0/adaptive-card.json)，用于编辑和验证 json 格式的自适应卡片。 请注意，架构 URL 进行了版本控制，较新版的自适应卡片会有相应的 URL。
 
 在 Visual Studio 和 Visual Studio Code 中，添加一个 `$schema` 引用即可获取自动 Intellisense。
 
@@ -54,7 +54,7 @@ ms.locfileid: "77454830"
 
 ![扩展](media/tools/vscode-extension.png)
 
-若要进行安装，请打开“扩展市场”，然后搜索“自适应卡片查看器”。 
+若要进行安装，请打开“扩展市场”，然后搜索“自适应卡片查看器”。
 
 ![市场](media/tools/vscode-extension-marketplace.png)
 

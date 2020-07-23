@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/30/2018
 ms.topic: article
-ms.openlocfilehash: 1c3ad2a4588244a8bd30011a4b6e25e37062624a
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: e460bf50cdb4f0c1af54f5c7ad6c1d02db9af746
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76145377"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417502"
 ---
 # <a name="adaptive-cards-for-bot-developers"></a>面向机器人开发人员的自适应卡片
 
@@ -107,7 +107,7 @@ ms.locfileid: "76145377"
 * 添加多种类型的`Actions`
 * 从用户收集`Input`
 * 让一张卡片`show another card`
-* [查看完整的架构资源管理器](http://adaptivecards.io/explorer/)！ 
+* [查看完整的架构资源管理器](https://adaptivecards.io/explorer/)！ 
 
 ## <a name="platform-sdks"></a>平台 SDK
 
@@ -128,7 +128,7 @@ NodeJS | `npm install adaptivecards` | [Bot Framework NodeJS Docs](https://docs.
 
 在本教程中，我们只是介绍了一些粗浅的知识。若要了解如何使用自适应卡片以更多方式增强机器人，请查看下面的链接。
 
-* [浏览示例卡片](http://adaptivecards.io/samples/)获取灵感
-* 使用[架构资源管理器](http://adaptivecards.io/explorer)了解可用元素
-* 使用[交互式可视化工具](http://adaptivecards.io/visualizer/index.html?hostApp=Skype)构建一张卡片
-* 如果你有任何反馈，请[联系我们](http://adaptivecards.io/connect)
+* [浏览示例卡片](https://adaptivecards.io/samples/)获取灵感
+* 使用[架构资源管理器](https://adaptivecards.io/explorer)了解可用元素
+* 使用[交互式可视化工具](https://adaptivecards.io/visualizer/index.html?hostApp=Skype)构建一张卡片
+* 如果你有任何反馈，请[联系我们](https://adaptivecards.io/connect)

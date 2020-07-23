@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 11/9/2017
 ms.topic: article
-ms.openlocfilehash: c9a0ad07ba5fefbcdc35239591c02fe0720b5b66
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 9cc7344ac357dcb95c7e47e377dbb12fbcd66957
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454840"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417491"
 ---
 # <a name="getting-started"></a>入门 
 
@@ -89,7 +89,7 @@ ms.locfileid: "77454840"
 
 ## <a name="learn-more"></a>了解详细信息
 
-* [浏览示例卡片](http://adaptivecards.io/samples/)获取灵感
-* 使用[架构资源管理器](http://adaptivecards.io/explorer)浏览可用元素
-* 使用[交互式可视化工具](http://adaptivecards.io/visualizer/)构建一张卡片
-* 如果你有任何反馈，请[联系我们](http://adaptivecards.io/connect)
+* [浏览示例卡片](https://adaptivecards.io/samples/)获取灵感
+* 使用[架构资源管理器](https://adaptivecards.io/explorer)浏览可用元素
+* 使用[交互式可视化工具](https://adaptivecards.io/visualizer/)构建一张卡片
+* 如果你有任何反馈，请[联系我们](https://adaptivecards.io/connect)

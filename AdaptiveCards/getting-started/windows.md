@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: f6ae9b99decf8176af68334a681eb9e370f04484
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: 8a73bcaf52e838453c6484ecd210d8ad7a577113
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631324"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417553"
 ---
 # <a name="adaptive-cards-for-windows-developers"></a>面向 Windows 开发人员的自适应卡片
 
@@ -52,7 +52,7 @@ Build 2017 的此次会议详细介绍了用户活动。
 
 在本教程中，我们只是介绍了一些粗浅的知识。若要了解自适应卡片的更多内容，请过不久再回来查看并浏览下面的链接。
 
-* [浏览示例卡片](http://adaptivecards.io/samples/)获取灵感
-* 使用[架构资源管理器](http://adaptivecards.io/explorer)了解可用元素
-* 使用[交互式可视化工具](http://adaptivecards.io/visualizer/index.html?hostApp=Skype)构建一张卡片
-* 如果你有任何反馈，请[联系我们](http://adaptivecards.io/connect)
+* [浏览示例卡片](https://adaptivecards.io/samples/)获取灵感
+* 使用[架构资源管理器](https://adaptivecards.io/explorer)了解可用元素
+* 使用[交互式可视化工具](https://adaptivecards.io/visualizer/index.html?hostApp=Skype)构建一张卡片
+* 如果你有任何反馈，请[联系我们](https://adaptivecards.io/connect)
