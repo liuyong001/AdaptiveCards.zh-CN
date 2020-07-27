@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 9/24/2018
 ms.topic: article
-ms.openlocfilehash: 53c9446b67db354dd3246534fe97d6a810fc61c8
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: a606f414edba8958b9bf917b20c47b0bd93a426b
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631383"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417544"
 ---
 # <a name="partners"></a>合作伙伴 
 
@@ -21,7 +21,7 @@ ms.locfileid: "83631383"
 
 平台 | 说明 | 文档 | 版本
 ---------|-------------|---------------|---------
-[Bot Framework Web Chat](https://github.com/Microsoft/BotFramework-WebChat)  | 嵌入式 Web 聊天控件，适用于 Microsoft Bot Framework | [入门](https://docs.microsoft.com/adaptive-cards/get-started/bots) | 1.2.5 (Web Chat 4.9.0)
+[Bot Framework Web Chat](https://github.com/Microsoft/BotFramework-WebChat)  | 嵌入式 Web 聊天控件，适用于 Microsoft Bot Framework | [入门](https://docs.microsoft.com/adaptive-cards/get-started/bots) | 1.2.6 (Web Chat 4.9.2)
 [Outlook 可操作邮件](https://docs.microsoft.com/outlook/actionable-messages/)  | 将可操作邮件附加到电子邮件 | [入门](https://docs.microsoft.com/outlook/actionable-messages/) | 1.0
 [Microsoft Teams](https://products.office.com/microsoft-teams/group-chat-software) | 一个平台，综合了工作区聊天、会议和便笺功能 | [入门](https://docs.microsoft.com/microsoftteams/platform/concepts/cards/cards-reference#adaptive-card) | 1.2
 [Cortana 技能](https://docs.microsoft.com/cortana/skills/adaptive-cards) | Windows 10 虚拟助手 | [入门](https://docs.microsoft.com/adaptive-cards/get-started/bots) | 1.0

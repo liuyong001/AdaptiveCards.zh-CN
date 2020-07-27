@@ -4,12 +4,12 @@ author: dclaux
 ms.author: dclaux
 ms.date: 5/10/2018
 ms.topic: article
-ms.openlocfilehash: 3bf8f04307e0ad65cae609e56295269254ca1e06
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 891b9ca4e1682d4249963f6ceb3da7dab026addc
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76145417"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417568"
 ---
 # <a name="adaptive-cards-for-outlook-actionable-message-developers"></a>面向 Outlook 可操作邮件开发人员的自适应卡片
 
@@ -28,4 +28,4 @@ ms.locfileid: "76145417"
 
 - 访问 https://docs.microsoft.com/outlook/actionable-messages/ ，了解如何通过各种步骤创建第一个可操作邮件方案。
 - 使用可操作邮件卡片样本工具查看卡片示例、创建你自己的卡片、将其发送到你自己的 Office 365 帐户，以及在 [Outlook 网页版](https://outlook.office.com)中查看它们。
-- 不想手动编写 JSON？ 可以使用[自适应卡片设计器（预览版）](https://acdesignerbeta.azurewebsites.net)来创建自适应卡片，一行 JSON 都不需要编写！
+- 不想手动编写 JSON？ 借助[自适应卡片设计器](https://adaptivecards.io/designer/)，一行 JSON 都不用编写就可创建自适应卡片！

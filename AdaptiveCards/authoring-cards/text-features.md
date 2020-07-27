@@ -2,23 +2,28 @@
 title: 文本功能
 author: matthidinger
 ms.author: mahiding
-ms.date: 11/09/2017
+ms.date: 06/18/2020
 ms.topic: article
-ms.openlocfilehash: f7ea40b80df4d976c0a8a86b15254018fdf2fac6
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: d685007cb24e7fa8ef15b53ee5547708fba6b490
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454870"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417508"
 ---
 # <a name="text-features"></a>文本功能
 
-`TextBlock` 提供一些用于文本格式设置和本地化的高级功能。
+[TextBlock](https://adaptivecards.io/explorer/TextBlock.html) 提供用于文本格式设置和本地化的高级功能。
 
-## <a name="markdown"></a>Markdown
-为了支持内联标记，自适应卡片支持**部分** Markdown 语法。
+## <a name="markdown-commonmark-subset"></a>Markdown（Commonmark 子集）
 
-支持 
+为了支持内联标记，自适应卡片支持部分 [Commonmark](https://commonmark.org/help/) Markdown 语法。
+
+> [!NOTE]
+>
+> [RichTextBlock](https://adaptivecards.io/explorer/RichTextBlock.html) 不支持 Markdown，但它直接在 [TextRun](https://adaptivecards.io/explorer/TextRun.html) 中提供了大量文本配置选项
+
+支持
 
 | 文本样式      | Markdown |
 |-----------------|-----|
@@ -28,7 +33,7 @@ ms.locfileid: "77454870"
 | 编号列表   | ```1. Green\r2. Orange\r3. Blue``` |
 | 超链接      | ```[Title](url)``` |
 
-不支持 
+不支持
 
 * 标头
 * 表
@@ -67,7 +72,7 @@ ms.locfileid: "77454870"
         },
         {
             "type": "TextBlock",
-            "text": "Check out [Adaptive Cards](http://adaptivecards.io)"
+            "text": "Check out [Adaptive Cards](https://adaptivecards.io)"
         }
     ]
 }

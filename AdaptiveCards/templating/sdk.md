@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/15/2020
 ms.topic: article
-ms.openlocfilehash: d04b38d6b2a389ca31b690d3298f64b3fced7c9a
-ms.sourcegitcommit: eb71aebe40a592649461e468a87993a10cbe6187
+ms.openlocfilehash: a8db2f5ef84203187ed1b9d0fc8dd3ce63ee3569
+ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84318177"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "86417575"
 ---
 # <a name="adaptive-card-templating-sdks"></a>自适应卡片模板化 SDK
 
@@ -192,8 +192,11 @@ string cardJson = template.Expand(context);
 ## <a name="troubleshooting"></a>疑难解答
 问： 我为什么会遇到 AdaptiveTemplateException ```expand()```？   
 A. 如果错误消息类似于：“第 \<line number> 行的‘\<offending item>’中的‘$data :’对格式错误”。   
-请确保为 "$data" 提供的值是有效的 json，如数字、布尔值、对象和数组，或确保正确使用了自适应模板语言的语法，条目在数据上下文中的行号处。 请注意，${LineItem} 和“8”可以更改。
+请确保为 "$data" 提供的值是有效的 json，如数字、布尔值、对象和数组，或确保正确使用了自适应模板语言的语法，条目在数据上下文中的行号处。
 
 问： 我为什么会遇到 ArgumentNullException ```expand()```？   
 A. 如果错误消息类似于：“请检查是否设置了父数据上下文，或者为第 \<line number> 行的‘\<offending item>’输入一个非空值”。   
 它指示不存在所请求的数据绑定的数据上下文。 请确保设置了根数据上下文，如果存在，请确保有数据上下文可用于行号所指示的当前绑定。
+
+问： RFC 3389 格式的日期/时间（例如“2017-02-14T06:08:00Z”）在与模板一起使用时为何不可用于 TIME/DATE 函数？   
+A. .NET SDK NuGet 版本 1.0.0-rc.0 具有此行为。 它已在后续版本中得到更正。 json.Net 反序列化程序的默认行为会更改日期/时间格式字符串，后续版本中已禁用该行为。 请使用 formatDateTime() 函数将日期/时间字符串的格式设置为 RFC 3389（如[本例](https://github.com/microsoft/AdaptiveCards/blob/db99ee07dadf317fe45e114a508e3de6e4325d0f/samples/Templates/Elements/Template.Functions.DateFunctions.json#L28)中所示），或者你可绕过 TIME/DATE 函数，只使用 formatDateTime()。 要详细了解 formatDateTime()，请转到[此处](https://docs.microsoft.com/azure/bot-service/adaptive-expressions/adaptive-expressions-prebuilt-functions?view=azure-bot-service-4.0#date-and-time-functions)。
