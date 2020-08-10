@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 03/14/2019
 ms.topic: article
-ms.openlocfilehash: f26550a73610073000166357df5b70c1bd8ccdc8
-ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
+ms.openlocfilehash: 819788313d78b4057fb5d3dc4d5a9be658566642
+ms.sourcegitcommit: 996fc604e59f72ba1dd96c29f4b517862a5264e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86417588"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "87566021"
 ---
 # <a name="tools-and-samples"></a>工具和示例
 
@@ -48,7 +48,18 @@ ms.locfileid: "86417588"
 }
 ```
 
-## <a name="visual-studio-code-extension"></a>Visual Studio Code 扩展
+## <a name="visual-studio-code-extensions"></a>Visual Studio Code 扩展
+
+### <a name="adaptive-cards-studio"></a>**自适应卡片设计器**
+
+![市场](https://madewithcards.blob.core.windows.net/uploads/29bb3d02-2158-40b8-8420-4dd1f15da34c-acstudio.png)
+
+通过自适应卡片设计器，可以直接在 Visual Studio Code 中创建卡片。 该扩展会自动检测工作区中的所有自适应卡片，让你可以轻松编辑卡片模板和示例数据。
+
+[在 Visual Studio Code 市场了解详细信息并进行安装](https://marketplace.visualstudio.com/items?itemName=madewithcardsio.adaptivecardsstudiobeta)
+
+
+### <a name="adaptive-card-viewer"></a>**自适应卡片查看器**
 
 我们创建了一个 Visual Studio Code 扩展，让你可以在编辑器中实时查看正在编辑的卡片。 
 
