@@ -1,15 +1,15 @@
 ---
 title: 自适应卡片的 HostConfig
-author: paulcam206
-ms.author: paulcam
-ms.date: 09/18/2018
+author: almedina-ms
+ms.author: almedina
+ms.date: 08/05/2020
 ms.topic: reference
-ms.openlocfilehash: d7fda209e6c470659d2fb2b66ac982e9c7183367
-ms.sourcegitcommit: eb71aebe40a592649461e468a87993a10cbe6187
+ms.openlocfilehash: 6a7dd189a5fd39c76241544679011f22c53ccc66
+ms.sourcegitcommit: 19c08b1370305fb2965de0140c5e632356e78513
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84318197"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87879161"
 ---
 # <a name="what-is-hostconfig"></a>什么是 HostConfig？
 `HostConfig` 是一个**跨平台配置对象**，用于指定自适应卡片呈现器生成 UI 的方式。
@@ -29,6 +29,10 @@ ms.locfileid: "84318197"
    * [`ForegroundColorsConfig`](#schema-foregroundcolorsconfig) - 控制各种字体颜色
    * [`ImageSetConfig`](#schema-imagesetconfig) - 控制 `ImageSet` 的显示方式
    * [`ImageSizesConfig`](#schema-imagesizesconfig) - 控制 `Image` 大小
+   * [`InputsConfig`](#schema-inputsconfig) - 控制标签和错误消息的显示方式 
+      * [`LabelConfig`](#schema-labelconfig) - 控制标签的显示方式
+         * [`InputLabelConfig`](#schema-inputlabelconfig) - 控制必需标签或可选标签的显示方式
+      * [`ErrorMessageConfig`](#schema-errormessageconfig) - 控制错误消息的显示方式
    * [`MediaConfig`](#schema-mediaconfig) - 控制 `Media` 元素的显示和行为
    * [`SeparatorConfig`](#schema-separatorconfig) - 控制分隔符的显示方式
    * [`ShowCardConfig`](#schema-showcardconfig) - 控制 `Action.ShowCard` 的行为和样式设置
@@ -42,7 +46,7 @@ ms.locfileid: "84318197"
 
 `AdaptiveCards` 的顶级选项
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**allowCustomStyle**|`boolean`| 否，默认值为：`true`|控制是否允许自定义样式设置|1.0
 |**supportsInteractivity**|`boolean`| 否，默认值为：`true`|控制是否允许调用交互式 `Action`|1.0
@@ -57,7 +61,7 @@ ms.locfileid: "84318197"
 |**fontSizes**|`object`| 否|控制不同文本样式的字体大小指标|1.0
 |**fontWeights**|`object`| 否|控制字体粗细指标|1.0
 |**spacing**|`object`| 否|控制元素的布局方式|1.0
-|**separator**|`object`| 否|控制分隔符的显示方式|1.0
+|separator |`object`| 否|控制分隔符的显示方式|1.0
 |**media**|`object`| 否|控制 `Media` 元素的显示和行为|1.1
 
 
@@ -66,7 +70,7 @@ ms.locfileid: "84318197"
 
 `Action` 的选项
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**actionsOrientation**|`string`| 否，默认值为：`"horizontal"`|控制按钮的布局方式|1.0
 |**actionAlignment**|`string`| 否，默认值为：`"stretch"`|控制按钮的布局|1.0
@@ -83,7 +87,7 @@ ms.locfileid: "84318197"
 
 控制默认的强调容器的样式设置
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**default**|`object`| 否|默认的容器样式|1.0
 |**emphasis**|`object`| 否|用于强调的容器样式|1.0
@@ -94,7 +98,7 @@ ms.locfileid: "84318197"
 
 控制 `FactSet` 的显示
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**title**|`object`| 否，默认值为：`{"weight":"bolder","size":"default","color":"default","isSubtle":false,"wrap":true,"maxWidth":150}`|控制文本显示的参数|1.0
 |**value**|`object`| 否，默认值为：`{"weight":"default","size":"default","color":"default","isSubtle":false,"wrap":true,"maxWidth":0}`|控制文本显示的参数|1.0
@@ -106,7 +110,7 @@ ms.locfileid: "84318197"
 
 控制不同文本样式的字体大小指标
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**small**|`integer`| 否，默认值为：`10`|小字号|1.0
 |**default**|`integer`| 否，默认值为：`12`|默认字号|1.0
@@ -120,7 +124,7 @@ ms.locfileid: "84318197"
 
 控制字体粗细指标
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**lighter**|`integer`| 否，默认值为：`200`|&nbsp;|1.0
 |**default**|`integer`| 否，默认值为：`400`|&nbsp;|1.0
@@ -132,7 +136,7 @@ ms.locfileid: "84318197"
 
 控制各种字体颜色
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**default**|`object`| 否，默认值为：`{"default":"#FF000000","subtle":"#B2000000"}`|&nbsp;|1.0
 |**accent**|`object`| 否，默认值为：`{"default":"#FF0000FF","subtle":"#B20000FF"}`|&nbsp;|1.0
@@ -148,7 +152,7 @@ ms.locfileid: "84318197"
 
 控制 `ImageSet` 的显示方式
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**imageSize**|`string`| 否，默认值为：`"auto"`|控制单个图像大小|1.0
 |**maxImageHeight**|`integer`| 否，默认值为：`100`|将图像高度限制为此值|1.0
@@ -159,12 +163,56 @@ ms.locfileid: "84318197"
 
 控制 `Image` 大小
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**small**|`integer`| 否，默认值为：`80`|小型图像大小值|1.0
 |**medium**|`integer`| 否，默认值为：`120`|中型图像大小值|1.0
 |**large**|`integer`| 否，默认值为：`180`|大型图像大小值|1.0
 
+<a name="schema-inputsconfig"></a>
+## <a name="inputsconfig"></a>InputsConfig
+
+控制标签和错误消息的显示方式 
+
+|属性|类型|必需|说明|版本|
+|--------|----|--------|-----------|-------|
+|**label**|`LabelConfig`| 否 |控制标签的显示方式|1.3|
+|**errorMessage**|`ErrorMessageConfig`| 否|控制错误消息的显示方式 |1.3|
+
+<a name="schema-labelconfig"></a>
+### <a name="labelconfig"></a>LabelConfig
+
+控制标签的显示方式
+
+|属性|类型|必需|说明|版本|
+|--------|----|--------|-----------|-------|
+|**requiredInputs**|`InputLabelConfig`| 否 |控制必需输入项的标签的显示方式|1.3|
+|**optionalInputs**|`InputLabelConfig`| 否|控制可选输入项的标签的显示方式 |1.3|
+|**spacing**|`string`| 否，默认值为：`"default"` |标签与输入项之间的[间距](#schema-spacingsconfig)|1.3|
+
+<a name="schema-inputlabelconfig"></a>
+#### <a name="inputlabelconfig"></a>InputLabelConfig
+
+控制必需标签或可选标签的显示方式
+
+|属性|类型|必需|说明|版本|
+|--------|----|--------|-----------|-------|
+|**color**|`string`|否，默认值为：`"default"`| 标签的字体[颜色](#schema-foregroundcolorsconfig)（后缀始终以 `attention` 颜色呈现） |1.3|
+|**isSubtle**|`bool`| 否，默认值为：`false`| 定义是否使用 `subtle` 前景色 |1.3|
+|**大小**|`string`| 否，默认值为：`"default"` | 要显示的标签的字体[大小size](#schema-fontsizesconfig) |1.3|
+|**suffix**|`string`| 否，默认值为：`"*"` | 要在必需输入项的标签末尾显示的后缀。 如果未定义任何后缀，则向标签追加星号 `*` |1.3|
+|**weight**|`string`| 否，默认值为：`"default"` | 标签的字体[粗细](#schema-fontweightsconfig) |1.3|
+
+<a name="schema-errormessageconfig"></a>
+### <a name="errormessageconfig"></a>ErrorMessageConfig
+
+控制错误消息的显示方式。 错误消息始终以 `attention` 颜色显示。
+
+|属性|类型|必需|说明|版本|
+|--------|----|--------|-----------|-------|
+|**spacing**|`string`| 否，默认值为：`"default"` |输入项与错误消息之间的[间距](#schema-spacingsconfig)|1.3|
+|**大小**|`string`| 否，默认值为：`"default"` | 错误消息的字体[大小](#schema-fontsizesconfig)  |1.3|
+|**weight**|`string`| 否，默认值为：`"default"` | 错误消息的字体[粗细](#schema-fontweightsconfig) |1.3|
 
 <a name="schema-mediaconfig"></a>
 ## <a name="mediaconfig"></a>MediaConfig
@@ -173,7 +221,7 @@ ms.locfileid: "84318197"
 
 #### <a name="introduced-in-version-11"></a>在版本 1.1 中引入
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**defaultPoster**|`string`| 否|在播放按钮尚未调用时需显示的图像的 URI|1.1
 |**playButton**|`string`| 否|将显示为播放按钮的图像|1.1
@@ -185,7 +233,7 @@ ms.locfileid: "84318197"
 
 控制分隔符的显示方式
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**lineThickness**|`integer`| 否，默认值为：`1`|分隔线的粗细|1.0
 |**lineColor**|`string,null`| 否，默认值为：`#B2000000`|绘制分隔线时需使用的颜色|1.0
@@ -196,10 +244,10 @@ ms.locfileid: "84318197"
 
 控制 `Action.ShowCard` 的行为和样式设置
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**actionMode**|`string`| 否，默认值为：`"inline"`|控制卡的显示方式|1.0
-|**style**|`object`| 否，默认值为：`emphasis`|控制容器的样式设置|1.0
+|style|`object`| 否，默认值为：`emphasis`|控制容器的样式设置|1.0
 |**inlineTopMargin**|`integer`| 否，默认值为：`16`|显示卡片时需使用的边距|1.0
 
 
@@ -208,7 +256,7 @@ ms.locfileid: "84318197"
 
 控制元素的布局方式
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
 |**small**|`integer`| 否，默认值为：`3`|小间距值|1.0
 |**default**|`integer`| 否，默认值为：`8`|默认间距值|1.0
@@ -223,9 +271,9 @@ ms.locfileid: "84318197"
 
 控制文本显示的参数
 
-|属性|在任务栏的搜索框中键入|必需|描述|版本|
+|属性|类型|必需|说明|版本|
 |--------|----|--------|-----------|-------|
-|**size**|`string`| 否，默认值为：`"default"`|卡片未指定时需使用的字号|1.0
+|**大小**|`string`| 否，默认值为：`"default"`|卡片未指定时需使用的字号|1.0
 |**weight**|`string`| 否，默认值为：`"normal"`|卡片未指定时需使用的字体粗细|1.0
 |**color**|`string`| 否，默认值为：`"default"`|卡片未指定时需使用的字体颜色|1.0
 |**isSubtle**|`boolean`| 否，默认值为：`false`|卡片未指定时文本是否为细微|1.0

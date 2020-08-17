@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 63426b2250407cc40af8c46975c10f57d1028a40
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 1042fd862990a79c77110ebdf5d804eadcc606ea
+ms.sourcegitcommit: 19c08b1370305fb2965de0140c5e632356e78513
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "77454900"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87879146"
 ---
 # <a name="renderer-status"></a>呈现器状态
 下面的表显示了每个呈现器的当前状态，具体取决于其公开发布的版本。
@@ -30,7 +30,7 @@ ms.locfileid: "77454900"
 |呈现操作栏 | ✅ | ✅ | ✅ | ✅ | ✅ |
 |忽略未知元素 | ✅ | ✅ | ✅ | ✅ | ✅ |
 |Host Config 支持 | ✅ | ✅ | ✅ | ✅ | ✅ |
-|本机平台样式设置 | ✅ | ✅ | ✅ | ✅ | ✅ |
+|本机平台样式设置 | ✅ | ✅ | ✅ | ✅ | ❌ |
 
 ### <a name="element-rendering"></a>元素呈现
 
@@ -38,8 +38,9 @@ ms.locfileid: "77454900"
 |--- | --- | --- | --- | --- | --- | --- |
 |间距和分隔符 | ✅ | ✅ | ✅ | ✅ | ✅ |
 |[TextBlock 日期/时间格式设置](../authoring-cards/text-features.md#datetime-formatting-and-localization) | ✅ | ✅ | ✅ | ✅ | ✅ |
-|[TextBlock Markdown 支持](../authoring-cards/text-features.md#markdown) | ✅* | ✅ | ✅ | ✅ | ✅ |
-|完整输入支持 | ✅ | ✅ | ✅ | ✅ | ✅ |
+|[TextBlock Markdown 支持](../authoring-cards/text-features.md#markdown-commonmark-subset) | ✅* | ✅ | ✅ | ✅ | ✅ |
+|输入验证和标签 | ❌ | ✅ | ✅ | ✅ | ✅ |
+
 
 \* HTML 呈现器不包括内置的 Markdown 支持，目的是尽量减少库的大小，让资源耗用型应用程序使用其首选的 Markdown 处理器。 不过，HTML 呈现器会在 Markdown 已加载的情况下自动使用它。
 
