@@ -4,16 +4,16 @@ author: almedina-ms
 ms.author: almedina
 ms.date: 12/02/2019
 ms.topic: article
-ms.openlocfilehash: a7fd40ac7f026e2a325e7dc52e10defe550fd43a
-ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
+ms.openlocfilehash: cd8dccd2aece23dd67ee8d601e8efaa2a1bcd4f2
+ms.sourcegitcommit: 588f3e97ed3de96dfff54906ac666ce42ef1e7f6
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76146001"
+ms.lasthandoff: 10/09/2020
+ms.locfileid: "91928827"
 ---
 # <a name="getting-started---xamarinandroid"></a>入门-Xamarin Android
 
-这是一个面向本机 xamarin android 应用程序的呈现器库，并且基于你可在[此处](../../android/getting-started.md)找到的 android 呈现器。 
+这是一个面向本机 xamarin android 应用程序的呈现器库，并且基于你可在 [此处](../../android/getting-started.md)找到的 android 呈现器。 
 
 ## <a name="nuget-install"></a>NuGet 安装
 
@@ -44,11 +44,11 @@ using AdaptiveCards.Rendering.Xamarin.Android.Renderer.Registration;
 
 ## <a name="xamarinandroid-visualizer-sample"></a>Xamarin Android 可视化工具示例
 
-[Xamarin Android 可视化工具示例](https://github.com/Microsoft/AdaptiveCards/tree/master/source/xamarin/Xamarin.Droid.Sample)允许使用 xamarin 直观显示卡。 如果曾经使用过 Android 示例应用程序，就会发现体验非常相似。
+[Xamarin Android 可视化工具示例](https://github.com/Microsoft/AdaptiveCards/tree/main/source/xamarin/Xamarin.Droid.Sample)允许使用 xamarin 直观显示卡。 如果曾经使用过 Android 示例应用程序，就会发现体验非常相似。
 
 ## <a name="next-steps"></a>后续步骤
 
-对于后续步骤，快速入门检查将[呈现一个卡](render-a-card.md)！
+对于后续步骤，快速入门检查将 [呈现一个卡](render-a-card.md) ！
 
 若要深入了解已为 Xamarin 绑定呈现器库的类，可以通过单击下面的方法来检查某些绑定类：
 * [```AdaptiveCard```](adaptivecards-rendering-xamarin-android-objectmodel-adaptivecard.md)
