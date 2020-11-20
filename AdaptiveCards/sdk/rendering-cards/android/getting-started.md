@@ -4,12 +4,12 @@ author: almedina-ms
 ms.author: almedina
 ms.date: 09/27/2017
 ms.topic: article
-ms.openlocfilehash: d15e0963427babe045a4db6f93800e09e0d95da9
-ms.sourcegitcommit: 9a9973129c36a41f5e4af30d95ffc146820ad173
+ms.openlocfilehash: 864bb96c5875365845f7b9a7955b8a5380f034d9
+ms.sourcegitcommit: 65b792d73c264c943036343e05b75f2b0488e6e9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76145497"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95001784"
 ---
 # <a name="getting-started---android"></a>入门 - Android
 
@@ -17,9 +17,9 @@ ms.locfileid: "76145497"
 
 ## <a name="install-maven-package"></a>安装 Maven 包
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)
+[![Maven 中部](https://img.shields.io/maven-central/v/io.adaptivecards/adaptivecards-android.svg)](https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22adaptivecards-android%22)
 
-可以在 ![此处](https://search.maven.org/search?q=g:io.adaptivecards)
+可在[此处](https://search.maven.org/artifact/io.adaptivecards/adaptivecards-android)找到已发布的包
 
 若要将库包括到项目中，必须将以下行包括到项目 gradle.build 的 dependencies 节中
 
@@ -28,7 +28,7 @@ ms.locfileid: "76145497"
 ```
 需要更改版本号，具体取决于需包括到项目中的版本
 
-## <a name="add-import"></a>添加 import
+## <a name="add-import"></a>添加导入
 
 若要包括对象模型，请添加以下 import
 
