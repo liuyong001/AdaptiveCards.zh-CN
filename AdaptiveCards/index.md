@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 272a7dc7c31fc3da8e5b27ff7479b249c4ef4226
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: e54582f74ea6d5d537bc5993a7494fea05102182
+ms.sourcegitcommit: 65b792d73c264c943036343e05b75f2b0488e6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631295"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95001824"
 ---
 # <a name="adaptive-cards-overview"></a>自适应卡片概述 
 
@@ -21,7 +21,7 @@ ms.locfileid: "83631295"
 
 ## <a name="how-they-work"></a>工作原理
 
-[**卡片作者**](authoring-cards/getting-started.md)一文将卡片内容描述为简单的 JSON 对象。 该内容随后可以在[**主机应用程序**](rendering-cards/getting-started.md)中以本机方式呈现，自动适应主机的外观。
+[**卡片作者**](authoring-cards/getting-started.md)一文将卡片内容描述为简单的 JSON 对象。 该内容随后可以在 [**主机应用程序**](rendering-cards/getting-started.md)中以本机方式呈现，自动适应主机的外观。
 
 例如，Contoso 机器人可以通过 Bot Framework 创作一张自适应卡片。将该卡片发送到 Skype 时，它看起来就像一张 Skype 卡片。 将这个相同的有效负载发送到 Microsoft Teams 时，它看起来就像 Microsoft Teams。 当更多的主机应用开始支持自适应卡片时，这个相同的有效负载会自动在这些应用程序中启用，但其外观就像完全是该应用原生的一样。
 
@@ -42,7 +42,7 @@ ms.locfileid: "83631295"
 对卡片作者来说，自适应卡片具有以下优点：
 
 * **一种架构** - 只有一种格式，可以将创建卡片的成本降至最低，同时又可以尽量扩大能够使用该卡片的场所。
-* **更丰富的表达** - 内容可以与你要表达的意思更接近，因为你的表达方式更丰富。
+* **更丰富的表达** - 内容可与你要表达的意思更接近，因为你的表达方式更丰富。
 * **广泛的覆盖面** - 内容将适用于更广泛的应用程序集，而你不需学习新架构。
 * **输入控件** - 卡片可以包含输入控件，用于从查看卡片的用户处收集信息。
 * **更好的工具** - 开放的卡片生态系统意味着更好的可供所有人共享的工具。
