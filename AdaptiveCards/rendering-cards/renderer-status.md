@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 10/12/2018
 ms.topic: article
-ms.openlocfilehash: 1042fd862990a79c77110ebdf5d804eadcc606ea
-ms.sourcegitcommit: 19c08b1370305fb2965de0140c5e632356e78513
+ms.openlocfilehash: 2b4f9d9ab376839a309a312e9846c45b0fc6cdff
+ms.sourcegitcommit: 65b792d73c264c943036343e05b75f2b0488e6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87879146"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95001794"
 ---
 # <a name="renderer-status"></a>呈现器状态
 下面的表显示了每个呈现器的当前状态，具体取决于其公开发布的版本。
@@ -41,7 +41,6 @@ ms.locfileid: "87879146"
 |[TextBlock Markdown 支持](../authoring-cards/text-features.md#markdown-commonmark-subset) | ✅* | ✅ | ✅ | ✅ | ✅ |
 |输入验证和标签 | ❌ | ✅ | ✅ | ✅ | ✅ |
 
-
 \* HTML 呈现器不包括内置的 Markdown 支持，目的是尽量减少库的大小，让资源耗用型应用程序使用其首选的 Markdown 处理器。 不过，HTML 呈现器会在 Markdown 已加载的情况下自动使用它。
 
 ### <a name="extensibility"></a>扩展性
@@ -51,7 +50,7 @@ ms.locfileid: "87879146"
 |重写元素呈现器 | ✅ | ✅ | ✅ | ✅ | ✅ |
 |添加新的元素呈现器 | ✅ | ✅ | ✅ | ✅ | ✅ |
 |删除元素呈现器 | ✅ | ✅ | ✅ | ✅ | ✅ |
-|[重写/添加/删除操作呈现器](https://github.com/Microsoft/AdaptiveCards/issues/1671) | ✅ | ✅ | ❌ | ✅ | ✅ |
+|[重写/添加/删除操作呈现器](https://github.com/Microsoft/AdaptiveCards/issues/1671) | ✅ | ✅ | ✅ | ✅ | ✅ |
 
 ### <a name="actions"></a>操作
 
