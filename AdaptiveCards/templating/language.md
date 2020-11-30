@@ -4,22 +4,22 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: 98ab88d541916198b9a027a54fb70ee4502e63f7
-ms.sourcegitcommit: eb71aebe40a592649461e468a87993a10cbe6187
+ms.openlocfilehash: c03ed2c18039d199f37b9cbd52814f4561dad199
+ms.sourcegitcommit: 65b792d73c264c943036343e05b75f2b0488e6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84318187"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95001854"
 ---
 # <a name="adaptive-cards-template-language"></a>自适应卡片模板语言
 
-模板化可以将自适应卡片中的**数据**与**布局**分开。 模板语言是用于创作模板的语法。 
+模板化可以将自适应卡片中的 **数据** 与 **布局** 分开。 模板语言是用于创作模板的语法。 
 
 > 有关此方面的内容，请参阅[自适应卡片模板化概述](index.md)
 
 > [!IMPORTANT] 
 > 
-> **2020 年 5 月候选发布版本**中的**中断性变更**
+> **2020 年 5 月候选发布版本** 中的 **中断性变更**
 >
 > 我们正在努力工作，力求尽早发布模板，我们已经在做最后的冲刺了！ 发布之前，我们需要进行一些小的中断性变更。
 
@@ -209,8 +209,8 @@ var card = template.expand({
 
 ## <a name="repeating-items-in-an-array"></a>数组中的重复项
 
-* 如果将某个自适应卡片元素的 `$data` 属性绑定到**数组**，则**会针对数组中的每个项重复元素本身。** 
-* 在属性值中使用的任何绑定表达式 (`${myProperty}`) 的作用域都将是数组中的**单个项**。
+* 如果将某个自适应卡片元素的 `$data` 属性绑定到 **数组**，则 **会针对数组中的每个项重复元素本身。** 
+* 在属性值中使用的任何绑定表达式 (`${myProperty}`) 的作用域都将是数组中的 **单个项**。
 * 如果绑定到字符串数组，请使用 `${$data}` 访问单个字符串元素。 例如 `"text": "${$data}"`
 
 举例来说，下面的 `TextBlock` 会重复 3 次，因为其 `$data` 是数组。 请注意 `text` 属性如何绑定到数组内单个对象的 `name` 属性。 

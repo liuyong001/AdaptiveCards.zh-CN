@@ -4,12 +4,12 @@ author: rebeccaanne
 ms.author: rebecch
 ms.date: 07/24/2020
 ms.topic: article
-ms.openlocfilehash: 08fb2cb5b2b6fa1f227ec5a530f8063dc26b40e3
-ms.sourcegitcommit: 19c08b1370305fb2965de0140c5e632356e78513
+ms.openlocfilehash: fe8602ecfb308afeb7a42b82c22b49c33911d20d
+ms.sourcegitcommit: 65b792d73c264c943036343e05b75f2b0488e6e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87879138"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95001764"
 ---
 # <a name="input-validation"></a>输入验证
 
@@ -37,6 +37,7 @@ ms.locfileid: "87879138"
 ## <a name="labels"></a>标签
 
 架构版本 1.3 中为所有输入元素添加的另一属性是 `label` 字符串属性。 要在自适应卡中标记输入项，建议使用 `label` 属性，而不是 `placeholder` 属性。 对于卡片作者，这是添加输入项标签的一种简单、简洁的方式，它具有以下优势：
+
 * 验证指示器：如上所述，现可将输入项标记为“必需”，必需输入项的标签旁边有一个视觉指示器。 该视觉指示器是在 `HostConfig` 中定义的，默认呈现为星号 `*`。
 * 辅助功能：通过在标签与输入项之间建立连接，呈现器库可设置必要的属性，来使采用辅助技术（屏幕阅读器）的用户能够在自适应卡中与输入项正确交互。
     * 标签与占位符：如 Katie Sherwin 在 [Placeholders in form fields are harmful](https://www.nngroup.com/articles/form-design-placeholders/)（窗体字段中的占位符是有害的）一文中阐释的，使用占位符会产生很多负面后果，例如考验用户的短期记忆、让用户更难在提交前验证其输入、使用户很难阅读它们，这是因为占位符文本通常与其背景的颜色对比度较差，或者屏幕阅读器根本没法读取占位符文本等等。
