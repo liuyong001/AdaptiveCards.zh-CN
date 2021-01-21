@@ -2,14 +2,14 @@
 title: 自适应卡片设计器 SDK
 author: matthidinger
 ms.author: mahiding
-ms.date: 08/15/2019
+ms.date: 01/04/2021
 ms.topic: article
-ms.openlocfilehash: 06e70d5f8acd801a39c6448f1d138ca53bf841f0
-ms.sourcegitcommit: c921a7bb15a95c0ceb803ad375501ee3b8bef028
+ms.openlocfilehash: c1b2675b950b00fd1b523a958e3232a9f915978a
+ms.sourcegitcommit: f22409d10e797fd182c4877f5aa37cc3883f8aac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83631366"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578156"
 ---
 # <a name="adaptive-cards-designer-sdk"></a>自适应卡片设计器 SDK
 
@@ -20,10 +20,6 @@ ms.locfileid: "83631366"
 ![设计器屏幕截图](../content/designer.png)
 
 可以通过此 SDK 轻松地将自适应卡片设计器集成到你自己的体验中。
-
-> [!NOTE]
-> 
-> 设计器 SDK 目前为预览版，我们可能会根据反馈在公共 API 中进行中断性变更。
 
 ## <a name="get-started"></a>入门
 
