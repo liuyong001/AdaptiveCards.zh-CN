@@ -2,18 +2,22 @@
 title: .NET HTML SDK
 author: matthidinger
 ms.author: mahiding
-ms.date: 10/19/2017
+ms.date: 01/04/2021
 ms.topic: article
-ms.openlocfilehash: e3623e2a47a7a778124c69fe433af9810708487c
-ms.sourcegitcommit: 1e18c5dc0cf85d26f66335e312348bbfb903d95a
+ms.openlocfilehash: 6645fe407b4d4b3f71dc1080b2fa462becd7d2bc
+ms.sourcegitcommit: 0ed81e04d8cdcf8f8bf6f854edf53b7eb9f67d2a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "77454550"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100532558"
 ---
 # <a name="getting-started---net-html"></a>入门-.NET HTML
 
-正如我们在[入门](../../../authoring-cards/getting-started.md)"页中所述，自适应卡是 JSON 序列化的卡对象模型。 这是一个用于生成 HTML 标记的 .NET 库，通常来自服务器。
+正如我们在 [入门](../../../authoring-cards/getting-started.md) "页中所述，自适应卡是 JSON 序列化的卡对象模型。 这是一个用于生成 HTML 标记的 .NET 库，通常来自服务器。
+
+> [!IMPORTANT]
+>
+> 从 **12/31/2020 到，此包处于维护模式，不再处于活动状态**。 它只会接收关键错误和安全修补程序。 有关更多详细信息，请参阅我们的 [支持策略](https://github.com/microsoft/AdaptiveCards/blob/main/SUPPORT.MD) 。 如果你有兴趣维护此项目，我们很乐意在可能的情况下提供支持--请在 GitHub 上联系并告诉我们。
 
 ## <a name="nuget-install"></a>NuGet 安装
 
