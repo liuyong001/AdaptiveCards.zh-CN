@@ -4,20 +4,20 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: 41eb972603b1688a1f1857cec83208b9b55b02c3
-ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
+ms.openlocfilehash: 29214e7ce08afa9342ad9f97cd8b35132d918dfc
+ms.sourcegitcommit: 0ed81e04d8cdcf8f8bf6f854edf53b7eb9f67d2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86417615"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100532488"
 ---
 # <a name="adaptive-cards-templating"></a>自适应卡片模板化
 
-我们很高兴与大家一起预览用于**创建**、**重复使用**和**共享**自适应卡片的新工具。 
+我们很高兴与大家一起预览用于 **创建**、**重复使用** 和 **共享** 自适应卡片的新工具。 
 
 > [!IMPORTANT] 
 > 
-> **2020 年 5 月候选发布版本**中的**中断性变更**
+> **2020 年 5 月候选发布版本** 中的 **中断性变更**
 >
 > 如果你使用的是较旧的包，那么你应了解该模板化候选发布版本包含的一些较小的中断性变更。 请参见以下详细内容。
 
@@ -31,15 +31,15 @@ ms.locfileid: "86417615"
 
 ## <a name="how-can-templating-help-you"></a>模板化对你有何帮助
 
-模板化可以将自适应卡片中的**数据**与**布局**分开。 
+模板化可以将自适应卡片中的 **数据** 与 **布局** 分开。 
 
 ### <a name="it-helps-design-a-card-once-and-then-populate-it-with-real-data"></a>只需设计卡片一次，然后为其填充实际数据即可
 
-目前不可能使用[自适应卡片设计器](https://adaptivecards.io/designer)来创建卡片并使用该 JSON 为有效负载填充**动态内容**。 为此，必须编写自定义代码来构建 JSON 字符串，或使用对象模型 SDK 来构建表示卡片的 OM 并将其序列化为 JSON。 不管什么情况，设计器执行的是一次性单向操作，一旦将卡片设计转换为代码，就不容易在以后调整它。
+目前不可能使用 [自适应卡片设计器](https://adaptivecards.io/designer)来创建卡片并使用该 JSON 为有效负载填充 **动态内容**。 为此，必须编写自定义代码来构建 JSON 字符串，或使用对象模型 SDK 来构建表示卡片的 OM 并将其序列化为 JSON。 不管什么情况，设计器执行的是一次性单向操作，一旦将卡片设计转换为代码，就不容易在以后调整它。
 
 ### <a name="it-makes-transmissions-over-the-wire-smaller"></a>降低通过网络传输的数据的大小
 
-想象一下，如果可以**直接在客户端上**将模板和数据组合在一起，会是一种什么情景。 这意味着，如果多次使用同一模板，或者要使用新数据来更新它，只需将新数据发送到设备即可，设备可以反复使用同一模板。
+想象一下，如果可以 **直接在客户端上** 将模板和数据组合在一起，会是一种什么情景。 这意味着，如果多次使用同一模板，或者要使用新数据来更新它，只需将新数据发送到设备即可，设备可以反复使用同一模板。
 
 ### <a name="it-helps-you-create-a-great-looking-card-from-just-the-data-you-provide"></a>直接使用所提供的数据创建外观优美的卡片
 
@@ -73,7 +73,7 @@ ms.locfileid: "86417615"
 
 ![设计器屏幕截图](content/2019-08-01-13-58-27.png)
 
-新更新的设计器添加了相关支持，允许用户创作模板，并提供用于在设计时预览卡片的**示例数据**。
+新更新的设计器添加了相关支持，允许用户创作模板，并提供用于在设计时预览卡片的 **示例数据**。
 
 请将以下示例粘贴到“卡片有效负载编辑器”窗格中： 
 
@@ -142,9 +142,9 @@ ms.locfileid: "86417615"
 }
 ```
 
-然后，将以下 JSON 数据粘贴到**示例数据编辑器**中。 
+然后，将以下 JSON 数据粘贴到 **示例数据编辑器** 中。 
 
-**示例数据**可以让你了解卡片在运行时（此时会传递实际数据）的具体外观。
+**示例数据** 可以让你了解卡片在运行时（此时会传递实际数据）的具体外观。
 
 **EmployeeData**
 
@@ -190,7 +190,7 @@ ms.locfileid: "86417615"
 平台 | 程序包 | 安装 | 文档
 --- | --- | --- | ---
 JavaScript | [![npm install](https://img.shields.io/npm/v/adaptivecards-templating.svg)](https://www.npmjs.com/package/adaptivecards-templating) | `npm install adaptivecards-templating` | [文档](https://www.npmjs.com/package/adaptivecards-templating)
-.NET | [![Nuget 安装](https://img.shields.io/nuget/vpre/AdaptiveCards.Templating.svg)](https://www.nuget.org/packages/AdaptiveCards.Templating) | `dotnet add package AdaptiveCards.Templating` | [文档](https://docs.microsoft.com/adaptive-cards/templating/sdk#net)
+.NET | [![Nuget 安装](https://img.shields.io/nuget/vpre/AdaptiveCards.Templating.svg)](https://www.nuget.org/packages/AdaptiveCards.Templating) | `dotnet add package AdaptiveCards.Templating` | [文档](./sdk.md#net)
 
 ### <a name="javascript-example"></a>JavaScript 示例
 
