@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 8a73bcaf52e838453c6484ecd210d8ad7a577113
-ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
+ms.openlocfilehash: 076add9a677af55c109ee65858841fd9efbd9f32
+ms.sourcegitcommit: 0ed81e04d8cdcf8f8bf6f854edf53b7eb9f67d2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86417553"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100532578"
 ---
 # <a name="adaptive-cards-for-windows-developers"></a>面向 Windows 开发人员的自适应卡片
 
@@ -21,7 +21,7 @@ ms.locfileid: "86417553"
 
 ### <a name="useractivity-api"></a>UserActivity API
 
-可以通过 [`Windows.ApplicationModel.UserActivities.UserActivity`](https://docs.microsoft.com/uwp/api/windows.applicationmodel.useractivities.useractivity) API 将活动填充到时间线中。
+可以通过 [`Windows.ApplicationModel.UserActivities.UserActivity`](/uwp/api/windows.applicationmodel.useractivities.useractivity) API 将活动填充到时间线中。
 
 将通过 `VisualElement` 的 `Content` 属性提供自适应卡片，如下所示：
 
@@ -37,7 +37,7 @@ await userActivity.SaveAsync();
 
 这里有一个非常棒的 45 分钟的学习模块，其中包含了从头到尾的这些步骤。
 
-[将自适应卡集成到 Windows 10 时间线](https://docs.microsoft.com/learn/modules/integrate-app-into-windows-10-timeline/)
+[将自适应卡集成到 Windows 10 时间线](/learn/modules/integrate-app-into-windows-10-timeline/)
 
 ### <a name="learn-more"></a>了解详细信息
 

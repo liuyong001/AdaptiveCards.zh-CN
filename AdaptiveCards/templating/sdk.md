@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/15/2020
 ms.topic: article
-ms.openlocfilehash: a8db2f5ef84203187ed1b9d0fc8dd3ce63ee3569
-ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
+ms.openlocfilehash: 7956962033d7e6fd444091831a8a61da63eb67c8
+ms.sourcegitcommit: 0ed81e04d8cdcf8f8bf6f854edf53b7eb9f67d2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86417575"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100532628"
 ---
 # <a name="adaptive-card-templating-sdks"></a>自适应卡片模板化 SDK
 
@@ -19,7 +19,7 @@ ms.locfileid: "86417575"
 
 > [!IMPORTANT] 
 > 
-> **2020 年 5 月候选发布版本**中的**中断性变更**
+> **2020 年 5 月候选发布版本** 中的 **中断性变更**
 >
 > 我们正在努力工作，力求尽早发布模板，我们已经在做最后的冲刺了！ 发布之前，我们需要进行一些小的中断性变更。
 
@@ -199,4 +199,4 @@ A. 如果错误消息类似于：“请检查是否设置了父数据上下文�
 它指示不存在所请求的数据绑定的数据上下文。 请确保设置了根数据上下文，如果存在，请确保有数据上下文可用于行号所指示的当前绑定。
 
 问： RFC 3389 格式的日期/时间（例如“2017-02-14T06:08:00Z”）在与模板一起使用时为何不可用于 TIME/DATE 函数？   
-A. .NET SDK NuGet 版本 1.0.0-rc.0 具有此行为。 它已在后续版本中得到更正。 json.Net 反序列化程序的默认行为会更改日期/时间格式字符串，后续版本中已禁用该行为。 请使用 formatDateTime() 函数将日期/时间字符串的格式设置为 RFC 3389（如[本例](https://github.com/microsoft/AdaptiveCards/blob/db99ee07dadf317fe45e114a508e3de6e4325d0f/samples/Templates/Elements/Template.Functions.DateFunctions.json#L28)中所示），或者你可绕过 TIME/DATE 函数，只使用 formatDateTime()。 要详细了解 formatDateTime()，请转到[此处](https://docs.microsoft.com/azure/bot-service/adaptive-expressions/adaptive-expressions-prebuilt-functions?view=azure-bot-service-4.0#date-and-time-functions)。
+A. .NET SDK NuGet 版本 1.0.0-rc.0 具有此行为。 它已在后续版本中得到更正。 json.Net 反序列化程序的默认行为会更改日期/时间格式字符串，后续版本中已禁用该行为。 请使用 formatDateTime() 函数将日期/时间字符串的格式设置为 RFC 3389（如[本例](https://github.com/microsoft/AdaptiveCards/blob/db99ee07dadf317fe45e114a508e3de6e4325d0f/samples/Templates/Elements/Template.Functions.DateFunctions.json#L28)中所示），或者你可绕过 TIME/DATE 函数，只使用 formatDateTime()。 要详细了解 formatDateTime()，请转到[此处](/azure/bot-service/adaptive-expressions/adaptive-expressions-prebuilt-functions?view=azure-bot-service-4.0#date-and-time-functions)。

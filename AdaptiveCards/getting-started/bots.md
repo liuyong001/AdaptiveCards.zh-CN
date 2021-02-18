@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/30/2018
 ms.topic: article
-ms.openlocfilehash: e460bf50cdb4f0c1af54f5c7ad6c1d02db9af746
-ms.sourcegitcommit: fec0fd2c23293127e8e8f7ca7821c04d46987f37
+ms.openlocfilehash: 27b27cc004c03ddf7cb873cf67493407d3844ed5
+ms.sourcegitcommit: 0ed81e04d8cdcf8f8bf6f854edf53b7eb9f67d2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2020
-ms.locfileid: "86417502"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100532588"
 ---
 # <a name="adaptive-cards-for-bot-developers"></a>面向机器人开发人员的自适应卡片
 
@@ -115,8 +115,8 @@ ms.locfileid: "86417502"
 
 平台|安装|了解详细信息
 --------|-------|----------
-.NET | `Install-Package AdaptiveCards -IncludePrerelease` | [Bot Framework .NET Docs](https://docs.microsoft.com/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
-NodeJS | `npm install adaptivecards` | [Bot Framework NodeJS Docs](https://docs.microsoft.com/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
+.NET | `Install-Package AdaptiveCards -IncludePrerelease` | [Bot Framework .NET Docs](/bot-framework/dotnet/bot-builder-dotnet-add-rich-card-attachments)
+NodeJS | `npm install adaptivecards` | [Bot Framework NodeJS Docs](/bot-framework/nodejs/bot-builder-nodejs-send-rich-cards)
 
 
 ## <a name="channel-status"></a>通道状态

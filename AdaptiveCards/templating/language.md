@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 05/18/2020
 ms.topic: article
-ms.openlocfilehash: c03ed2c18039d199f37b9cbd52814f4561dad199
-ms.sourcegitcommit: 65b792d73c264c943036343e05b75f2b0488e6e9
+ms.openlocfilehash: 3c451c62f9345fd4072e560cb001b1d77996e093
+ms.sourcegitcommit: 0ed81e04d8cdcf8f8bf6f854edf53b7eb9f67d2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95001854"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100532638"
 ---
 # <a name="adaptive-cards-template-language"></a>自适应卡片模板语言
 
@@ -256,11 +256,11 @@ var card = template.expand({
 
 ## <a name="built-in-functions"></a>内置函数
 
-如果没有一整套丰富的帮助程序函数，则任何模板化语言都不是完整的。 自适应卡模板化建立在[自适应表达式语言](https://aka.ms/adaptive-expressions) (AEL) 的基础之上，后者是声明可在许多不同平台上进行计算的表达式的开放性标准。 而且它是“逻辑应用”的一个适当超集，因此可以使用与 Power Automate 等类似的语法。
+如果没有一整套丰富的帮助程序函数，则任何模板化语言都不是完整的。 自适应卡模板化建立在[自适应表达式语言](/azure/bot-service/bot-builder-concept-adaptive-expressions) (AEL) 的基础之上，后者是声明可在许多不同平台上进行计算的表达式的开放性标准。 而且它是“逻辑应用”的一个适当超集，因此可以使用与 Power Automate 等类似的语法。
 
 **这只是一小部分内置函数的示例。**
 
-查看[自适应表达式语言预生成函数](https://docs.microsoft.com/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0)的完整列表。
+查看[自适应表达式语言预生成函数](/azure/bot-service/bot-builder-concept-adaptive-expressions?view=azure-bot-service-4.0)的完整列表。
 
 ### <a name="conditional-evaluation"></a>条件计算
 

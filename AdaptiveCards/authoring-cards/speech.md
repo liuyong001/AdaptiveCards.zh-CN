@@ -4,12 +4,12 @@ author: matthidinger
 ms.author: mahiding
 ms.date: 06/26/2017
 ms.topic: article
-ms.openlocfilehash: 1dfd9b0c45a280905223e3286998b333b0a6ec6a
-ms.sourcegitcommit: e6418d692296e06be7412c95c689843f9db5240d
+ms.openlocfilehash: 348567679d90c03605913691ce7c66b91cabd630
+ms.sourcegitcommit: 0ed81e04d8cdcf8f8bf6f854edf53b7eb9f67d2a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76145338"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100532528"
 ---
 # <a name="speech-and-advanced-customization"></a>语音和高级自定义
 我们生活在一个可以通过 Cortana 之类的服务进行语音交互的时代。  从第一天开始，自适应卡片在设计时就考虑到要支持语音，启用可应对用户超忙情况的全新超酷方案。
@@ -17,7 +17,7 @@ ms.locfileid: "76145338"
 可以通过 `speak` 标记为视觉显示不是主要体验的环境（例如，在驾驶时使用的汽车仪表板）提供自适应卡片。 
 
 ## <a name="speak-property"></a>Speak 属性
-为了支持语音，我们使用了 `speak` 属性，其中包含要说给用户听的文本。 文本可以使用语音合成标记语言 ([SSML](https://msdn.microsoft.com/library/office/hh361578)) 进行标注。 SSML 控制语音的速度、语气和音调。  它甚至允许你流式传输音频，或者呈现由你自己的服务提供的 TTS 音频流，让你可以很灵活地进行自定义。
+为了支持语音，我们使用了 `speak` 属性，其中包含要说给用户听的文本。 文本可以使用语音合成标记语言 ([SSML](/previous-versions/office/developer/speech-technologies/hh361578(v=office.14))) 进行标注。 SSML 控制语音的速度、语气和音调。  它甚至允许你流式传输音频，或者呈现由你自己的服务提供的 TTS 音频流，让你可以很灵活地进行自定义。
 
 主机应用程序可以通过两种模式来使用 speak 属性：
 
@@ -36,4 +36,4 @@ ms.locfileid: "76145338"
 
 ## <a name="speech-content-design"></a>语音内容设计
 
-为语音设计的内容不同于为视觉显示设计的内容。 在设计卡片时，你是在设计整个视觉体验，需要以用户满意的方式将信息提供给用户。 针对语音进行设计时，应考虑如何以用户满意的方式口头介绍内容。  
+为语音设计的内容不同于为视觉显示设计的内容。 在设计卡片时，你是在设计整个视觉体验，需要以用户满意的方式将信息提供给用户。 针对语音进行设计时，应考虑如何以用户满意的方式口头介绍内容。
