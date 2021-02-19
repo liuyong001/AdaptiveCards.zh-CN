@@ -20,6 +20,8 @@
       href: authoring-cards/text-features.md
     - name: 输入验证
       href: authoring-cards/input-validation.md
+    - name: 通用机器人操作模型
+      href: authoring-cards/universal-action-model.md
 - name: 呈现卡片
   items:
     - name: 入门
